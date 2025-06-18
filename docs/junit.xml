@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/Users/nik/Sites/tips/phpunit.xml" tests="13" assertions="944" errors="0" failures="0" skipped="0" time="2.351951">
+    <testsuite name="default" tests="13" assertions="944" errors="0" failures="0" skipped="0" time="2.351951">
+      <testsuite name="Tips\Tests\Moduler\TT\TTRKodTest" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTRKodTest.php" tests="1" assertions="258" errors="0" failures="0" skipped="0" time="0.065665">
+        <testcase name="testRKod" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTRKodTest.php" line="24" class="Tips\Tests\Moduler\TT\TTRKodTest" classname="Tips.Tests.Moduler.TT.TTRKodTest" assertions="258" time="0.065665"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Moduler\TTTest" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.135848">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTTest.php" line="30" class="Tips\Tests\Moduler\TTTest" classname="Tips.Tests.Moduler.TTTest" assertions="2" time="0.135848"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Klasser\SpelTest" file="/Users/nik/Sites/tips/tests/Klasser/SpelTest.php" tests="1" assertions="5" errors="0" failures="0" skipped="0" time="0.008358">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Klasser/SpelTest.php" line="29" class="Tips\Tests\Klasser\SpelTest" classname="Tips.Tests.Klasser.SpelTest" assertions="5" time="0.008358"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Klasser\OmgangTest" file="/Users/nik/Sites/tips/tests/Klasser/OmgangTest.php" tests="1" assertions="8" errors="0" failures="0" skipped="0" time="1.829842">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Klasser/OmgangTest.php" line="29" class="Tips\Tests\Klasser\OmgangTest" classname="Tips.Tests.Klasser.OmgangTest" assertions="8" time="1.829842"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Funktioner\matriserTest" file="/Users/nik/Sites/tips/tests/funktioner/matriserTest.php" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="0.000708">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/matriserTest.php" line="23" class="Tips\Tests\Funktioner\matriserTest" classname="Tips.Tests.Funktioner.matriserTest" assertions="4" time="0.000708"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Ajax\SekvensAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/SekvensAjaxTest.php" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="0.203325">
+        <testcase name="testSekvensAjax" file="/Users/nik/Sites/tips/tests/Ajax/SekvensAjaxTest.php" line="29" class="Tips\Tests\Ajax\SekvensAjaxTest" classname="Tips.Tests.Ajax.SekvensAjaxTest" assertions="4" time="0.203325"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Ajax\ModulerAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/ModulerAjaxTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.029615">
+        <testcase name="testModulerAjax" file="/Users/nik/Sites/tips/tests/Ajax/ModulerAjaxTest.php" line="29" class="Tips\Tests\Ajax\ModulerAjaxTest" classname="Tips.Tests.Ajax.ModulerAjaxTest" assertions="1" time="0.029615"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Funktioner\assistenterTest" file="/Users/nik/Sites/tips/tests/funktioner/assistenterTest.php" tests="1" assertions="21" errors="0" failures="0" skipped="0" time="0.000947">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/assistenterTest.php" line="23" class="Tips\Tests\Funktioner\assistenterTest" classname="Tips.Tests.Funktioner.assistenterTest" assertions="21" time="0.000947"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Funktioner\tipsraderTest" file="/Users/nik/Sites/tips/tests/funktioner/tipsraderTest.php" tests="1" assertions="14" errors="0" failures="0" skipped="0" time="0.000472">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/tipsraderTest.php" line="23" class="Tips\Tests\Funktioner\tipsraderTest" classname="Tips.Tests.Funktioner.tipsraderTest" assertions="14" time="0.000472"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Moduler\System\RKodTest" file="/Users/nik/Sites/tips/tests/Moduler/System/RKodTest.php" tests="1" assertions="615" errors="0" failures="0" skipped="0" time="0.051004">
+        <testcase name="testRKod" file="/Users/nik/Sites/tips/tests/Moduler/System/RKodTest.php" line="24" class="Tips\Tests\Moduler\System\RKodTest" classname="Tips.Tests.Moduler.System.RKodTest" assertions="615" time="0.051004"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Klasser\MatcherTest" file="/Users/nik/Sites/tips/tests/Klasser/MatcherTest.php" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="0.002665">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Klasser/MatcherTest.php" line="26" class="Tips\Tests\Klasser\MatcherTest" classname="Tips.Tests.Klasser.MatcherTest" assertions="4" time="0.002665"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Ajax\SpelAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/SpelAjaxTest.php" tests="1" assertions="7" errors="0" failures="0" skipped="0" time="0.023026">
+        <testcase name="testSpelAjax" file="/Users/nik/Sites/tips/tests/Ajax/SpelAjaxTest.php" line="28" class="Tips\Tests\Ajax\SpelAjaxTest" classname="Tips.Tests.Ajax.SpelAjaxTest" assertions="7" time="0.023026"/>
+      </testsuite>
+      <testsuite name="Tips\Tests\Funktioner\generatorTest" file="/Users/nik/Sites/tips/tests/funktioner/generatorTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.000476">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/generatorTest.php" line="23" class="Tips\Tests\Funktioner\generatorTest" classname="Tips.Tests.Funktioner.generatorTest" assertions="1" time="0.000476"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

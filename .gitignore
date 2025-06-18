@@ -1,6 +1,8 @@
 vendor/
 tools/
-docs/
+docs/api
+docs/coverage
+docs/metrics
 backup/
 src/_data/skarp/
 src/_data/_skarp/

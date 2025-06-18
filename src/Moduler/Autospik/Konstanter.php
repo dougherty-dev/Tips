@@ -13,7 +13,7 @@ namespace Tips\Moduler\Autospik;
  * Egenskap Konstanter.
  */
 trait Konstanter {
-	public const int AS_MIN = 1;
-	public const int AS_MAX = 6;
-	public const int AS_STD = 3;
+	public const AS_MIN = 1;
+	public const AS_MAX = 6;
+	public const AS_STD = 3;
 }

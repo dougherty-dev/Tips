@@ -16,7 +16,7 @@ Tips är ett enkelt litet desktopprogram för det svenska stryktipset och europa
 
 ### Systemkrav
 
-- PHP 8.4 (FPM för parallell exekvering)
+- PHP 8.3 (FPM för parallell exekvering)
 - SQLite 3
 
 Optionellt krävs även FANN 2.1 för beräkningar med neuralt nätverk. Installera med `pecl install fann` för PHP tillsammans med fannlib för din maskin.

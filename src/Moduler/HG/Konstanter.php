@@ -13,9 +13,9 @@ namespace Tips\Moduler\HG;
  * Egenskap Konstanter.
  */
 trait Konstanter {
-	public const int HG_MIN = 8;
-	public const int HG_MAX = MATCHRYMD;
-	public const int HG_STD = 10;
+	public const HG_MIN = 8;
+	public const HG_MAX = MATCHRYMD;
+	public const HG_STD = 10;
 
 	/**
 	 * @var array<int, array<int, float|int>> HG_MATRIS

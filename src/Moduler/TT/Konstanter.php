@@ -13,26 +13,26 @@ namespace Tips\Moduler\TT;
  * Egenskap Konstanter.
  */
 trait Konstanter {
-	public const int TT_MATCHANTAL = 8; // Topptipset har åtta matcher
+	public const TT_MATCHANTAL = 8; // Topptipset har åtta matcher
 
-	public const int TT_MIN_RADER = 10; // spelgränser 10–1000 kr
-	public const int TT_MAX_RADER = 1000;
-	public const int TT_MIN_DEFAULT = 20;
+	public const TT_MIN_RADER = 10; // spelgränser 10–1000 kr
+	public const TT_MAX_RADER = 1000;
+	public const TT_MIN_DEFAULT = 20;
 
-	public const int TT_ODDS_RÄTT_MIN = 2; // defaultintervall för antal odds rätt
-	public const int TT_ODDS_RÄTT_MAX = 5;
-	public const int TT_ANTAL_1_MIN = 2; // defaultintervall för antal tecken 1 rätt
-	public const int TT_ANTAL_1_MAX = 5;
-	public const int TT_ANTAL_X_MIN = 1; // defaultintervall för antal tecken X rätt
-	public const int TT_ANTAL_X_MAX = 4;
-	public const int TT_ANTAL_2_MIN = 1; // defaultintervall för antal tecken 2 rätt
-	public const int TT_ANTAL_2_MAX = 5;
+	public const TT_ODDS_RÄTT_MIN = 2; // defaultintervall för antal odds rätt
+	public const TT_ODDS_RÄTT_MAX = 5;
+	public const TT_ANTAL_1_MIN = 2; // defaultintervall för antal tecken 1 rätt
+	public const TT_ANTAL_1_MAX = 5;
+	public const TT_ANTAL_X_MIN = 1; // defaultintervall för antal tecken X rätt
+	public const TT_ANTAL_X_MAX = 4;
+	public const TT_ANTAL_2_MIN = 1; // defaultintervall för antal tecken 2 rätt
+	public const TT_ANTAL_2_MAX = 5;
 
-	public const int TT_MAX_SPIKFÄLT = 6; // defaultintervall för antal fält som ska visas
+	public const TT_MAX_SPIKFÄLT = 6; // defaultintervall för antal fält som ska visas
 
-	public const string TT_MAPP = BAS . GENERERADE . '/topptipset'; // textfiler
-	public const string TT_TEXTFIL = self::TT_MAPP . '/topptipset.txt';
-	public const string TT_BILDFIL = '/TT-vinstgraf.png';
+	public const TT_MAPP = BAS . GENERERADE . '/topptipset'; // textfiler
+	public const TT_TEXTFIL = self::TT_MAPP . '/topptipset.txt';
+	public const TT_BILDFIL = '/TT-vinstgraf.png';
 
 	/**
 	 * @var array<string, string[]> TOPPTIPSTYPER

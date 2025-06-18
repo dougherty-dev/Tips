@@ -23,8 +23,8 @@ class assistenterTest extends TestCase
 	public function testCreateObject(): void
 	{
 		new Preludium();
-		$this->assertTrue(∈(2, 1, 3));
-		$this->assertFalse(∈(1, 2, 3));
+		$this->assertTrue(in(2, 1, 3));
+		$this->assertFalse(in(1, 2, 3));
 
 		$this->assertEquals(ne_max([2, 3]), 3);
 		$this->assertEquals(ne_max([]), 0);

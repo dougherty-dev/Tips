@@ -5,13 +5,13 @@ filter:
     excluded_paths: [vendor/*, test/*, src/_data/skarp/*]
 
 build:
-    image: default-numbat
+    image: default-bionic
 
     nodes:
         my-tests:
             environment:
                 php:
-                    version: 8.4.0
+                    version: 8.3.0
         analysis:
             tests:
                 override:

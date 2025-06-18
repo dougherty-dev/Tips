@@ -7,8 +7,8 @@
 
 declare(strict_types=1);
 
-define('VERSION', '0.8.0.10');
-define('VERSIONSDATUM', '2025-06-17');
+define('VERSION', '0.8.0.11');
+define('VERSIONSDATUM', '2025-06-18');
 
 /**
  * Välj felrapportering.

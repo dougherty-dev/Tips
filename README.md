@@ -115,3 +115,7 @@ Drygt 450 klasser nyttjas, varav några är aningen för komplexa, men det spegl
 Linters ger inga anmärkningar, men självklart finns buggar, särskilt i randvillkor som aldrig testas i verklig miljö. Särskilt för små datamängder kan dessa komma att manifesteras. Detta är för hugade spekulanter att nysta i.
 
 ![Tips](https://raw.githubusercontent.com/dougherty-dev/Tips/refs/heads/main/readme/phpmetrics.avif)
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dougherty-dev/Tips/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/dougherty-dev/Tips/?branch=main)
+[![Code Coverage](https://scrutinizer-ci.com/g/dougherty-dev/Tips/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/dougherty-dev/Tips/?branch=main)
+[![Build Status](https://scrutinizer-ci.com/g/dougherty-dev/Tips/badges/build.png?b=main)](https://scrutinizer-ci.com/g/dougherty-dev/Tips/build-status/main)

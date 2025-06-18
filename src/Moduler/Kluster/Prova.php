@@ -19,7 +19,7 @@ class Prova extends Preferenser {
 	public function pröva_tipsrad(string $tipsrad_012): bool {
 		[$x, $y] = $this->graf->tipsgrafskoordinater($tipsrad_012);
 		foreach ($this->rektanglar as [$x1, $y1, $x2, $y2]) {
-			if (∈($x, $x1, $x2) && ∈($y, $y1, $y2)) {
+			if (in($x, $x1, $x2) && in($y, $y1, $y2)) {
 				return true;
 			}
 		}

@@ -24,8 +24,8 @@ class Validering extends Intervall {
 		string $pref
 	): int|float {
 		$värde = is_int($min) ? (int) filter_var($_REQUEST[$rad], FILTER_VALIDATE_INT) : (float) filter_var($_REQUEST[$rad], FILTER_VALIDATE_FLOAT);
-		∈($standard, $min, $max) or $standard = $min;
-		∈($värde, $min, $max) or $värde = $standard;
+		in($standard, $min, $max) or $standard = $min;
+		in($värde, $min, $max) or $värde = $standard;
 		$this->spara_preferens($pref, (string) $värde);
 		return $värde;
 	}

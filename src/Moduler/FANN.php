@@ -49,7 +49,7 @@ final class FANN extends Visa {
 			$this->uppdatera_preferenser();
 		}
 
-		if ($this->∃fann = file_exists($this->utdatafil)) {
+		if ($this->exists_fann = file_exists($this->utdatafil)) {
 			$this->fann = fann_create_from_file($this->utdatafil);
 		}
 

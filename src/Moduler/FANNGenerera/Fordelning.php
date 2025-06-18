@@ -22,7 +22,7 @@ class Fordelning extends Ratt {
 		/**
 		 * Kräv anslutning till FANN.
 		 */
-		if (!$this->∃fann) {
+		if (!$this->exists_fann) {
 			return;
 		}
 

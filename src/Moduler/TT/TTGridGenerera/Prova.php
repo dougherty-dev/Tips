@@ -58,15 +58,15 @@ class Prova {
 		$antal_1 = substr_count($tipsrad_012, '0');
 		$antal_X = substr_count($tipsrad_012, '1');
 		$antal_2 = substr_count($tipsrad_012, '2');
-		return ∈($antal_1, $this->tt->antal_1_min, $this->tt->antal_1_max) &&
-			∈($antal_X, $this->tt->antal_X_min, $this->tt->antal_X_max) &&
-			∈($antal_2, $this->tt->antal_2_min, $this->tt->antal_2_max);
+		return in($antal_1, $this->tt->antal_1_min, $this->tt->antal_1_max) &&
+			in($antal_X, $this->tt->antal_X_min, $this->tt->antal_X_max) &&
+			in($antal_2, $this->tt->antal_2_min, $this->tt->antal_2_max);
 	}
 
 	/**
 	 * Pröva oddsintervall.
 	 */
 	protected function pröva_oddsintervall(string $tipsrad_012): bool {
-		return ∈(antal_rätt($tipsrad_012, $this->tt->enkelrad_012), $this->tt->odds_rätt_min, $this->tt->odds_rätt_max);
+		return in(antal_rätt($tipsrad_012, $this->tt->enkelrad_012), $this->tt->odds_rätt_min, $this->tt->odds_rätt_max);
 	}
 }

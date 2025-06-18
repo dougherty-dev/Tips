@@ -22,7 +22,7 @@ class Prova extends Historik {
 	 */
 	public function pröva_tipsrad(string $tipsrad_012): bool {
 		$this->beräkna_sannolikhetssummor($tipsrad_012);
-		return ∈($this->oddssumma, $this->minsumma, $this->maxsumma) || $this->tick();
+		return in($this->oddssumma, $this->minsumma, $this->maxsumma) || $this->tick();
 	}
 
 	/**

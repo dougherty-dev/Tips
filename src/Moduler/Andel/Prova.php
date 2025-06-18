@@ -29,9 +29,9 @@ class Prova extends Preferenser {
 	 * @param int[] $vektor
 	 */
 	protected function pröva_andelar(array $vektor): bool {
-		return ∈($vektor[0], $this->andel_1_min, $this->andel_1_max) &&
-			∈($vektor[1], $this->andel_x_min, $this->andel_x_max) &&
-			∈($vektor[2], $this->andel_2_min, $this->andel_2_max);
+		return in($vektor[0], $this->andel_1_min, $this->andel_1_max) &&
+			in($vektor[1], $this->andel_x_min, $this->andel_x_max) &&
+			in($vektor[2], $this->andel_2_min, $this->andel_2_max);
 	}
 
 	/**

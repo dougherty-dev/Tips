@@ -31,8 +31,8 @@ class Visa extends Spara {
 		/**
 		 * Visa resursförbrukning av tid och minne.
 		 */
-		$minne = round(memory_get_peak_usage() / 1_048_576, 2);
-		$tidsdifferens = round((hrtime(true) - $this->tid) / 1_000_000_000, 2);
+		$minne = round(memory_get_peak_usage() / 1048576, 2);
+		$tidsdifferens = round((hrtime(true) - $this->tid) / 1000000000, 2);
 		$maxtid = ($tidsdifferens < MAXTID) ? "✅ " : "❌ ";
 		$maxtid .= strval(MAXTID) . ' s';
 

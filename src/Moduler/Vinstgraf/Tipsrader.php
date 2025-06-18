@@ -31,7 +31,7 @@ class Tipsrader extends Rita {
 					$u13[$omgång] = MAXVINST;
 				}
 
-				if (∈($u13[$omgång], $this->utdelning_13_min, $this->utdelning_13_max)) {
+				if (in($u13[$omgång], $this->utdelning_13_min, $this->utdelning_13_max)) {
 					$this->tipsrader[] = [$tipsrad_012, $u13[$omgång]];
 				}
 			}

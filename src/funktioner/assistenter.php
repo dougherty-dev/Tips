@@ -5,7 +5,7 @@ declare(strict_types=1);
 /**
  * Finns ett värde inom ett intervall inklusivt?
  */
-function ∈(int|float $värde, int|float $min, int|float $max): bool {
+function in(int|float $värde, int|float $min, int|float $max): bool {
 	return $värde >= $min && $värde <= $max;
 }
 

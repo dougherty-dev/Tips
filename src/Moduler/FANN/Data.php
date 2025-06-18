@@ -30,7 +30,7 @@ class Data extends Omgang {
 		/**
 		 * Rendera data om FANN-anslutning.
 		 */
-		if ($this->∃fann) {
+		if ($this->exists_fann) {
 			$fanndata = <<< EOT
 						<div id="fannlogg"><em>{$this->logg}</em></div>
 						<div>

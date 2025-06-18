@@ -37,7 +37,7 @@ trait Konstanter {
 	/**
 	 * @var array<string, string[]> TOPPTIPSTYPER
 	 */
-	public const array TOPPTIPSTYPER = [
+	public const TOPPTIPSTYPER = [
 		'namn' => ['Topptipset', 'Topptipset Europa', 'Topptipset Stryk'],
 		'api' => ['topptipset', 'topptipseteuropa', 'topptipsetstryk'],
 		'externa' => ['Topptipset', 'Topptipset,Europa', 'Topptipset,Stryk']
@@ -48,7 +48,7 @@ trait Konstanter {
 	 * Uppdateras inte kontinuerligt för närvarande, men kan ge en bild av spelets karaktär.
 	 * @var array<int, string> TT_TOPPTIPSRADER
 	 */
-	public const array TT_TOPPTIPSRADER = [
+	public const TT_TOPPTIPSRADER = [
 		'00000000', '00000002', '00000022', '00000010', '00000012', '00000011', '00000200', '00000201',
 		'00000220', '00000210', '00000101', '00000122', '00000112', '00000111', '00002000', '00002002',
 		'00002001', '00002020', '00002021', '00002222', '00002212', '00002211', '00002100', '00002102',

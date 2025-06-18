@@ -18,7 +18,7 @@ use Tips\Klasser\Parallellisering;
  */
 class Parametrar extends MonteCarlo {
 	private Parallellisering $parallellisering;
-	public bool $∃fann = false;
+	public bool $exists_fann = false;
 	protected int $antal_lager = 2;
 	protected int $max_neuroner = 10000;
 
@@ -29,7 +29,7 @@ class Parametrar extends MonteCarlo {
 		/**
 		 * Kräv anslutning till neuralt nätverk.
 		 */
-		if (!$this->∃fann) {
+		if (!$this->exists_fann) {
 			return;
 		}
 

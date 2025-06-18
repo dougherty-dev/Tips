@@ -41,10 +41,10 @@ final class Generera extends Fordelning {
 		fann_set_activation_function_output($this->fann->fann, FANN_SIGMOID_SYMMETRIC_STEPWISE);
 		fann_set_training_algorithm($this->fann->fann, FANN_TRAIN_RPROP);
 
-		$this->∃fann = fann_cascadetrain_on_file($this->fann->fann, $this->fann->indatafil, $this->max_neuroner, 0, $this->fann->feltolerans);
+		$this->exists_fann = fann_cascadetrain_on_file($this->fann->fann, $this->fann->indatafil, $this->max_neuroner, 0, $this->fann->feltolerans);
 
 		$logg = "Kunde inte träna FANN.<br>";
-		if ($this->∃fann) {
+		if ($this->exists_fann) {
 			fann_save($this->fann->fann, $this->fann->utdatafil);
 			unlink($this->fann->indatafil);
 			$logg = 'MSE: ' . fann_get_mse($this->fann->fann) . '<br>';

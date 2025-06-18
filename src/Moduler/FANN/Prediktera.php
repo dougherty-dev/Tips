@@ -28,7 +28,7 @@ class Prediktera extends Preferenser {
 	  */
 	public array $utdata = TOMRAD;
 
-	protected bool $∃fann = false; // huruvida anslutning till FANN existerar
+	protected bool $exists_fann = false; // huruvida anslutning till FANN existerar
 	protected int $fann_rätt = 0;
 	protected int $halvgarderingar = 0;
 
@@ -36,7 +36,7 @@ class Prediktera extends Preferenser {
 	 * Beräkna FANN-rad för aktuella sannolikheter.
 	 */
 	protected function prediktera(): void {
-		if ($this->∃fann) {
+		if ($this->exists_fann) {
 			foreach ($this->odds->sannolikheter as $index => $o_sannolikhet) {
 				$s_sannolikhet = $this->streck->sannolikheter[$index];
 				/**

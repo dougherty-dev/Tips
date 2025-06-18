@@ -39,7 +39,7 @@ final class GridOmgangsdata extends Omgangsdata {
 							<table class="omgångstabell">
 								<tr>
 									<td colspan="3" class="ramfri">$dag <span id="datumtid">$datum $spelstopp</span><input type="hidden" id="spelstopp" name="spelstopp" value="{$this->tips->matcher->spelstopp}"></td>
-									<td colspan="1"><strong>Sekv. {$this->tips->utdelning->spel->sekvens} ∈ [$sekvenser]</strong></td>
+									<td colspan="1"><strong>Sekv. {$this->tips->utdelning->spel->sekvens} in [$sekvenser]</strong></td>
 									<td id="omgång_strategi" class="topp" rowspan="7">
 										<p id="omgång_strategi_p"><label for="strategi">Strategi</label></p>
 										<textarea class="mindre" rows="8" cols="45" id="strategi">$strategi</textarea>

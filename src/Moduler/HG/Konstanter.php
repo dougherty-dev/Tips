@@ -20,7 +20,7 @@ trait Konstanter {
 	/**
 	 * @var array<int, array<int, float|int>> HG_MATRIS
 	 */
-	public const array HG_MATRIS = [
+	public const HG_MATRIS = [
 		[1594323, 100],
 		[1594322, 99.999937277453],
 		[1594296, 99.998306491219],

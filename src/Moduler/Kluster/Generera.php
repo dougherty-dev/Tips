@@ -22,7 +22,7 @@ class Generera extends Kluster {
 		foreach ($this->rektanglar as [$x_min, $y_min, $x_max, $y_max]) {
 			$rektanglar[] = implode(',', [$x_min, $y_min, $x_max, $y_max]);
 			foreach ($koordinater as $index => [$x, $y]) {
-				if (∈($x, $x_min, $x_max) && ∈($y, $y_min, $y_max)) {
+				if (in($x, $x_min, $x_max) && in($y, $y_min, $y_max)) {
 					$this->klustrade_rader++;
 					unset($koordinater[$index]);
 				}

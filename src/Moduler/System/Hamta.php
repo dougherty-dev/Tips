@@ -59,7 +59,7 @@ class Hamta extends Preferenser {
 				 */
 				foreach ($gardering as $tecken) {
 					if ($tecken[0] !== '' || $tecken[1] !== '' || $tecken[2] !== '') {
-						$this->antal_garderingar[$i]++;
+						$this->antal_garderingar[(int) $tecken]++;
 					}
 				}
 			}

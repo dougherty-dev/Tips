@@ -17,7 +17,7 @@
 		"phpmetrics": "php -d error_reporting='E_ALL & ~E_DEPRECATED' tools/phpmetrics/vendor/bin/phpmetrics --config=tools/phpmetrics/phpmetrics.json",
 		"phpdoc": "php -d error_reporting='E_ALL & ~E_DEPRECATED' tools/phpdoc/phpdoc --config=tools/phpdoc/phpdoc.xml",
 		"phpstan": "php -d error_reporting='E_ALL & ~E_DEPRECATED' tools/phpstan/vendor/bin/phpstan analyse -c tools/phpstan/phpstan.neon || true",
-		"phpunit": "vendor/bin/phpunit",
+		"phpunit": "XDEBUG_MODE=coverage vendor/bin/phpunit",
 		"phpcs": "./vendor/bin/phpcs src -s",
 		"lint": [
 			"@phpmd",

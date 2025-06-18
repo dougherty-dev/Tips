@@ -12,6 +12,8 @@ Tips är ett enkelt litet desktopprogram för det svenska stryktipset och europa
 - Modulsystem
 - Kompletta R-system
 
+![Tips](https://raw.githubusercontent.com/dougherty-dev/Tips/refs/heads/main/readme/tips.avif)
+
 ### Systemkrav
 
 - PHP 8.4 (FPM för parallell exekvering)
@@ -64,6 +66,10 @@ Ett antal moduler följer med systemet. Dessa kan aktiveras i valfri ordning.
 
 Smidig förinställning av moduler med vissa värden kan ges av scheman definierade i fliken Scheman.
 
+![Tips](https://raw.githubusercontent.com/dougherty-dev/Tips/refs/heads/main/readme/distribution.avif)
+
+![Tips](https://raw.githubusercontent.com/dougherty-dev/Tips/refs/heads/main/readme/topptipset.avif)
+
 ### Data
 
 Systemet får mer mening med mycket data, som man får hämta själv på annat håll. Den databaskunnige har därefter inga problem med att tanka in relevanta data i databasen. Nätet erbjuder historiska data för dessa tipsformer.
@@ -82,18 +88,30 @@ Data för moduler Distribution och System (garderingar) sparas per omgång och s
 
 Raderna sparas kompakt i databasen, men även i en textfil som kan skickas till Svenska spel, för närvarande med manuell uppladdning. Dessa filer finns under `src/_data/(mapp)/genererade/(år)/(spelform)`.
 
+![Tips](https://raw.githubusercontent.com/dougherty-dev/Tips/refs/heads/main/readme/system.avif)
+
 ### Resultat
 
 Efter avslutad omgång kan man hämta (eller manuellt mata in) resultat, varvid eventuella vinstrader presenteras. Grafen uppdateras med ett vinstkors och eventuella vinstmarkörer. Ytterligare två grafer visar så kallad vinstspridning samt en kombinationsgraf omfattande andra grafiska moduler (här enbart Kluster).
 
+![Tips](https://raw.githubusercontent.com/dougherty-dev/Tips/refs/heads/main/readme/resultat.avif)
+
 Den grafiska framställningen kan avslöja egenheter för spelet i sig, men särskilt för vissa omgångar, och kan då nyttjas för analys.
+
+![Tips](https://raw.githubusercontent.com/dougherty-dev/Tips/refs/heads/main/readme/graf.avif)
 
 ### Investera
 
 De spel man lägger bokförs i filken Investera, om man väljer detta tillval då man sparar raderna. Man kan på så sätt följa tillväxten av kapital över tid, samt se en grafisk presentation över vinsterna. Det givna exemplet i `dist` är fiktivt, och i verkligheten kan det hända att tillväxten är mer negativ. Spela inte för mycket!
+
+![Tips](https://raw.githubusercontent.com/dougherty-dev/Tips/refs/heads/main/readme/invest1.avif)
+
+![Tips](https://raw.githubusercontent.com/dougherty-dev/Tips/refs/heads/main/readme/invest2.avif)
 
 ### Programmering
 
 Drygt 450 klasser nyttjas, varav några är aningen för komplexa, men det speglar då den underliggande komplexiteten i algoritmen. I snitt ligger cyklomatisk komplexitet på 2.77 per klass, med 0.07 potentiella buggar per klass. Det ser grönt ut.
 
 Linters ger inga anmärkningar, men självklart finns buggar, särskilt i randvillkor som aldrig testas i verklig miljö. Särskilt för små datamängder kan dessa komma att manifesteras. Detta är för hugade spekulanter att nysta i.
+
+![Tips](https://raw.githubusercontent.com/dougherty-dev/Tips/refs/heads/main/readme/phpmetrics.avif)

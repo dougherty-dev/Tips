@@ -2,7 +2,7 @@ imports:
     - php
 
 filter:
-    excluded_paths: [vendor/*, tests/*, src/_data/skarp/*]
+    excluded_paths: [vendor/*, tools/*, backup/*, tests/*, src/_data/skarp/*]
 
 build:
     image: default-bionic
@@ -11,7 +11,7 @@ build:
         my-tests:
             environment:
                 php:
-                    version: 8.3.0
+                    version: 8.3.22
         analysis:
             tests:
                 override:

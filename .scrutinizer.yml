@@ -2,7 +2,7 @@ imports:
     - php
 
 filter:
-    excluded_paths: [vendor/*, test/*, src/_data/skarp/*]
+    excluded_paths: [vendor/*, tests/*, src/_data/skarp/*]
 
 build:
     image: default-bionic

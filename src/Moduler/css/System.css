@@ -1,0 +1,18 @@
+/* Grid System */
+
+.system-övre-grid {
+	display: grid;
+	grid-template-areas:
+		'preferenser koddata'
+		'garderingar garderingar';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.system-grid-preferenser {grid-area: preferenser;}
+.system-grid-koddata {grid-area: koddata;}
+.system-grid-garderingar {grid-area: garderingar;}
+
+.system-helgardering, .system-rensa-gardering {cursor: pointer;}

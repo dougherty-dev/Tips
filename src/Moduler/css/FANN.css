@@ -1,0 +1,31 @@
+/* Grid FANN */
+
+.FANN-övre-grid {
+	display: grid;
+	grid-template-areas:
+		'fannomgång';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.FANN-grid-fannomgång {grid-area: fannomgång;}
+
+.FANN-nedre-grid {
+	display: grid;
+	grid-template-areas:
+		'fanndata fannparametrar fannrätt';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.FANN-grid-fanndata {grid-area: fanndata;}
+.FANN-grid-fannparametrar {grid-area: fannparametrar;}
+.FANN-grid-fannrätt {grid-area: fannrätt;}
+
+#fanntabell tr:hover, #FANN-fördelning tr:hover {
+	outline: medium solid red;
+}

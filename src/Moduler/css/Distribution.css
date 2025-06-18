@@ -1,0 +1,16 @@
+/* Grid Distribution */
+
+.distribution-grid {
+	display: grid;
+	grid-template-areas:
+		'intervall förekomst'
+		'distribution distribution';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.grid-intervall {grid-area: intervall;}
+.grid-förekomst {grid-area: förekomst;}
+.grid-distribution {grid-area: distribution;}

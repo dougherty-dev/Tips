@@ -1,0 +1,93 @@
+/* Grid omgångsdata */
+
+.övre-grid {
+	display: grid;
+	grid-template-areas:
+		'omgång generera rader';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.grid-omgång {grid-area: omgång;}
+.grid-generera {grid-area: generera; justify-self: end;}
+.grid-rader {grid-area: rader; justify-self: end;}
+
+.mellersta-grid {
+	display: grid;
+	grid-template-areas:
+		'omgångsdata favoriter'
+		'matcher matcher';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.grid-omgångsdata {grid-area: omgångsdata;}
+.grid-favoriter {grid-area: favoriter; justify-self: end;}
+.grid-matcher {grid-area: matcher;}
+
+/* Grid resultat */
+
+.undre-grid {
+	display: grid;
+	grid-template-areas:
+		'moduler fördelning vinstrader';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.grid-moduler {grid-area: moduler;}
+.grid-fördelning {grid-area: fördelning;}
+.grid-vinstrader {grid-area: vinstrader;}
+
+/* Grid spelat/genererat resultat */
+
+.spelade-grid {
+	display: grid;
+	grid-template-areas:
+		'spelade-rader graf';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.grid-spelade-rader {grid-area: spelade-rader;}
+.grid-graf {grid-area: graf;}
+
+.omgångsdata {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+}
+
+/* Grid generell */
+
+.generell-övre-grid {
+	display: grid;
+	grid-template-areas:
+		'generell-övre';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.generell-nedre-grid {
+	display: grid;
+	grid-template-areas:
+		'generell-nedre';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.generell-övre {grid-area: generell-övre;}
+.generell-nedre {grid-area: generell-nedre;}

@@ -1,0 +1,47 @@
+/* Grid tt */
+
+.tt-övre-grid {
+	display: grid;
+	grid-template-areas:
+		'omgång bokföring';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.tt-grid-omgång {grid-area: omgång;}
+.tt-grid-bokföring {
+	grid-area: bokföring;
+	max-height: 18em;
+	overflow-y: auto;
+}
+
+.tt-mellersta-grid {
+	display: grid;
+	grid-template-areas:
+		'preferenser preferenser'
+		'matcher koddata';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.tt-grid-preferenser {grid-area: preferenser;}
+.tt-grid-matcher {grid-area: matcher;}
+.tt-grid-koddata {grid-area: koddata;}
+
+.tt-undre-grid {
+	display: grid;
+	grid-template-areas:
+		'rader';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.tt-rader {grid-area: rader;}
+
+.tt-helgardering, .tt-rensa-gardering {cursor: pointer;}

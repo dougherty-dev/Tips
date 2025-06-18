@@ -1,0 +1,28 @@
+/* Grid HG */
+
+.hg-övre-grid {
+	display: grid;
+	grid-template-areas:
+		'hg-omgång';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.hg-nedre-grid {
+	display: grid;
+	grid-template-areas:
+		'hg-fördelning';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.hg-grid-omgång {grid-area: hg-omgång;}
+.hg-grid-fördelning {grid-area: hg-fördelning;}
+
+#hgtabell tr:hover, #hg-fördelning tr:hover {
+	outline: medium solid red;
+}

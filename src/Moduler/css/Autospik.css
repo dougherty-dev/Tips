@@ -1,0 +1,15 @@
+/* Grid Autospik */
+
+.autospik-grid {
+	display: grid;
+	grid-template-areas:
+		'garderingar'
+		'historik';
+	grid-gap: 0.5em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border: thin solid gray;
+}
+
+.autospik-grid-garderingar {grid-area: garderingar;}
+.autospik-grid-historik {grid-area: historik;}

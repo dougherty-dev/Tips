@@ -1,0 +1,9 @@
+vendor/
+tools/
+docs/
+backup/
+src/_data/skarp/
+src/_data/_skarp/
+*.log
+*.cache
+src/Ajax/_tips_json.txt

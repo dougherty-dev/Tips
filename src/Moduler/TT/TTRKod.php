@@ -1,0 +1,300 @@
+<?php
+
+/**
+ * Enum TTRKod.
+ * @author Niklas Dougherty
+ */
+
+declare(strict_types=1);
+
+namespace Tips\Moduler\TT;
+
+/**
+ * Enum TTRKod.
+ * @author Niklas Dougherty
+ * @SuppressWarnings("PHPMD.ExcessiveMethodLength")
+ */
+enum TTRKod: string {
+	case R_8_0_486_1 = 'R_8_0_486_1';
+
+	case R_7_1_333_1 = 'R_7_1_333_1';
+	case R_7_0_186_1 = 'R_7_0_186_1';
+
+	case R_6_2_252_1 = 'R_6_2_252_1';
+	case R_6_1_132_1 = 'R_6_1_132_1';
+	case R_6_0_73_1 = 'R_6_0_73_1';
+
+	case R_5_3_168_1 = 'R_5_3_168_1';
+	case R_5_2_96_1 = 'R_5_2_96_1';
+	case R_5_1_54_1 = 'R_5_1_54_1';
+	case R_5_0_27_1 = 'R_5_0_27_1';
+
+	case R_4_4_128_1 = 'R_4_4_128_1';
+	case R_4_3_72_1 = 'R_4_3_72_1';
+	case R_4_2_36_1 = 'R_4_2_36_1';
+	case R_4_1_18_1 = 'R_4_1_18_1';
+	case R_4_0_9_1 = 'R_4_0_9_1';
+
+	case R_3_5_92_1 = 'R_3_5_92_1';
+	case R_3_4_48_1 = 'R_3_4_48_1';
+	case R_3_3_24_1 = 'R_3_3_24_1';
+	case R_3_2_16_1 = 'R_3_2_16_1';
+	case R_3_1_9_1 = 'R_3_1_9_1';
+	case R_3_0_5_1 = 'R_3_0_5_1';
+
+	case R_2_6_64_1 = 'R_2_6_64_1';
+	case R_2_5_36_1 = 'R_2_5_36_1';
+	case R_2_4_20_1 = 'R_2_4_20_1';
+	case R_2_3_12_1 = 'R_2_3_12_1';
+	case R_2_2_6_1 = 'R_2_2_6_1';
+	case R_2_1_4_1 = 'R_2_1_4_1';
+	case R_2_0_3_1 = 'R_2_0_3_1';
+
+	case R_1_7_48_1 = 'R_1_7_48_1';
+	case R_1_6_24_1 = 'R_1_6_24_1';
+	case R_1_5_16_1 = 'R_1_5_16_1';
+	case R_1_4_8_1 = 'R_1_4_8_1';
+	case R_1_3_6_1 = 'R_1_3_6_1';
+	case R_1_2_3_1 = 'R_1_2_3_1';
+	case R_1_1_2_1 = 'R_1_1_2_1';
+	case R_1_0_1_1 = 'R_1_0_1_1';
+
+	case R_0_8_32_1 = 'R_0_8_32_1';
+	case R_0_7_16_1 = 'R_0_7_16_1';
+	case R_0_6_12_1 = 'R_0_6_12_1';
+	case R_0_5_7_1 = 'R_0_5_7_1';
+	case R_0_4_4_1 = 'R_0_4_4_1';
+	case R_0_3_2_1 = 'R_0_3_2_1';
+	case R_0_2_2_1 = 'R_0_2_2_1';
+	case R_0_1_1_1 = 'R_0_1_1_1';
+
+	case R_8_0_81_2 = 'R_8_0_81_2';
+
+	case R_7_1_54_2 = 'R_7_1_54_2';
+	case R_7_0_34_2 = 'R_7_0_34_2';
+
+	case R_6_2_48_2 = 'R_6_2_48_2';
+	case R_6_1_27_2 = 'R_6_1_27_2';
+	case R_6_0_17_2 = 'R_6_0_17_2';
+
+	case R_5_3_36_2 = 'R_5_3_36_2';
+	case R_5_2_21_2 = 'R_5_2_21_2';
+	case R_5_1_12_2 = 'R_5_1_12_2';
+	case R_5_0_8_2 = 'R_5_0_8_2';
+
+	case R_4_4_24_2 = 'R_4_4_24_2';
+	case R_4_3_18_2 = 'R_4_3_18_2';
+	case R_4_2_10_2 = 'R_4_2_10_2';
+	case R_4_1_6_2 = 'R_4_1_6_2';
+	case R_4_0_3_2 = 'R_4_0_3_2';
+
+	case R_3_5_23_2 = 'R_3_5_23_2';
+	case R_3_4_13_2 = 'R_3_4_13_2';
+	case R_3_3_8_2 = 'R_3_3_8_2';
+	case R_3_2_5_2 = 'R_3_2_5_2';
+	case R_3_1_3_2 = 'R_3_1_3_2';
+	case R_3_0_3_2 = 'R_3_0_3_2';
+
+	case R_2_6_16_2 = 'R_2_6_16_2';
+	case R_2_5_11_2 = 'R_2_5_11_2';
+	case R_2_4_6_2 = 'R_2_4_6_2';
+	case R_2_3_4_2 = 'R_2_3_4_2';
+	case R_2_2_3_2 = 'R_2_2_3_2';
+	case R_2_1_2_2 = 'R_2_1_2_2';
+	case R_2_0_1_2 = 'R_2_0_1_2';
+
+	case R_1_7_12_2 = 'R_1_7_12_2';
+	case R_1_6_8_2 = 'R_1_6_8_2';
+	case R_1_5_6_2 = 'R_1_5_6_2';
+	case R_1_4_3_2 = 'R_1_4_3_2';
+	case R_1_3_2_2 = 'R_1_3_2_2';
+	case R_1_2_2_2 = 'R_1_2_2_2';
+	case R_1_1_1_2 = 'R_1_1_1_2';
+
+	case R_0_8_12_2 = 'R_0_8_12_2';
+	case R_0_7_7_2 = 'R_0_7_7_2';
+	case R_0_6_4_2 = 'R_0_6_4_2';
+	case R_0_5_2_2 = 'R_0_5_2_2';
+	case R_0_4_2_2 = 'R_0_4_2_2';
+	case R_0_3_2_2 = 'R_0_3_2_2';
+	case R_0_2_1_2 = 'R_0_2_1_2';
+
+	public function garanti(): string {
+		return number_format(100 * intval(explode('_', $this->name)[3]) / pow(3, intval(explode('_', $this->name)[1])) /
+			pow(2, intval(explode('_', $this->name)[2])), 2) . ' %';
+	}
+
+	/**
+	 * @return float[]
+	 * @SuppressWarnings("PHPMD.ExcessiveMethodLength")
+	 */
+	public function garantitabell(): array {
+		return match ($this) {
+			static::R_8_0_486_1 => [7.4, 100.0, 100.0, 100.0],
+
+			static::R_7_1_333_1 => [7.6, 99.0, 100.0, 100.0],
+			static::R_7_0_186_1 => [8.5, 96.3, 98.6, 100.0],
+
+			static::R_6_2_252_1 => [8.6, 98.5, 100.0, 100.0],
+			static::R_6_1_132_1 => [9.1, 100.0, 95.9, 100.0],
+			static::R_6_0_73_1 => [10.0, 96.0, 99.2, 100.0],
+
+			static::R_5_3_168_1 => [8.6, 95.4, 100.0, 100.0],
+			static::R_5_2_96_1 => [9.9, 96.9, 96.3, 100.0],
+			static::R_5_1_54_1 => [11.1, 100.0, 100.0, 100.0],
+			static::R_5_0_27_1 => [11.1, 88.9, 100.0, 100.0],
+
+			static::R_4_4_128_1 => [9.9, 94.1, 98.8, 100.0],
+			static::R_4_3_72_1 => [11.1, 100.0, 94.4, 100.0],
+			static::R_4_2_36_1 => [11.1, 100.0, 100.0, 100.0],
+			static::R_4_1_18_1 => [11.1, 88.9, 100.0, 100.0],
+			static::R_4_0_9_1 => [11.1, 88.9, 88.9, 100.0],
+
+			static::R_3_5_92_1 => [10.6, 95.8, 98.6, 100.0],
+			static::R_3_4_48_1 => [11.1, 94.4, 100.0, 100.0],
+			static::R_3_3_24_1 => [11.1, 94.4, 94.4, 100.0],
+			static::R_3_2_16_1 => [14.8, 92.6, 100.0, 100.0],
+			static::R_3_1_9_1 => [16.7, 83.3, 100.0, 100.0],
+			static::R_3_0_5_1 => [18.5, 81.5, 81.5, 100.0],
+
+			static::R_2_6_64_1 => [11.1, 97.2, 97.2, 100.0],
+			static::R_2_5_36_1 => [12.5, 98.6, 93.1, 100.0],
+			static::R_2_4_20_1 => [13.9, 91.7, 94.4, 100.0],
+			static::R_2_3_12_1 => [16.7, 91.7, 94.4, 100.0],
+			static::R_2_2_6_1 => [16.7, 83.3, 100.0, 94.4],
+			static::R_2_1_4_1 => [22.2, 100.0, 77.8, 66.7],
+			static::R_2_0_3_1 => [33.3, 100.0, 66.7, 0.0],
+
+			static::R_1_7_48_1 => [12.5, 88.5, 99.5, 100.0],
+			static::R_1_6_24_1 => [12.5, 95.8, 87.5, 100.0],
+			static::R_1_5_16_1 => [16.7, 95.8, 96.9, 100.0],
+			static::R_1_4_8_1 => [16.7, 83.3, 95.8, 100.0],
+			static::R_1_3_6_1 => [25.0, 83.3, 95.8, 87.5],
+			static::R_1_2_3_1 => [25.0, 91.7, 75.0, 41.7],
+			static::R_1_1_2_1 => [33.3, 100.0, 66.7, 0.0],
+			static::R_1_0_1_1 => [33.3, 66.7, 0.0, 0.0],
+
+			static::R_0_8_32_1 => [12.5, 89.1, 98.4, 100.0],
+			static::R_0_7_16_1 => [12.5, 87.5, 87.5, 100.0],
+			static::R_0_6_12_1 => [18.8, 90.6, 96.9, 100.0],
+			static::R_0_5_7_1 => [21.9, 87.5, 93.8, 93.8],
+			static::R_0_4_4_1 => [25.0, 100.0, 75.0, 100.0],
+			static::R_0_3_2_1 => [25.0, 75.0, 75.0, 25.0],
+			static::R_0_2_2_1 => [50.0, 100.0, 50.0, 0],
+			static::R_0_1_1_1 => [50.0, 50.0, 0, 0],
+
+			static::R_8_0_81_2 => [1.2, 19.8, 88.9, 100.0],
+
+			static::R_7_1_54_2 => [1.2, 18.5, 97.5, 98.8],
+			static::R_7_0_34_2 => [1.6, 21.6, 94.2, 99.2],
+
+			static::R_6_2_48_2 => [1.6, 19.8, 91.8, 97.5],
+			static::R_6_1_27_2 => [1.9, 22.8, 92.8, 98.4],
+			static::R_6_0_17_2 => [2.3, 28.0, 90.4, 99.9],
+
+			static::R_5_3_36_2 => [1.9, 23.5, 89.5, 97.5],
+			static::R_5_2_21_2 => [2.2, 24.7, 91.4, 98.5],
+			static::R_5_1_12_2 => [2.5, 27.2, 93.0, 96.7],
+			static::R_5_0_8_2 => [3.3, 29.2, 84.8, 88.5],
+
+			static::R_4_4_24_2 => [1.9, 22.2, 75.9, 96.3],
+			static::R_4_3_18_2 => [2.8, 30.6, 88.9, 100.0],
+			static::R_4_2_10_2 => [3.1, 30.2, 92.0, 94.4],
+			static::R_4_1_6_2 => [3.7, 30.9, 84.0, 86.4],
+			static::R_4_0_3_2 => [3.7, 29.6, 66.7, 74.1],
+
+			static::R_3_5_23_2 => [2.7, 28.5, 76.5, 87.0],
+			static::R_3_4_13_2 => [3.0, 27.8, 86.8, 100.0],
+			static::R_3_3_8_2 => [3.7, 32.4, 84.3, 99.1],
+			static::R_3_2_5_2 => [4.6, 37.0, 88.0, 97.2],
+			static::R_3_1_3_2 => [5.6, 38.9, 66.7, 75.9],
+			static::R_3_0_3_2 => [11.1, 63.0, 81.5, 66.7],
+
+			static::R_2_6_16_2 => [2.8, 27.8, 86.1, 98.6],
+			static::R_2_5_11_2 => [3.8, 34.4, 87.8, 98.6],
+			static::R_2_4_6_2 => [4.2, 30.6, 83.3, 94.4],
+			static::R_2_3_4_2 => [5.6, 38.9, 77.8, 88.9],
+			static::R_2_2_3_2 => [8.3, 47.2, 72.2, 75.0],
+			static::R_2_1_2_2 => [11.1, 55.6, 88.9, 44.4],
+			static::R_2_0_1_2 => [11.1, 44.4, 44.4, 0.0],
+
+			static::R_1_7_12_2 => [3.1, 28.1, 84.4, 100.0],
+			static::R_1_6_8_2 => [4.2, 32.3, 85.4, 91.7],
+			static::R_1_5_6_2 => [6.3, 35.4, 89.6, 87.5],
+			static::R_1_4_3_2 => [6.3, 35.4, 79.2, 65.5],
+			static::R_1_3_2_2 => [8.3, 41.7, 50.0, 58.3],
+			static::R_1_2_2_2 => [16.7, 66.7, 83.3, 33.3],
+			static::R_1_1_1_2 => [16.7, 50.0, 33.3, 0.0],
+
+			static::R_0_8_12_2 => [4.7, 32.0, 84.4, 99.2],
+			static::R_0_7_7_2 => [5.5, 35.2, 87.5, 89.8],
+			static::R_0_6_4_2 => [6.3, 37.5, 93.8, 62.5],
+			static::R_0_5_2_2 => [6.3, 31.3, 62.5, 62.5],
+			static::R_0_4_2_2 => [12.5, 50.0, 37.5, 50.0],
+			static::R_0_3_2_2 => [25.0, 75.0, 75.0, 25.0],
+			static::R_0_2_1_2 => [25.0, 50.0, 25.0, 0.0],
+		};
+	}
+
+	/**
+	 * Visa antal helgarderingar för aktuell kod.
+	 */
+	public function helgarderingar(): int {
+		return intval(explode('_', $this->name)[1]);
+	}
+
+	/**
+	 * Visa antal halvgarderingar för aktuell kod.
+	 */
+	public function halvgarderingar(): int {
+		return intval(explode('_', $this->name)[2]);
+	}
+
+	/**
+	 * Visa antal rader för aktuell kod.
+	 */
+	public function antal_rader(): string {
+		return explode('_', $this->name)[3];
+	}
+
+	/**
+	 * Visa allmänna data för aktuell kod.
+	 */
+	public function koddata(): string {
+		$rymd = pow(3, $this->helgarderingar()) * pow(2, $this->halvgarderingar());
+		$reduktion = number_format(fdiv($rymd, (int) $this->antal_rader()), 2);
+		$fält = '𝔽₃' . n_exponent($this->helgarderingar()) . ' ⨯ 𝔽₂' . n_exponent($this->halvgarderingar());
+		$antal = count($this->kod());
+		$kontroll = $antal . ' vektorer med vardera ' . strlen($this->kod()[0]) . ' bitar.';
+		$reduktion2 = number_format(fdiv($rymd, $antal), 2);
+		$rymd = number_format($rymd, 0, '.', ' ');
+		$täckning = intval(explode('_', $this->name)[4]);
+
+		return <<< EOT
+							<h2>Reducerad kod:</h2>
+							<p class="större">{$this->name}<br>
+								Kod K({$this->helgarderingar()}₃, {$this->halvgarderingar()}₂, <span class="vinst10">R = $täckning</span>) över $fält<br>
+								Rymd: $rymd; rader: {$this->antal_rader()}; reduktion: $reduktion<br>
+								Kontroll: $kontroll; reduktion: $reduktion2<br>
+								Vinstchans 8 r: {$this->garanti()}</p>
+							<p class="större">Garantitabell:<br>
+								8 r: {$this->garantitabell()[0]} %<br>
+								7 r: {$this->garantitabell()[1]} %<br>
+								6 r: {$this->garantitabell()[2]} %<br>
+								5 r: {$this->garantitabell()[3]} %</p>
+							<input type="hidden" class="antal_helgarderingar" value="{$this->helgarderingar()}">
+							<input type="hidden" class="antal_halvgarderingar" value="{$this->halvgarderingar()}">
+EOT;
+	}
+
+	/**
+	 * Visa kodnamn.
+	 * @return string[]
+	 */
+	public function kod(): array {
+		$mapp = 'R' . explode('_', $this->name)[4];
+		$klass = "\\Tips\\Koder\\$mapp\\" . $this->name;
+		$system = new $klass();
+		return property_exists($system, 'kod') ? $system->kod : [];
+	}
+}

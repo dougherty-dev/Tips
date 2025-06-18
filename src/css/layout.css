@@ -1,0 +1,184 @@
+#investeringstabell tr:hover {
+	outline: medium solid red;
+}
+
+.ram {border: thin solid #ccc;}
+
+.ramfri {border: none;}
+
+.mindre {font-size: 0.8em;}
+.större {font-size: 1.2em;}
+
+#flikar > div {background-color: #111111;}
+
+#tidsangivelse {
+	font-size: 2em;
+	color: maroon;
+}
+
+.glipa {padding: 0.4em;}
+
+.generera {outline: thin solid yellow;}
+.summera {outline: medium solid lightgreen;}
+
+.genererat-resultat {
+	height: auto;
+	width: auto;
+	border: 0;
+	margin: 0;
+	overflow: auto;
+}
+
+.spelat_resultat {
+	height: auto;
+	border: 0;
+	margin: 0;
+	overflow: auto;
+}
+
+.moduler {
+	top: 4em;
+	left: 0;
+}
+
+.tipsrader {
+	max-height: 70vh;
+	overflow: auto;
+	padding-right: 1.5em;
+}
+
+.tipsrader::-webkit-scrollbar {
+	width: 0;
+	background: transparent;
+}
+
+.vinstrad {
+	font-weight: bold;
+	background-color: #222;
+	color: #fbb;
+}
+
+.tipsruta {
+	height: auto;
+	width: 1.2em;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.vinstruta {border: thick solid white;}
+.förlustruta {border: thick solid red;}
+
+.grå {background-color: #222;}
+
+.center {text-align: center !important;}
+.höger {text-align: right !important;}
+.vänster {text-align: left !important;}
+
+.oddskolumn {
+	width: 3em;
+	text-align: right;
+}
+
+.streckkolumn {
+	width: 2em;
+	text-align: right;
+}
+
+.odefinierad, .vinst, .förlust, .storförlust {
+	padding-right: 0.3em;
+	color: white;
+}
+
+.odefinierad {background-color: black;}
+.vinst {background-color: green;}
+.förlust {background-color: yellow; color: black;}
+.storförlust {background-color: red;}
+
+.odds {background-color: #440;}
+.streck {background-color: #404;}
+.match {background-color: #044;}
+
+.vinst10 {background-color: #074080;}
+.vinst11 {background-color: #118002;}
+.vinst12 {background-color: #808004;}
+.vinst13 {
+	background-color: #800002;
+	animation: blinker 0.7s linear infinite alternate;
+}
+
+@keyframes blinker {to {opacity: 0;}}
+
+.omgångstabell {
+	background-color: #222;
+	border: thin solid #ccc;
+	text-align: left;
+}
+
+.favorittabell {
+	border: thin solid #ccc;
+	margin-bottom: 1em;
+}
+
+.tipsgraf {
+	border: thin solid red;
+	max-width: 100%;
+	height: auto;
+}
+
+.emoji {line-height: 0;}
+
+.pekare {cursor: pointer;}
+
+.flytande {float: left;}
+.frigör {clear: left;}
+
+.nummer {width: 6em;}
+.nummer_litet {width: 3em;}
+.nummer_stort {width: 8em;}
+
+.fet {font-weight: bold;}
+
+.ickevinst {color: #a55;}
+.nettovinst {color: #d00; font-size: 1.2em;}
+
+.ui-button {font-size: 1.0em !important;}
+div.annonser .ui-button {padding: 0 1em !important;}
+
+.ui-tabs-anchor {
+	margin-left: 0.2em !important;
+	margin-right: 0.2em !important;
+	padding: 0.3em !important;
+}
+
+.ui-selectmenu-menu .ui-menu {max-height: 70vh;}
+
+.ss-logo {
+	background-color: var(--red);
+}
+
+.stryktipset {
+	background-color: var(--stryktipset);
+}
+
+.europatipset {
+	background-color: var(--europatipset);
+}
+
+.topptipset {
+	background-color: var(--topptipset);
+}
+
+.logotyp {
+	display: inline-flex;
+	align-items: center;
+	padding-right: 5px;
+}
+
+.ss-logo,
+.stryktipset,
+.europatipset,
+.topptipset {
+	margin: 5px;
+}

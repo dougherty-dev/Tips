@@ -1,0 +1,24 @@
+imports:
+    - php
+
+filter:
+    excluded_paths: [vendor/*, test/*, src/_data/skarp/*]
+
+build:
+    image: default-bionic
+
+    nodes:
+        my-tests:
+            environment:
+                php:
+                    version: 8.4.0
+        analysis:
+            tests:
+                override:
+                    - php-scrutinizer-run
+    tests:
+        override:
+            -   command: "composer phpunit"
+                coverage:
+                    file: "docs/coverage.xml"
+                    format: "clover"

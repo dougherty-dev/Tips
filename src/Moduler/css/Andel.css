@@ -1,0 +1,4 @@
+div.andel-kolumner {
+  column-count: 3;
+  column-gap: 2em;
+}

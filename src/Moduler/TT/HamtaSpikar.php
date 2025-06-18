@@ -60,19 +60,14 @@ class HamtaSpikar extends HamtaData {
 			$this->andel_spikar = array_map('intval', explode(',', $andel_spikar));
 		}
 
-		foreach ($this->spikar as $index => $spik) {
-			foreach ($spik as $tecken) {
-				/**
-				 * Halvgardering = en ruta tom.
-				 */
-				foreach ($gardering as $tecken) {
-					if ($tecken[0] !== '' || $tecken[1] !== '' || $tecken[2] !== '') {
-						$this->antal_spikar[$index]++;
-					}
+		foreach ($this->spikar as $i => $spik) {
+			foreach ($spik as $s) {
+				if ($s[0] !== '' || $s[1] !== '' || $s[2] !== '') {
+					$this->antal_spikar[$i]++;
 				}
 			}
-			if ($this->andel_spikar[$index] > $this->antal_spikar[$index]) {
-				$this->antal_spikar[$index] = $this->andel_spikar[$index];
+			if ($this->andel_spikar[$i] > $this->antal_spikar[$i]) {
+				$this->antal_spikar[$i] = $this->andel_spikar[$i];
 			}
 		}
 

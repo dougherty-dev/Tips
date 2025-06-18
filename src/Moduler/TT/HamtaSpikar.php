@@ -65,12 +65,10 @@ class HamtaSpikar extends HamtaData {
 				/**
 				 * Halvgardering = en ruta tom.
 				 */
-				$har_hg = array_any($tecken, function (string $value) {
-					return $value !== '';
-				});
-
-				if ($har_hg) {
-					$this->antal_spikar[$index]++;
+				foreach ($gardering as $tecken) {
+					if ($tecken[0] !== '' || $tecken[1] !== '' || $tecken[2] !== '') {
+						$this->antal_spikar[$index]++;
+					}
 				}
 			}
 			if ($this->andel_spikar[$index] > $this->antal_spikar[$index]) {

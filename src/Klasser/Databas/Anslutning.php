@@ -32,10 +32,10 @@ class Anslutning {
 	 * Anslut till DB.
 	 */
 	public function anslut(): void {
-		$this->instans = PDO::connect('sqlite:' . DB . '/tips.db');
+		$this->instans = new PDO('sqlite:' . DB . '/tips.db');
 		$this->instans->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$this->instans->setAttribute(PDO::ATTR_PERSISTENT, true);
-		$this->temp = PDO::connect('sqlite:' . DB . '/temp.db');
+		$this->temp = new PDO('sqlite:' . DB . '/temp.db');
 		$pragma = 'PRAGMA temp_store = MEMORY; PRAGMA mmap_size = 1000000000; PRAGMA auto_vacuum = FULL; PRAGMA busy_timeout = 5000';
 		$this->instans->exec($pragma);
 		$this->temp->exec($pragma);

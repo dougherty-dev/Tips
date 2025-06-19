@@ -15,7 +15,7 @@ namespace Tips\Moduler\Vinstgraf;
 class Tipsrader extends Rita {
 	public int $antal_rader = 0;
 	public int $totalt_antal_rader = 0;
-	/** @var array<int, array{string, int}> $tipsrader */ protected array $tipsrader = [];
+	/** @var array<int, string[]> $tipsrader */ protected array $tipsrader = [];
 
 	/**
 	 * Hämta tipsrader.
@@ -32,7 +32,7 @@ class Tipsrader extends Rita {
 				}
 
 				if (in($u13[$omgång], $this->utdelning_13_min, $this->utdelning_13_max)) {
-					$this->tipsrader[] = [$tipsrad_012, $u13[$omgång]];
+					$this->tipsrader[] = [$tipsrad_012, strval($u13[$omgång])];
 				}
 			}
 		}

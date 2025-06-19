@@ -46,7 +46,7 @@ class Koordinater extends Element {
 	/**
 	 * Beräkna koordinater för tipsrad.
 	 * @param int[] $kuber
-	 * @return array{int, int}
+	 * @return array<int, int>
 	 */
 	public function tipsgrafskoordinater(string $tipsrad_012, array $kuber = KUBER): array {
 		$serienummer = $this->serienummer($tipsrad_012, $kuber);

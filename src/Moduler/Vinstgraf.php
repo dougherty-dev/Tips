@@ -33,7 +33,7 @@ final class Vinstgraf extends Tipsrader {
 		 * Rendera vinstgraf.
 		 */
 		foreach ($this->tipsrader as [$tipsrad_012, $u13]) {
-			$this->rita($tipsrad_012, $u13);
+			$this->rita($tipsrad_012, intval($u13));
 		}
 
 		$this->graf->spara_tipsgraf(self::FIL);

@@ -19,7 +19,7 @@ use Tips\Klasser\Matcher;
  */
 class Annonsera {
 	/** @var object[] $m_moduler */ public array $m_moduler = [];
-	/** @var array<string, array{string, string}> $moduldata */ public array $moduldata = [];
+	/** @var array<string, array<int|string, string>> $moduldata */ public array $moduldata = [];
 
 	public function __construct(
 		public Utdelning $utdelning,

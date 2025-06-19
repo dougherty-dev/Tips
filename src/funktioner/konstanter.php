@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-define('VERSION', '0.8.0.12');
+define('VERSION', '0.8.0.13');
 define('VERSIONSDATUM', '2025-06-19');
 
 /**
@@ -75,13 +75,13 @@ define('SVENSKA_SPEL_API_URL', 'https://api.www.svenskaspel.se/external/1/draw/'
 define('MATCHANTAL', 13);
 define('MATCHRYMD', pow(3, MATCHANTAL));
 define('MIN_RADER', 10);
-define('MAX_RADER', 10_000);
-define('MAX_RADER_TOTALT', 20_000);
-define('MAXVINST', 20_000_000);
+define('MAX_RADER', 10000);
+define('MAX_RADER_TOTALT', 20000);
+define('MAXVINST', 20000000);
 define('TECKENRYMD', [0, 1, 2]);
 define('TRÅDMÄNGD', [1, 3, 9, 27, 81]);
 define('KUBER', array_map(fn (int $n): int => 3 ** $n, range(MATCHANTAL - 1, 0))); // 3^(13-(k+1))
-define('USÖMNTID', 10_000);
+define('USÖMNTID', 10000);
 define('MAXTID', 10);
 
 define('TOM_ODDSVEKTOR', [0.0, 0.0, 0.0]);

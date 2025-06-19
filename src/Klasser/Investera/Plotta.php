@@ -50,14 +50,14 @@ class Plotta extends HamtaAlla {
 		 */
 		foreach ($this->investeringar as $index => $inv) {
 			[$diameter, $färg] = match (true) {
-				$inv[0] > 5_000_000 => [40, $this->graf->vit],
-				$inv[0] > 1_000_000 => [35, $this->graf->blå],
-				$inv[0] > 500_000 => [28, $this->graf->lila],
-				$inv[0] > 100_000 => [22, $this->graf->röd],
-				$inv[0] > 50_000 => [18, $this->graf->grön],
-				$inv[0] > 10_000 => [14, $this->graf->gul],
-				$inv[0] > 5_000 => [10, $this->graf->gul_v[5]],
-				$inv[0] > 1_000 => [8, $this->graf->gul_v[4]],
+				$inv[0] > 5000000 => [40, $this->graf->vit],
+				$inv[0] > 1000000 => [35, $this->graf->blå],
+				$inv[0] > 500000 => [28, $this->graf->lila],
+				$inv[0] > 100000 => [22, $this->graf->röd],
+				$inv[0] > 50000 => [18, $this->graf->grön],
+				$inv[0] > 10000 => [14, $this->graf->gul],
+				$inv[0] > 5000 => [10, $this->graf->gul_v[5]],
+				$inv[0] > 1000 => [8, $this->graf->gul_v[4]],
 				$inv[0] > 500 => [5, $this->graf->gul_v[3]],
 				$inv[0] > 1 => [3, $this->graf->gul_v[2]],
 				default => [2, $this->graf->gul_v[1]]

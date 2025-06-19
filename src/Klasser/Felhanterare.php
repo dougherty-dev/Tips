@@ -16,7 +16,7 @@ class Felhanterare {
 	/**
 	 * Definiera felhanterare.
 	 */
-	public function felhanterare(int $errno, string $errstr, string $errfile, int $errline): true {
+	public function felhanterare(int $errno, string $errstr, string $errfile, int $errline): bool {
 		/**
 		 * Metoden anropas flera gånger, undvik omdefiniering.
 		 */

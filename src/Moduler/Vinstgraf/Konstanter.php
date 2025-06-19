@@ -13,7 +13,7 @@ namespace Tips\Moduler\Vinstgraf;
  * Egenskap Konstanter.
  */
 trait Konstanter {
-	public const string FIL = '/vinstgraf.png';
+	public const FIL = '/vinstgraf.png';
 
 	public const UTDELNING_13_MIN_MIN = 100;
 	public const UTDELNING_13_MIN_MAX = 1_000_000;

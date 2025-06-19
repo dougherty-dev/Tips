@@ -14,7 +14,7 @@ namespace Tips\Klasser\Vinstspridning;
  */
 class Rita extends Permutera {
 	protected string $bildfil = '';
-	private const int RADIE = 54;
+	private const RADIE = 54;
 
 	/**
 	 * Rendera vinstspridning. Definiera en cirkel runt vinnande pixel,

@@ -20,7 +20,7 @@ use Tips\Klasser\Matcher;
  * Klass Initiera.
  */
 class Initiera extends Kontrollera {
-	/** @var array<int, array{int, string, int}> $moduler */ public array $moduler = [];
+	/** @var array<int, array<int|string, int>> $moduler */ public array $moduler = [];
 	/** @var string[] $aktiva_moduler */ public array $aktiva_moduler = [];
 	/** @var string[] $skarpa_moduler */ public array $skarpa_moduler = [];
 

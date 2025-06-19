@@ -52,31 +52,31 @@ trait Varden {
 			$this->max_rader,
 			MIN_RADER,
 			MAX_RADER,
-			self::STD_RADER,
+			static::STD_RADER,
 			'preferenser.max_rader'
 		);
 
 		$db_preferenser->int_preferens_i_intervall(
 			$this->u13_min,
-			self::UTDELNING_13_MIN_MIN,
-			self::UTDELNING_13_MIN_MAX,
-			self::UTDELNING_13_MIN_STD,
+			static::UTDELNING_13_MIN_MIN,
+			static::UTDELNING_13_MIN_MAX,
+			static::UTDELNING_13_MIN_STD,
 			'preferenser.u13_min'
 		);
 
 		$db_preferenser->int_preferens_i_intervall(
 			$this->u13_max,
-			self::UTDELNING_13_MAX_MIN,
-			self::UTDELNING_13_MAX_MAX,
-			self::UTDELNING_13_MAX_STD,
+			static::UTDELNING_13_MAX_MIN,
+			static::UTDELNING_13_MAX_MAX,
+			static::UTDELNING_13_MAX_STD,
 			'preferenser.u13_max'
 		);
 
 		$db_preferenser->int_komparera_preferenser(
 			$this->u13_min,
 			$this->u13_max,
-			self::UTDELNING_13_MIN_STD,
-			self::UTDELNING_13_MAX_STD,
+			static::UTDELNING_13_MIN_STD,
+			static::UTDELNING_13_MAX_STD,
 			'preferenser.u13_min',
 			'preferenser.u13_max'
 		);

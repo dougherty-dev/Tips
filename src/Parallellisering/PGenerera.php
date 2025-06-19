@@ -50,14 +50,9 @@ final class PGenerera {
 		$tipsvektor = []; // håll tipsrader i ett fält.
 
 		/**
-		 * Definiera en rymd.
+		 * Bilda en lämplig rymd.
 		 */
-		$delrymd = [];
-		for ($index = 4; $index >= 1; $index--) {
-			$delrymd[$index] = ($this->trådar >= 3 ** $index) ? [$vektorer[$index - 1]] : TECKENRYMD;
-		}
-
-		$rymd = [...array_fill(0, MATCHANTAL - 4, TECKENRYMD), ...$delrymd];
+		$rymd = $this->bilda_rymd($vektorer);
 
 		/**
 		 * Hämta moduldata.
@@ -78,6 +73,21 @@ final class PGenerera {
 		}
 
 		$this->tips->parallellisering->populera_databas(implode(',', $tipsvektor), $vektorer);
+	}
+
+	/**
+	 * Definiera en rymd.
+	 * Beror av antal trådar, skickade som query.
+	 * @param int[] $vektorer
+	 * @return  array<int, int[]>
+	 */
+	private function bilda_rymd(array $vektorer): array {
+		$delrymd = [];
+		for ($index = 4; $index >= 1; $index--) {
+			$delrymd[$index] = ($this->trådar >= 3 ** $index) ? [$vektorer[$index - 1]] : TECKENRYMD;
+		}
+
+		return [...array_fill(0, MATCHANTAL - 4, TECKENRYMD), ...$delrymd];
 	}
 
 	/**

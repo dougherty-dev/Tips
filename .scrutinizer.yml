@@ -12,6 +12,8 @@ build:
             environment:
                 php:
                     version: 8.3.22
+                    pecl_extensions:
+                        - fann
         analysis:
             tests:
                 override:

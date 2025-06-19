@@ -53,13 +53,20 @@ final class FANN extends Visa {
 			$this->fann = fann_create_from_file($this->utdatafil);
 		}
 
-		$this->prediktera();
+		if (defined('UPPMÄRKNING') || defined('UNITTEST')) {
+			$this->prediktera();
 
-		if (isset($_REQUEST['generera'])) { // preparera för parallellisering
-			$this->db_preferenser->spara_preferens('fann.utdata', implode(',', $this->utdata), 'temp');
+			if (isset($_REQUEST['generera'])) { // preparera för parallellisering
+				$this->db_preferenser->spara_preferens('fann.utdata', implode(',', $this->utdata), 'temp');
+			}
 		}
 
-		// parallellisering, nyttja befintlig prediktion för omgång
-		$this->utdata = explode(',', $this->db_preferenser->hämta_preferens('fann.utdata', 'temp'));
+		/**
+		 * Parallellisering.
+		 */
+		if (!defined('UPPMÄRKNING') && !defined('UNITTEST')) {
+			// parallellisering, nyttja befintlig prediktion för omgång
+			$this->utdata = explode(',', $this->db_preferenser->hämta_preferens('fann.utdata', 'temp'));
+		}
 	}
 }

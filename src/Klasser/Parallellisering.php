@@ -29,7 +29,7 @@ final class Parallellisering extends Behandla {
 
 		foreach (generera($rymd, 4) as $räckvidd) {
 			[$i, $j, $k, $l] = str_split($räckvidd);
-			file_put_contents("a.txt", "i=$i\&j=$j\&k=$k\&l=$l", FILE_APPEND);
+
 			match (PHP_SAPI) {
 				'fpm-fcgi' => exec("SCRIPT_FILENAME=$skript \
 					REQUEST_METHOD=GET QUERY_STRING=i=$i\&j=$j\&k=$k\&l=$l {$this->fcgi} > /dev/null &"),

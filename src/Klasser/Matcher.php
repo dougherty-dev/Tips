@@ -32,7 +32,8 @@ final class Matcher {
 	public array $resultat;
 
 	/**
-	 * Init.
+	 * Initiera.
+	 * Visa matcher i fliken för omgång.
 	 */
 	public function __construct(public Spel $spel) {
 		$this->hämta_matcher();
@@ -45,8 +46,7 @@ final class Matcher {
 		/**
 		 * Initiera tomma fält.
 		 */
-		$this->match = TOMRAD;
-		$this->resultat = TOMRAD;
+		[$this->match, $this->resultat] = [TOMRAD, TOMRAD];
 		$this->matchstatus = NOLLRAD;
 
 		/**
@@ -57,11 +57,17 @@ final class Matcher {
 		$sats->bindValue(':omgang', $this->spel->omgång, PDO::PARAM_INT);
 		$sats->bindValue(':speltyp', $this->spel->speltyp->value, PDO::PARAM_INT);
 		$sats->execute();
+
+		/**
+		 * Kräv data.
+		 * Ibland skickas tomma data.
+		 */
 		if ($sats === false) {
 			return;
 		}
 
 		/**
+		 * Hämta rader.
 		 * Iterera över matchkolumner.
 		 */
 		$rad = $sats->fetchAll(PDO::FETCH_ASSOC)[0];

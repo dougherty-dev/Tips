@@ -65,6 +65,13 @@ class Hamta extends Preferenser {
 			$this->antal_garderingar[$index] = min($this->andel_garderingar[$index], $this->antal_garderingar[$index]);
 		}
 
+		$this->spara_reduktion();
+	}
+
+	/**
+	 * Spara reduktion.
+	 */
+	private function spara_reduktion(): void {
 		$reduktion = $this->db_preferenser->hämta_preferens("system.reduktion");
 
 		/**

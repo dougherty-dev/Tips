@@ -17,7 +17,7 @@ final class Tipsdata extends Tipsresultat {
 	/**
 	 * Hämta tipsdata.
 	 * Rest med boolesk flagga för senaste spel (= okänd omgång).
-	 * Tanken var att hämta data fär äldre spel, men dessa är ofta ofullständiga.
+	 * Tanken var att hämta data för äldre spel, men dessa är ofta ofullständiga.
 	 */
 	public function hämta_tipsdata(Tips &$tips, bool $senaste = true): bool {
 		$url = ($senaste) ? "{$this->site}/draws?accesskey={$this->api}" :
@@ -51,14 +51,7 @@ final class Tipsdata extends Tipsresultat {
 		$spel->spara_spel();
 		$tips = new Tips($spel);
 
-		/**
-		 * Extrahera JSON-data för omgång.
-		 */
-		$tips->utdelning->år = intval(substr($draws->closeTime, 0, 4));
-		$tips->utdelning->vecka = intval(explode("-", $draws->drawComment)[1]);
-		$tips->matcher->spelstopp = strval($draws->closeTime);
-
-		$this->bearbeta_tipsdata($tips, $draws->events);
+		$this->bearbeta_tipsdata($tips, $draws->events, [$draws->closeTime, $draws->drawComment, $draws->closeTime]);
 
 		/**
 		 * Logga och återvänd.
@@ -70,8 +63,16 @@ final class Tipsdata extends Tipsresultat {
 	/**
 	 * Plocka ut data från JSON-objekt.
 	 * @param object[] $events
+	 * @param string[] $tider
 	 */
-	private function bearbeta_tipsdata(Tips &$tips, array $events): void {
+	private function bearbeta_tipsdata(Tips &$tips, array $events, array $tider): void {
+		/**
+		 * Extrahera JSON-data för omgång.
+		 */
+		$tips->utdelning->år = intval(substr($tider[0], 0, 4));
+		$tips->utdelning->vecka = intval(explode("-", $tider[1])[1]);
+		$tips->matcher->spelstopp = strval($tider[2]);
+
 		/**
 		 * Plocka ut matcher, odds och streck.
 		 */

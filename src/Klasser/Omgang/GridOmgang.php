@@ -31,17 +31,9 @@ final class GridOmgang {
 	 */
 	public function visa(): string {
 		/**
-		 * Hämta antal omgångar från databas.
-		 * Enbart omgångar med kompletta odds och resultat.
+		 * Hämta antal kompletta omgångar.
 		 */
-		$sats = $this->tips->spel->db->instans->prepare("SELECT COUNT(`odds`.`omgång`) FROM `odds`
-			LEFT JOIN `streck` ON `odds`.`omgång`=`streck`.`omgång`
-			LEFT JOIN `matcher` ON `odds`.`omgång`=`matcher`.`omgång`
-			WHERE `odds`.`speltyp`={$this->tips->spel->speltyp->value} AND
-			`odds`.`komplett` AND `streck`.`komplett` AND `matcher`.`komplett`");
-		$sats->execute();
-		$antal_kompletta = $sats->fetchColumn();
-		$sats->closeCursor();
+		$antal_kompletta = $this->antal_kompletta();
 
 		/**
 		 * Initialisera variabler.
@@ -95,5 +87,28 @@ $grid_omgång							</select>
 						<button{$this->eka($nästa ? '' : ' disabled="disabled"')} id="nästa" value="$nästa">⇨</button>
 						($antal_kompletta / $antal_omgångar)
 EOT;
+	}
+
+	/**
+	 * Hämta antal kompletta.
+	 */
+	private function antal_kompletta(): int {
+		/**
+		 * Hämta antal omgångar från databas.
+		 * Enbart omgångar med kompletta odds och resultat.
+		 */
+		$sats = $this->tips->spel->db->instans->prepare("SELECT COUNT(`odds`.`omgång`) FROM `odds`
+			LEFT JOIN `streck` ON `odds`.`omgång`=`streck`.`omgång`
+			LEFT JOIN `matcher` ON `odds`.`omgång`=`matcher`.`omgång`
+			WHERE `odds`.`speltyp`={$this->tips->spel->speltyp->value} AND
+			`odds`.`komplett` AND `streck`.`komplett` AND `matcher`.`komplett`");
+		$sats->execute();
+		$antal_kompletta = (int) $sats->fetchColumn();
+		$sats->closeCursor();
+
+		/**
+		 * Returnera.
+		 */
+		return $antal_kompletta;
 	}
 }

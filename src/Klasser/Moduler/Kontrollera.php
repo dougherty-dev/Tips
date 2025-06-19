@@ -33,22 +33,7 @@ class Kontrollera extends Annonsera {
 		$glob = (array) glob(MODULER . '/*.php');
 		$befintliga_moduler = array_map(fn ($filnamn): string => basename((string) $filnamn, '.php'), $glob);
 
-		$index = 1;
-		/** @var PDOStatement $sats */
-		$sats = $this->utdelning->spel->db->instans->query('SELECT * FROM `moduler` ORDER BY `prioritet`');
-
-		foreach ($sats->fetchAll(PDO::FETCH_ASSOC) as $rad) {
-			if (isset($_REQUEST['uppdatera_moduler'])) {
-				$rad['aktiv'] = isset($_REQUEST['modul'][$rad['namn']]) &&
-					$_REQUEST['modul'][$rad['namn']]['aktiv'] === '1' ? 1 : 0;
-			}
-
-			if (in_array($rad['namn'], $befintliga_moduler, true)) {
-				$moduler[] = [$index, $rad['namn'], $rad['aktiv']];
-				$modulbeteckning[] = $rad['namn'];
-				$index++;
-			}
-		}
+		$this->hämta_moduler($befintliga_moduler, $moduler, $modulbeteckning);
 
 		$antal_moduler = count($modulbeteckning);
 		$nya_moduler = array_diff($befintliga_moduler, $modulbeteckning);
@@ -72,6 +57,31 @@ class Kontrollera extends Annonsera {
 			$sats->bindValue(':namn', $modul[1], PDO::PARAM_STR);
 			$sats->bindValue(':aktiv', $modul[2], PDO::PARAM_BOOL);
 			$sats->execute();
+		}
+	}
+
+	/**
+	 * Hämta moduler från databas.
+	 * @param string[] $befintliga_moduler
+	 * @param array<int, mixed[]> $moduler
+	 * @param string[] $modulbeteckning
+	 */
+	private function hämta_moduler(array $befintliga_moduler, array &$moduler, array &$modulbeteckning): void {
+		$index = 1;
+		/** @var PDOStatement $sats */
+		$sats = $this->utdelning->spel->db->instans->query('SELECT * FROM `moduler` ORDER BY `prioritet`');
+
+		foreach ($sats->fetchAll(PDO::FETCH_ASSOC) as $rad) {
+			if (isset($_REQUEST['uppdatera_moduler'])) {
+				$rad['aktiv'] = isset($_REQUEST['modul'][$rad['namn']]) &&
+					$_REQUEST['modul'][$rad['namn']]['aktiv'] === '1' ? 1 : 0;
+			}
+
+			if (in_array($rad['namn'], $befintliga_moduler, true)) {
+				$moduler[] = [$index, $rad['namn'], $rad['aktiv']];
+				$modulbeteckning[] = $rad['namn'];
+				$index++;
+			}
 		}
 	}
 }

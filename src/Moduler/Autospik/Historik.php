@@ -56,29 +56,9 @@ EOT;
 			}
 
 			/**
-			 * Sortera sannolikheter.
+			 * Hämta summering.
 			 */
-			$sannolikheter = odds_till_sannolikheter($prediktioner[$omgång]);
-			$sortering = array_keys(ordna_sannolikheter($sannolikheter));
-			$summa = 0;
-
-			/**
-			 * Iterera över ordnade sannolikheter.
-			 * Så länge matcher går in ökas summan, annars bryts exekveringen.
-			 */
-			foreach ($sortering as $index) {
-				if (
-					array_search(
-						ne_max($sannolikheter[$index]),
-						$sannolikheter[$index],
-						true
-					) != $tipsrad_012[$index]
-				) {
-					break;
-				}
-
-				$summa++;
-			}
+			$summa = $this->summera($tipsrad_012, $prediktioner[$omgång]);
 
 			/**
 			 * Öka (eller sätt) summa för antal matcher som går in.
@@ -97,6 +77,43 @@ EOT;
 		 */
 		$this->historik .= t(6, "</table>");
 		$this->db_preferenser->spara_preferens('autospik.historik', $this->historik);
+	}
+
+	/**
+	 * Summera.
+	 * Räknar antalet konsekutiva spikar i favoritordning.
+	 * @param array<int, float[]> $prediktioner
+	 */
+	private function summera(string $tipsrad_012, array $prediktioner): int {
+		/**
+		 * Sortera sannolikheter.
+		 */
+		$sannolikheter = odds_till_sannolikheter($prediktioner);
+		$sortering = array_keys(ordna_sannolikheter($sannolikheter));
+		$summa = 0;
+
+		/**
+		 * Iterera över ordnade sannolikheter.
+		 * Så länge matcher går in ökas summan, annars bryts exekveringen.
+		 */
+		foreach ($sortering as $index) {
+			if (
+				array_search(
+					ne_max($sannolikheter[$index]),
+					$sannolikheter[$index],
+					true
+				) != $tipsrad_012[$index]
+			) {
+				break;
+			}
+
+			$summa++;
+		}
+
+		/**
+		 * Skicka tillbaka.
+		 */
+		return $summa;
 	}
 
 	/**
@@ -120,6 +137,9 @@ EOT;
 		 * 2 matcher 177 gånger, andel 17.17 %, kumulativ 74.49 %
 		 */
 		foreach ($historik as $autospikar => $antal) {
+			/**
+			 * Andelar och stil.
+			 */
 			$andel = 100 * $antal / $hsumma;
 			$andel_kumulativ += $andel;
 			$ackstil = stil($andel_kumulativ / 100); // gråskala 0–100 = vit till svart

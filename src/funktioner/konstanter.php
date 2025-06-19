@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-define('VERSION', '0.8.0.13');
+define('VERSION', '0.8.0.14');
 define('VERSIONSDATUM', '2025-06-19');
 
 /**

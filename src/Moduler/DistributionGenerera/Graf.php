@@ -55,52 +55,31 @@ class Graf extends Rendera {
 		 * Iterera över koordinater.
 		 */
 		foreach ($this->distribution as $xkoord => $ykoord) {
+			/**
+			 * Koordinater.
+			 */
 			[$x, $y] = [
 				intval(($xkoord - $oddssumma_min) * $dx),
 				intval($this->dist->graf->höjd - $ykoord * $dy)
 			];
 
+			/**
+			 * Plussa andelssumma.
+			 */
 			if ($xkoord > $oddssumma_utfall) {
 				$this->dist->andelssumma += $ykoord;
 			}
 
+			/**
+			 * Gränslinjer.
+			 */
 			$delsumma += $ykoord;
 			$andel = 100 * $delsumma / MATCHRYMD;
 
 			/**
-			 * Rita procentsatser med linjer i gröna nyanser.
-			 * Använder 0.5 %, 1 %, 2%, 3 %, 5 % och 10 %.
-			 * En procentenhet motsvarar 15943 rader.
+			 * Rendera linjer.
 			 */
-			$this->percentage_lines($andel, $x, $xkoord);
-
-			/**
-			 * Rita aktuellt utfall med röd linje.
-			 */
-			if ($oddssumma_utfall == $xkoord) {
-				$this->dist->graf->sätt_linje($x, 0, $x, $this->dist->graf->höjd, $this->dist->graf->röd);
-			}
-
-			/**
-			 * Rita maxprocent med vit linje.
-			 */
-			if ($this->dist->maxsumma == 0 && $andel > $this->dist->minprocent) {
-				$this->dist->maxsumma = (float) $xkoord;
-				$this->dist->graf->sätt_linje($x, 0, $x, $this->dist->graf->höjd - 50, $this->dist->graf->vit);
-			}
-
-			/**
-			 * Rita minprocent med vit linje.
-			 */
-			if ($this->dist->minsumma == 0 && $andel > $this->dist->maxprocent) {
-				$this->dist->minsumma = (float) $xkoord;
-				$this->dist->graf->sätt_linje($x, 0, $x, $this->dist->graf->höjd - 50, $this->dist->graf->vit);
-			}
-
-			/**
-			 * Rita kurva med blå färg.
-			 */
-			$this->dist->graf->sätt_pixel($x, $y, $this->dist->graf->blå);
+			$this->rendera_linjer($andel, $x, $y, $xkoord, $oddssumma_utfall);
 		}
 
 		/**
@@ -117,6 +96,49 @@ class Graf extends Rendera {
 		 * Spara graf.
 		 */
 		$this->spara_graf();
+	}
+
+	/**
+	 * Rendera gränslinjer i dist.
+	 */
+	private function rendera_linjer(float $andel, int $x, int $y, string $xkoord, float $oddssumma_utfall): void {
+		/**
+		 * Rita procentsatser med linjer i gröna nyanser.
+		 * Intensitet ökar med avstånd från origo.
+		 * Använder 0.5 %, 1 %, 2%, 3 %, 5 % och 10 %.
+		 * En procentenhet motsvarar 15943 rader.
+		 */
+		$this->percentage_lines($andel, $x, $xkoord);
+
+		/**
+		 * Rita aktuellt utfall med röd linje.
+		 * Motsvarar den momentana sannolikhetssumman för odds för omgången.
+		 */
+		if ($oddssumma_utfall == $xkoord) {
+			$this->dist->graf->sätt_linje($x, 0, $x, $this->dist->graf->höjd, $this->dist->graf->röd);
+		}
+
+		/**
+		 * Rita maxprocent med vit linje.
+		 */
+		if ($this->dist->maxsumma == 0 && $andel > $this->dist->minprocent) {
+			$this->dist->maxsumma = (float) $xkoord;
+			$this->dist->graf->sätt_linje($x, 0, $x, $this->dist->graf->höjd - 50, $this->dist->graf->vit);
+		}
+
+		/**
+		 * Rita minprocent med vit linje.
+		 * Reducera höjd på linje för att ge plats åt eventuell undre linje.
+		 */
+		if ($this->dist->minsumma == 0 && $andel > $this->dist->maxprocent) {
+			$this->dist->minsumma = (float) $xkoord;
+			$this->dist->graf->sätt_linje($x, 0, $x, $this->dist->graf->höjd - 50, $this->dist->graf->vit);
+		}
+
+		/**
+		 * Rita kurva med blå färg.
+		 */
+		$this->dist->graf->sätt_pixel($x, $y, $this->dist->graf->blå);
 	}
 
 	/**

@@ -67,29 +67,42 @@ final class TTReduceradKod extends Reduktion {
 					}
 
 					$kod_helgarderingar[] = $temp;
-				/**
-				 * Halvgardering.
-				 */
-				} elseif ($antal_hg) {
-					foreach ($kod as $nyckel => $tecken) {
-						/**
-						 * Skifta tecken efter odds.
-						 * Mallar förutsätter 1X för halvgarderingar.
-						 */
-						match (true) {
-							$this->tt->reduktion[$this->halvgarderingar[$nyckel]][0] === '' =>
-								$temp[$this->halvgarderingar[$nyckel]] = $tecken === 0 ? 1 : 2, // skifta 1X -> X2
-							$this->tt->reduktion[$this->halvgarderingar[$nyckel]][1] === '' =>
-								$temp[$this->halvgarderingar[$nyckel]] = $tecken === 0 ? 0 : 2, // skifta 1X -> 12
-							default =>
-								$temp[$this->halvgarderingar[$nyckel]] = $tecken === 0 ? 0 : 1 // behåll 1X
-						};
-					}
-					$kod_halvgarderingar[] = $temp;
+					continue;
 				}
+
+				$this->halvgarderingar($antal_hg, $kod, $temp, $kod_halvgarderingar);
 			}
 		}
 
 		$this->addera_kodord($antal_hg, $kod_helgarderingar, $kod_halvgarderingar);
+	}
+
+	/**
+	 * Halvgarderingar.
+	 * @param int[] $kod
+	 * @param int[] $temp
+	 * @param array<int, int[]> $kod_halvgarderingar
+	 */
+	private function halvgarderingar(int $antal_hg, array $kod, array &$temp, array &$kod_halvgarderingar): void {
+		/**
+		 * Halvgardering.
+		 */
+		if ($antal_hg) {
+			foreach ($kod as $nyckel => $tecken) {
+				/**
+				 * Skifta tecken efter odds.
+				 * Mallar förutsätter 1X för halvgarderingar.
+				 */
+				match (true) {
+					$this->tt->reduktion[$this->halvgarderingar[$nyckel]][0] === '' =>
+						$temp[$this->halvgarderingar[$nyckel]] = $tecken === 0 ? 1 : 2, // skifta 1X -> X2
+					$this->tt->reduktion[$this->halvgarderingar[$nyckel]][1] === '' =>
+						$temp[$this->halvgarderingar[$nyckel]] = $tecken === 0 ? 0 : 2, // skifta 1X -> 12
+					default =>
+						$temp[$this->halvgarderingar[$nyckel]] = $tecken === 0 ? 0 : 1 // behåll 1X
+				};
+			}
+			$kod_halvgarderingar[] = $temp;
+		}
 	}
 }

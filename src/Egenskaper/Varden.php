@@ -24,7 +24,7 @@ trait Varden {
 
 	public const UTDELNING_13_MAX_MIN = 1000;
 	public const UTDELNING_13_MAX_MAX = MAXVINST;
-	public const UTDELNING_13_MAX_STD = 1000_000;
+	public const UTDELNING_13_MAX_STD = 1000000;
 
 	public const STD_RADER = 200;
 

@@ -90,7 +90,7 @@ class Graf extends Rendera {
 		/**
 		 * Rendera text.
 		 */
-		$this->rendera_text($distmax_antal_rader, $oddssumma_min, $oddssumma_max, $oddssumma_utfall);
+		$this->rendera_text((int) $distmax_antal_rader, $oddssumma_min, $oddssumma_max, $oddssumma_utfall);
 
 		/**
 		 * Spara graf.

@@ -2,7 +2,7 @@
 
 /**
  * Klass PreferenserAjaxTest.
- * Författare: Niklas Dougherty
+ * @author Niklas Dougherty
  */
 
 declare(strict_types=1);

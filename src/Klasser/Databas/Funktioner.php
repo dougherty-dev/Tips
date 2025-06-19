@@ -36,6 +36,10 @@ class Funktioner extends Anslutning {
 	 * Spara kopia av DB.
 	 */
 	public function spara_backup(): void {
+		if (defined('PHPUNIT')) {
+			return;
+		}
+
 		$datum = date('Y-m-d');
 		if (!file_exists(BACKUP . "/$datum" . '.db')) {
 			if (copy(DB . '/tips.db', BACKUP . "/$datum" . '.db')) {

@@ -57,6 +57,9 @@ final class Matcher {
 		$sats->bindValue(':omgang', $this->spel->omgång, PDO::PARAM_INT);
 		$sats->bindValue(':speltyp', $this->spel->speltyp->value, PDO::PARAM_INT);
 		$sats->execute();
+		if ($sats === false) {
+			return;
+		}
 
 		/**
 		 * Iterera över matchkolumner.

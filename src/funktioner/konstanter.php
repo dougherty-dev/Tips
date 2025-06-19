@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-define('VERSION', '0.8.0.17');
+define('VERSION', '0.8.0.19');
 define('VERSIONSDATUM', '2025-06-19');
 
 /**
@@ -28,6 +28,10 @@ define('PREFIX', match (true) {
 	is_dir(ROT . '/_data/skarp') => '/_data/skarp',
 	default => '/_data/dist'
 });
+
+if (PREFIX === '/_data/test') {
+	define('PHPUNIT', true);
+}
 
 define('BAS', ROT . PREFIX);
 define('DB', BAS . '/db');

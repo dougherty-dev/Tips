@@ -232,7 +232,6 @@ enum TTRKod: string {
 
 	/**
 	 * @return float[]
-	 * @SuppressWarnings("PHPMD.ExcessiveMethodLength")
 	 */
 	public function garantitabell(): array {
 		return self::GARANTITABELL[$this->name];

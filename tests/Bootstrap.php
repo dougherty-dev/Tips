@@ -9,6 +9,10 @@ declare(strict_types=1);
 
 namespace Tips\Tests;
 
+use Tips\Klasser\Spel;
+use Tips\Klasser\DBPreferenser;
+use Tips\Klasser\Preludium;
+
 final class Bootstrap {
 	public function __construct() {
 		rename(
@@ -17,6 +21,10 @@ final class Bootstrap {
 		);
 
 		require_once __DIR__ . '/../vendor/autoload.php';
+		new Preludium();
+		$spel = new Spel();
+		$db_preferenser = new DBPreferenser($spel->db);
+		$db_preferenser->spara_preferens('preferenser.php', PHP_BINARY);
 	}
 }
 

@@ -5,7 +5,7 @@
          cacheDirectory=".phpunit.cache"
 		 displayDetailsOnTestsThatTriggerWarnings="true"
 		 colors="true"
-		 executionOrder="random">
+		 executionOrder="default">
 	<extensions>
         <bootstrap class="Tips\Tests\Extension\AfterWork" />
     </extensions>

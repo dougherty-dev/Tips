@@ -70,15 +70,7 @@ final class PreferenserAjax {
 	}
 
 	/**
-	 * Spara preferens för avlusning.
-	 * js/funktioner.js: avlusa
-	 */
-	private function avlusa(): void {
-		$this->db_preferenser->spara_preferens('preferenser.avlusa', (string) filter_var($_REQUEST['avlusa'], FILTER_VALIDATE_BOOLEAN));
-	}
-
-	/**
-	 * Spara anal rader att generera.
+	 * Spara antal rader att generera.
 	 * js/funktioner.js: antal_rader
 	 */
 	private function antal_rader(): void {

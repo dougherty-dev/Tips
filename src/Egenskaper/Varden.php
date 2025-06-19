@@ -28,10 +28,10 @@ trait Varden {
 
 	public const STD_RADER = 200;
 
-	protected string $api = '';
-	protected string $php = '';
-	protected string $fcgi = '';
-	protected int $trådar = TRÅDMÄNGD[2];
+	public string $api = '';
+	public string $php = '';
+	public string $fcgi = '';
+	public int $trådar = TRÅDMÄNGD[2];
 	public int $u13_min = self::UTDELNING_13_MIN_STD;
 	public int $u13_max = self::UTDELNING_13_MAX_STD;
 	public int $max_rader = -1;

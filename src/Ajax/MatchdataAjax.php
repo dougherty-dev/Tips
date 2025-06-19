@@ -47,7 +47,6 @@ final class MatchdataAjax extends Nedbrytning {
 	 */
 	private function spara_matchdata(): void {
 		$_REQUEST['spara_matchdata'] = (string) filter_var($_REQUEST['spara_matchdata'], FILTER_SANITIZE_URL);
-		// dumpa_text(dumpa_objekt($this->tips));
 		parse_str($_REQUEST['spara_matchdata'], $matchdata);
 
 		/**

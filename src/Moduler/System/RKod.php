@@ -491,7 +491,6 @@ enum RKod: string {
 	/**
 	 * Garantitabell för alla system.
 	 * @return float[]
-	 * @SuppressWarnings("PHPMD.ExcessiveMethodLength")
 	 */
 	public function garantitabell(): array {
 		return self::GARANTITABELL[$this->name];

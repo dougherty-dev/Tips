@@ -6,6 +6,8 @@ filter:
 
 build:
     image: default-bionic
+		dependencies:
+			- libfann
 
     nodes:
         my-tests:
@@ -15,6 +17,9 @@ build:
                     pecl_extensions:
                         - fann
         analysis:
+            dependencies:
+                before:
+                    - sudo apt-get install -y fann
             tests:
                 override:
                     - php-scrutinizer-run

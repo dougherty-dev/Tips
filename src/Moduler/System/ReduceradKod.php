@@ -43,24 +43,32 @@ class ReduceradKod extends Reduktion {
 				$kod = array_map('intval', str_split($kodord));
 				$temp = NOLLRAD;
 
-				/**
-				 * Helgardering.
-				 * $projektion håller helgarderingar i [0], halvgarderingar i [1]
-				 */
-				if ($index === 0) {
-					foreach ($kod as $nyckel => $tecken) {
-						$temp[$this->helgarderingar[$nyckel]] = $tecken;
-					}
-
-					$kod_helgarderingar[] = $temp;
-					continue;
-				}
-
-				$this->halvgarderingar($antal_hg, $kod, $temp, $kod_halvgarderingar);
+				match ($index) {
+					0 => $this->helgarderingar($kod, $temp, $kod_helgarderingar),
+					default => $this->halvgarderingar($antal_hg, $kod, $temp, $kod_halvgarderingar)
+				};
 			}
 		}
 
 		$this->addera_kodord($antal_hg, $kod_helgarderingar, $kod_halvgarderingar);
+	}
+
+	/**
+	 * Helgarderingar.
+	 * @param int[] $kod
+	 * @param int[] $temp
+	 * @param array<int, int[]> $kod_helgarderingar
+	 */
+	private function helgarderingar(array $kod, array &$temp, array &$kod_helgarderingar): void {
+		/**
+		 * Helgardering.
+		 * $projektion håller helgarderingar i [0], halvgarderingar i [1]
+		 */
+		foreach ($kod as $nyckel => $tecken) {
+			$temp[$this->helgarderingar[$nyckel]] = $tecken;
+		}
+
+		$kod_helgarderingar[] = $temp;
 	}
 
 	/**

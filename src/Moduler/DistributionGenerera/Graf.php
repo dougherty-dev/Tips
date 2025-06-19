@@ -31,6 +31,9 @@ class Graf extends Rendera {
 			return;
 		}
 
+		/**
+		 * Oddssummor.
+		 */
 		[$oddssumma_min, $oddssumma_max, $oddssumma_utfall] = $this->oddssummor();
 		$distmax_antal_rader = max($this->distribution);
 
@@ -106,6 +109,26 @@ class Graf extends Rendera {
 		$this->dist->procentandel = round(100 * $this->dist->andelssumma / MATCHRYMD, 3);
 
 		/**
+		 * Rendera text.
+		 */
+		$this->rendera_text($distmax_antal_rader, $oddssumma_min, $oddssumma_max, $oddssumma_utfall);
+
+		/**
+		 * Spara graf.
+		 */
+		$this->spara_graf();
+	}
+
+	/**
+	 * Rita ut textinformation i graf.
+	 */
+	private function rendera_text(
+		int $distmax_antal_rader,
+		float $oddssumma_min,
+		float $oddssumma_max,
+		float $oddssumma_utfall
+	): void {
+		/**
 		 * Rendera omgångsdata med gul text.
 		 */
 		$this->dist->graf->sätt_text(20, 20, "{$this->tips->odds->spel->speltyp->produktnamn()} {$this->tips->odds->spel->omgång}: utdelning {$this->tips->utdelning->utdelning[0]}", $this->dist->graf->gul);
@@ -122,10 +145,11 @@ class Graf extends Rendera {
 		if ($oddssumma_utfall > 0) {
 			$this->dist->graf->sätt_text(20, 60, "utfall: $oddssumma_utfall ({$this->dist->andelssumma}) | andel: {$this->dist->procentandel} %", $this->dist->graf->röd);
 		}
-
-		$this->spara_graf();
 	}
 
+	/**
+	 * Spara distributionsgraf.
+	 */
 	private function spara_graf(): void {
 		/**
 		 * Spara och beräkna sannolikhetssummor.

@@ -68,25 +68,51 @@ final class TTHamtaTopptips extends Spara {
 		$this->tt->extrapengar = intval($draws->fund->extraMoney);
 
 		/**
-		 * Marcher, odds och streck.
+		 * Extrahera omgångsdata.
 		 */
-		foreach ($draws->events as $k => $event) {
-			$this->tt->hemmalag[$k = intval($k)] = $event->participants[0]->name;
-			$this->tt->bortalag[$k] = $event->participants[1]->name;
-
-			$dist = $event->distribution;
-			$this->tt->tt_streck[$k] = array_map('floatval', [$dist->home, $dist->draw, $dist->away]);
-			if (isset($event->odds->home, $event->odds->draw, $event->odds->away)) {
-				$this->tt->tt_odds[$k] = $event->odds->home ? array_map(
-					'flyttal',
-					[$event->odds->home, $event->odds->draw, $event->odds->away]
-				) : TOM_ODDSVEKTOR;
-			}
-		}
+		$this->bearbeta_tipsdata($draws->events);
 
 		$this->tt->utdelning->spel->db->logg->logga(self::class . ": ✅ Hämtade TT-data. ({$this->tt->omgång})");
 		$this->spara_data();
 
 		return true;
+	}
+
+	/**
+	 * Plocka ut data från JSON-objekt.
+	 * @param object[] $events
+	 */
+	private function bearbeta_tipsdata(array $events): void {
+		foreach ($events as $k => $event) {
+			$index = intval($k);
+
+			/**
+			 * Plocka ut matcher.
+			 */
+			if (isset($event->participants)) {
+				$this->tt->hemmalag[$index] = $event->participants[0]->name;
+				$this->tt->bortalag[$index] = $event->participants[1]->name;
+			}
+
+			/**
+			 * Plocka ut streck.
+			 */
+			if (isset($event->distribution)) {
+				$this->tt->tt_streck[$index] = array_map(
+					'floatval',
+					[$event->distribution->home, $event->distribution->draw, $event->distribution->away]
+				);
+
+				/**
+				 * Plocka ut odds.
+				 */
+				if (isset($event->odds->home, $event->odds->draw, $event->odds->away)) {
+					$this->tt->tt_odds[$index] = $event->odds->home ? array_map(
+						'flyttal',
+						[$event->odds->home, $event->odds->draw, $event->odds->away]
+					) : TOM_ODDSVEKTOR;
+				}
+			}
+		}
 	}
 }

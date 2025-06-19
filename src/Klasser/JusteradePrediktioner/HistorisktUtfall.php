@@ -79,6 +79,15 @@ class HistorisktUtfall {
 			}
 		}
 
+		$this->procentuell_fördelning($codds, $cstreck);
+	}
+
+	/**
+	 * Procentuell fördelning.
+	 * @param array<int, float[]> $codds
+	 * @param array<int, float[]> $cstreck
+	 */
+	private function procentuell_fördelning(array $codds, array $cstreck): void {
 		/**
 		 * Omvandla summering till procentuell fördelning.
 		 */

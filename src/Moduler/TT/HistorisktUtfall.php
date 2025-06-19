@@ -34,6 +34,41 @@ class HistorisktUtfall {
 	 * Redovisas i matchtabell under historik.
 	 */
 	public function historiskt_utfall(): void {
+		/**
+		 * Sammanställ historik.
+		 */
+		$this->tt->utfallshistorik = [];
+		foreach ($this->resultat() as $index => $rad) {
+			/**
+			 * Nollvektor vid otillräcklig statistik.
+			 */
+			$this->tt->utfallshistorik[$index] = [0, 0, 0, 0];
+			$summa = array_sum($rad);
+			/**
+			 * Format: andel 1X2 samt antal statistikposter.
+			 * Andel i procent, avrundad till heltal.
+			 */
+			if ($summa > 0) {
+				$this->tt->utfallshistorik[$index] = [
+					round(100 * $rad[0] / $summa, 0),
+					round(100 * $rad[1] / $summa, 0),
+					round(100 * $rad[2] / $summa, 0),
+					array_sum($rad)
+				];
+			}
+		}
+
+		$historik = array_map(fn ($utfall): string => implode(',', $utfall), $this->tt->utfallshistorik);
+
+		$this->tt->db_preferenser->spara_preferens('topptips.historik', implode(',', $historik));
+		$this->tt->utdelning->spel->db->logg->logga(self::class . ": ✅ Sparade TT-historik.");
+	}
+
+	/**
+	 * Hämta oddsdata från databas.
+	 * @return array<int, int[]>
+	 */
+	private function resultat(): array {
 		[$pmin, $pmax] = [0.93, 1.07]; // ± 7 % oddsintervall
 		$resultat = [];
 
@@ -42,7 +77,11 @@ class HistorisktUtfall {
 		 */
 		foreach ($this->tt->tt_odds as $match => $odds) {
 			$query = '';
-			for ($index = 1; $index <= 13; $index++) {
+
+			/**
+			 * Iterera över matchnummer
+			 */
+			for ($index = 1; $index <= MATCHANTAL; $index++) {
 				$bas = 3 * ($index - 1);
 				$pred = [$bas + 1, $bas + 2, $bas + 3]; // p1–p39, d.v.s. alla enskilda odds
 				$query .= "SELECT `resultat$index` AS `res` FROM `odds` NATURAL JOIN `matcher`
@@ -73,33 +112,6 @@ class HistorisktUtfall {
 			}
 		}
 
-		/**
-		 * Sammanställ historik.
-		 */
-		$this->tt->utfallshistorik = [];
-		foreach ($resultat as $index => $rad) {
-			/**
-			 * Nollvektor vid otillräcklig statistik.
-			 */
-			$this->tt->utfallshistorik[$index] = [0, 0, 0, 0];
-			$summa = array_sum($rad);
-			/**
-			 * Format: andel 1X2 samt antal statistikposter.
-			 * Andel i procent, avrundad till heltal.
-			 */
-			if ($summa > 0) {
-				$this->tt->utfallshistorik[$index] = [
-					round(100 * $rad[0] / $summa, 0),
-					round(100 * $rad[1] / $summa, 0),
-					round(100 * $rad[2] / $summa, 0),
-					array_sum($rad)
-				];
-			}
-		}
-
-		$historik = array_map(fn ($utfall): string => implode(',', $utfall), $this->tt->utfallshistorik);
-
-		$this->tt->db_preferenser->spara_preferens('topptips.historik', implode(',', $historik));
-		$this->tt->utdelning->spel->db->logg->logga(self::class . ": ✅ Sparade TT-historik.");
+		return $resultat;
 	}
 }

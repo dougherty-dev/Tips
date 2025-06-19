@@ -48,7 +48,6 @@ final class PGenerera {
 	private function pgenerera(): void {
 		$vektorer = extrahera(); // hämta parametrar från querysträng.
 		$tipsvektor = []; // håll tipsrader i ett fält.
-		$moduler = [];
 
 		/**
 		 * Definiera en rymd.
@@ -57,7 +56,36 @@ final class PGenerera {
 		for ($index = 4; $index >= 1; $index--) {
 			$delrymd[$index] = ($this->trådar >= 3 ** $index) ? [$vektorer[$index - 1]] : TECKENRYMD;
 		}
+
 		$rymd = [...array_fill(0, MATCHANTAL - 4, TECKENRYMD), ...$delrymd];
+
+		/**
+		 * Hämta moduldata.
+		 */
+		$moduler = $this->hämta_moduler();
+
+		/**
+		 * Använd generator för att generera tipsrader.
+		 * Kontrollera mot varje modulmetod eller fortsätt.
+		 */
+		foreach (generera($rymd) as $tipsrad_012) {
+			foreach ($moduler as $modul) {
+				if (!method_exists($modul, 'pröva_tipsrad') || !$modul->pröva_tipsrad($tipsrad_012)) {
+					continue 2;
+				}
+			}
+			$tipsvektor[] = base_convert($tipsrad_012, 3, 36);
+		}
+
+		$this->tips->parallellisering->populera_databas(implode(',', $tipsvektor), $vektorer);
+	}
+
+	/**
+	 * Hämta moduler.
+	 * @return object[]
+	 */
+	private function hämta_moduler(): array {
+		$moduler = [];
 
 		/**
 		 * Ladda moduler med en metod för att pröva tipsrader.
@@ -70,20 +98,7 @@ final class PGenerera {
 			}
 		}
 
-		/**
-		 * Använd generator för att generera tipsrader.
-		 * Kontrollera mot varje modulmetod eller fortsätt.
-		 */
-		foreach (generera($rymd) as $tipsrad_012) {
-			foreach ($moduler as $modul) {
-				if (!$modul->pröva_tipsrad($tipsrad_012)) {
-					continue 2;
-				}
-			}
-			$tipsvektor[] = base_convert($tipsrad_012, 3, 36);
-		}
-
-		$this->tips->parallellisering->populera_databas(implode(',', $tipsvektor), $vektorer);
+		return $moduler;
 	}
 }
 

@@ -77,6 +77,13 @@ class Traningsdata {
 			$this->tipsrader = array_slice($this->tipsrader, 0, $andel);
 		}
 
+		$this->träningsdata();
+	}
+
+	/**
+	 * Själva genereringen.
+	 */
+	private function träningsdata(): void {
 		/**
 		 * Slumpa tipsraderna.
 		 */
@@ -105,6 +112,9 @@ class Traningsdata {
 			}
 		}
 
+		/**
+		 * Spara och logga.
+		 */
 		$this->fann->logg = date("Y-m-d H:i") . "<br>" .
 		match (file_put_contents($this->fann->indatafil, $träningsdata) !== false) {
 			true => "Sparade fil.<br>",

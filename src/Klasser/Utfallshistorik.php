@@ -39,6 +39,47 @@ final class Utfallshistorik {
 	 * Redovisas i favorittabell under historik.
 	 */
 	private function utfallshistorik(): void {
+		/**
+		 * Sammanställ historik.
+		 */
+		$this->utfallshistorik = [];
+		foreach ($this->resultat() as $index => $rad) {
+			/**
+			 * Format: andel 1X2 samt antal statistikposter.
+			 * Andel i procent, avrundad till heltal.
+			 * Nollvektor vid otillräcklig statistik.
+			 */
+			$summa = array_sum($rad);
+			$this->utfallshistorik[$index] = match (true) {
+				$summa > 0 => [
+					round(100 * $rad[0] / $summa, 0),
+					round(100 * $rad[1] / $summa, 0),
+					round(100 * $rad[2] / $summa, 0),
+					array_sum($rad)
+				],
+				default => [0, 0, 0, 0]
+			};
+		}
+
+		/**
+		 * Historikfält.
+		 */
+		$historik = array_map(fn (array $utfall): array =>
+			[$utfall[0], $utfall[1], $utfall[2]], $this->utfallshistorik);
+
+		/**
+		 * Sortera.
+		 */
+		$sortering = array_map(fn (array $sort): float => (float) ne_max($sort), $historik);
+		arsort($sortering);
+		$this->ordnad_historik = array_flip(array_keys($sortering));
+	}
+
+	/**
+	 * Hämta oddsdata från databas.
+	 * @return array<int, int[]>
+	 */
+	private function resultat(): array {
 		[$pmin, $pmax] = [0.93, 1.07]; // ± 7 % oddsintervall
 		$resultat = [];
 
@@ -48,11 +89,14 @@ final class Utfallshistorik {
 		foreach ($this->prediktioner->prediktioner as $match => $odds) {
 			$query = '';
 
+			/**
+			 * Iterera över matchnummer
+			 */
 			for ($index = 1; $index <= MATCHANTAL; $index++) {
 				$bas = 3 * ($index - 1);
 				$pred = [$bas + 1, $bas + 2, $bas + 3]; // p1–p39, d.v.s. alla enskilda odds
 				$query .= "SELECT `resultat$index` AS `res` FROM `odds` NATURAL JOIN `matcher`
-				NATURAL JOIN `utdelning` WHERE `tipsrad_012` AND `resultat$index` AND
+					NATURAL JOIN `utdelning` WHERE `tipsrad_012` AND `resultat$index` AND
 					$pmin * `p$pred[0]` < $odds[0] AND $pmax * `p$pred[0]` > $odds[0] AND
 					$pmin * `p$pred[1]` < $odds[1] AND $pmax * `p$pred[1]` > $odds[1] AND
 					$pmin * `p$pred[2]` < $odds[2] AND $pmax * `p$pred[2]` > $odds[2]";
@@ -79,36 +123,6 @@ final class Utfallshistorik {
 			}
 		}
 
-		/**
-		 * Sammanställ historik.
-		 */
-		$this->utfallshistorik = [];
-		foreach ($resultat as $index => $rad) {
-			/**
-			 * Format: andel 1X2 samt antal statistikposter.
-			 * Andel i procent, avrundad till heltal.
-			 * Nollvektor vid otillräcklig statistik.
-			 */
-			$summa = array_sum($rad);
-			$this->utfallshistorik[$index] = match (true) {
-				$summa > 0 => [
-					round(100 * $rad[0] / $summa, 0),
-					round(100 * $rad[1] / $summa, 0),
-					round(100 * $rad[2] / $summa, 0),
-					array_sum($rad)
-				],
-				default => [0, 0, 0, 0]
-			};
-		}
-
-		$historik = array_map(fn (array $utfall): array =>
-			[$utfall[0], $utfall[1], $utfall[2]], $this->utfallshistorik);
-
-		/**
-		 * Sortera.
-		 */
-		$sortering = array_map(fn (array $sort): float => (float) ne_max($sort), $historik);
-		arsort($sortering);
-		$this->ordnad_historik = array_flip(array_keys($sortering));
+		return $resultat;
 	}
 }

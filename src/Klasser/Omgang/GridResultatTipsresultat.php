@@ -38,23 +38,7 @@ class GridResultatTipsresultat extends GridResultatVinstrader {
 			array_reverse(UTFALL_PER_HALVGARDERINGAR[MATCHANTAL])
 		);
 
-		$vinst_netto = $this->vinst - $this->antal_rader;
-		$stil = $vinst_netto > 0 ? ['<span class="nettovinst">', '</span>'] : ['', ''];
-
-		/**
-		 * Tabellhuvud.
-		 */
-		$tipsresultat = <<< EOT
-						<p>Vinst: {$stil[0]}$vinst_netto{$stil[1]} ({$this->vinst}) kr</p>
-						<table class="ram">
-							<tr class="match">
-								<th>Rätt</th>
-								<th>Antal</th>
-								<th>E[r|{$this->antal_rader}]</th>
-								<th>Faktor</th>
-							</tr>
-
-EOT;
+		$tipsresultat = $this->tabellhuvud();
 
 		for ($i = MATCHANTAL; $i >= 0; $i--) {
 			$förväntade = number_format($förväntat_antal[$i], 4);
@@ -77,6 +61,30 @@ EOT;
 
 		return <<< EOT
 $tipsresultat						</table>
+
+EOT;
+	}
+
+	/**
+	 * Tabellhuvud.
+	 * Dela upp rutiner.
+	 */
+	private function tabellhuvud(): string {
+		$vinst_netto = $this->vinst - $this->antal_rader;
+		$stil = $vinst_netto > 0 ? ['<span class="nettovinst">', '</span>'] : ['', ''];
+
+		/**
+		 * Skicka tillbaka.
+		 */
+		return <<< EOT
+						<p>Vinst: {$stil[0]}$vinst_netto{$stil[1]} ({$this->vinst}) kr</p>
+						<table class="ram">
+							<tr class="match">
+								<th>Rätt</th>
+								<th>Antal</th>
+								<th>E[r|{$this->antal_rader}]</th>
+								<th>Faktor</th>
+							</tr>
 
 EOT;
 	}

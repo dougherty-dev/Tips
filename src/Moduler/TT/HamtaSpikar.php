@@ -18,10 +18,21 @@ class HamtaSpikar extends HamtaData {
 	use Konstanter;
 
 	/**
-	 * @var int[] $antal_spikar */ public array $antal_spikar;
-	/** @var int[] $andel_spikar */ public array $andel_spikar;
-	/** @var array<int, array<int, array<int, string>>> $spikar */ public array $spikar;
-	/** @var array<int, string[]> $reduktion */ public array $reduktion;
+	 * @var int[] $antal_spikar
+	 */
+	public array $antal_spikar;
+	/**
+	 * @var int[] $andel_spikar
+	 */
+	public array $andel_spikar;
+	/**
+	 * @var array<int, array<int, array<int, string>>> $spikar
+	 */
+	public array $spikar;
+	/**
+	 * @var array<int, string[]> $reduktion
+	 */
+	public array $reduktion;
 
 	/**
 	 * Hämta spikar.
@@ -60,15 +71,17 @@ class HamtaSpikar extends HamtaData {
 			$this->andel_spikar = array_map('intval', explode(',', $andel_spikar));
 		}
 
-		foreach ($this->spikar as $i => $spik) {
-			foreach ($spik as $s) {
-				if ($s[0] !== '' || $s[1] !== '' || $s[2] !== '') {
-					$this->antal_spikar[$i]++;
+		foreach ($this->spikar as $index => $gardering) {
+			foreach ($gardering as $tecken) {
+				/**
+				 * Halvgardering = en ruta tom.
+				 */
+				if (!in_array('', $tecken, true)) {
+					$this->antal_spikar[$index]++;
 				}
 			}
-			if ($this->andel_spikar[$i] > $this->antal_spikar[$i]) {
-				$this->antal_spikar[$i] = $this->andel_spikar[$i];
-			}
+
+			$this->antal_spikar[$index] = min($this->andel_spikar[$index], $this->antal_spikar[$index]);
 		}
 
 		$this->reduktion = array_fill(0, self::TT_MATCHANTAL, TOM_STRÄNGVEKTOR);

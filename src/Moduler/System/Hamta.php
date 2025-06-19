@@ -57,14 +57,12 @@ class Hamta extends Preferenser {
 				/**
 				 * Halvgardering = en ruta tom.
 				 */
-				foreach ($gardering as $tecken) {
-					if ($tecken[0] !== '' || $tecken[1] !== '' || $tecken[2] !== '') {
-						$this->antal_garderingar[(int) $tecken]++;
-					}
+				if (!in_array('', $tecken, true)) {
+					$this->antal_garderingar[(int) $tecken]++;
 				}
 			}
 
-			$this->antal_garderingar[$index] = min($this->antal_garderingar[$index], $this->antal_garderingar[$index]);
+			$this->antal_garderingar[$index] = min($this->andel_garderingar[$index], $this->antal_garderingar[$index]);
 		}
 
 		$reduktion = $this->db_preferenser->hämta_preferens("system.reduktion");

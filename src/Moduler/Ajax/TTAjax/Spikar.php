@@ -35,16 +35,8 @@ class Spikar {
 	 */
 	protected function tt_spikar(): void {
 		$antal_spikar = array_fill(0, self::TT_MAX_SPIKFÄLT, 0);
-
-		$_REQUEST['tt_spikar'] = is_string($_REQUEST['tt_spikar']) ?
-			$_REQUEST['tt_spikar'] : '';
-		parse_str($_REQUEST['tt_spikar'], $spikar);
-		$spikar = (array) array_values($spikar)[0];
-
-		$_REQUEST['tt_andel_spikar'] = is_string($_REQUEST['tt_andel_spikar']) ?
-			$_REQUEST['tt_andel_spikar'] : '';
-		parse_str($_REQUEST['tt_andel_spikar'], $andel_spikar);
-		$andel_spikar = (array) array_values($andel_spikar)[0];
+		$spikar = $this->hämta_request('tt_spikar');
+		$andel_spikar = $this->hämta_request('tt_andel_spikar');
 
 		/**
 		 * Kontrollera format.
@@ -76,5 +68,18 @@ class Spikar {
 		);
 
 		echo true;
+	}
+
+	/**
+	 * Hämta request.
+	 * Kontrollera indata och returnera fält.
+	 * @return mixed[]
+	 */
+	private function hämta_request(string $request): array {
+		$_REQUEST[$request] = is_string($_REQUEST[$request]) ?
+			$_REQUEST[$request] : '';
+		parse_str($_REQUEST[$request], $resultat);
+		$resultat = (array) array_values($resultat)[0];
+		return $resultat;
 	}
 }

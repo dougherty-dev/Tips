@@ -41,8 +41,8 @@ final class Scheman extends Hamta {
 			 * [schema_namn] => R_4_5_238_1 F2/4
 			 * [schema_antal_rader] => 100
 			 */
-			foreach (explode(',', $schema['data']) as $d) {
-				[$namn, $data[$namn]] = explode(':', $d);
+			foreach (explode(',', $schema['data']) as $dat) {
+				[$namn, $data[$namn]] = explode(':', $dat);
 			}
 
 			/**

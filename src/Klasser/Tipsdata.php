@@ -58,15 +58,34 @@ final class Tipsdata extends Tipsresultat {
 		$tips->utdelning->vecka = intval(explode("-", $draws->drawComment)[1]);
 		$tips->matcher->spelstopp = strval($draws->closeTime);
 
+		$this->bearbeta_tipsdata($tips, $draws->events);
+
+		/**
+		 * Logga och återvänd.
+		 */
+		$tips->spel->db->logg->logga(self::class . ": ✅ Hämtade tipsdata. ({$tips->spel->omgång})");
+		return true;
+	}
+
+	/**
+	 * Plocka ut data från JSON-objekt.
+	 * @param object[] $events
+	 */
+	private function bearbeta_tipsdata(Tips &$tips, array $events): void {
 		/**
 		 * Plocka ut matcher, odds och streck.
 		 */
-		foreach ($draws->events as $index => $event) {
-			$tips->matcher->match[$index] = $event->description;
-			$tips->streck->prediktioner[$index] = array_map(
-				'floatval',
-				[$event->distribution->home, $event->distribution->draw, $event->distribution->away]
-			);
+		foreach ($events as $index => $event) {
+			if (isset($event->description)) {
+				$tips->matcher->match[$index] = $event->description;
+			}
+
+			if (isset($event->distribution)) {
+				$tips->streck->prediktioner[$index] = array_map(
+					'floatval',
+					[$event->distribution->home, $event->distribution->draw, $event->distribution->away]
+				);
+			}
 
 			/**
 			 * Ge nollvektor om oddsdata saknas för match.
@@ -78,11 +97,5 @@ final class Tipsdata extends Tipsresultat {
 				) : TOM_ODDSVEKTOR;
 			}
 		}
-
-		/**
-		 * Logga och återvänd.
-		 */
-		$tips->spel->db->logg->logga(self::class . ": ✅ Hämtade tipsdata. ({$tips->spel->omgång})");
-		return true;
 	}
 }

@@ -29,7 +29,6 @@ class Kontrollera extends Annonsera {
 
 		$moduler = []; // aktiva moduler
 		$modulbeteckning = []; // modulnamn
-		$befintliga_moduler = []; // moduler i filsystem
 
 		$glob = (array) glob(MODULER . '/*.php');
 		$befintliga_moduler = array_map(fn ($filnamn): string => basename((string) $filnamn, '.php'), $glob);

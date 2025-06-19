@@ -17,21 +17,26 @@ class Rendera extends Oddssummor {
 	 * Rita procentsatser med linjer i gröna nyanser.
 	 */
 	protected function percentage_lines(float $andel, int $x, string $xkoord): void {
-		match (true) {
-			!$this->andel_vid['10'] && $andel > 10.0 =>
-				$this->rendera($this->andel_vid['10'], $x, $this->dist->graf->grön, 80, "10 % vid: $xkoord"),
-			!$this->andel_vid['5'] && $andel > 5.0 =>
-				$this->rendera($this->andel_vid['5'], $x, $this->dist->graf->grön_v[7], 100, "5 % vid: $xkoord"),
-			!$this->andel_vid['3'] && $andel > 3.0 =>
-				$this->rendera($this->andel_vid['3'], $x, $this->dist->graf->grön_v[5], 120, "3 % vid: $xkoord"),
-			!$this->andel_vid['2'] && $andel > 2.0 =>
-				$this->rendera($this->andel_vid['2'], $x, $this->dist->graf->grön_v[3], 140, "2 % vid: $xkoord"),
-			!$this->andel_vid['1'] && $andel > 1.0 =>
-				$this->rendera($this->andel_vid['1'], $x, $this->dist->graf->grön_v[2], 160, "1 % vid: $xkoord"),
-			!$this->andel_vid['0.5'] && $andel > 0.5 =>
-				$this->rendera($this->andel_vid['0.5'], $x, $this->dist->graf->grön_v[1], 180, "0.5 % vid: $xkoord"),
-			default => null
-		};
+		$data = [
+			'10' => [10.0, $this->dist->graf->grön, 80],
+			'5' => [5.0, $this->dist->graf->grön_v[7], 100],
+			'3' => [3.0, $this->dist->graf->grön_v[5], 120],
+			'2' => [2.0, $this->dist->graf->grön_v[3], 140],
+			'1' => [1.0, $this->dist->graf->grön_v[2], 160],
+			'0.5' => [0.5, $this->dist->graf->grön_v[1], 180]
+		];
+
+		foreach ($data as $index => $punkt) {
+			if (!$this->andel_vid[$index] && $andel > $punkt[0]) {
+				$this->rendera(
+					$this->andel_vid[$index],
+					$x,
+					$punkt[1],
+					$punkt[2],
+					"$index % vid: $xkoord"
+				);
+			}
+		}
 	}
 
 	/**

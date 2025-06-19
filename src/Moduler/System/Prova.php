@@ -25,22 +25,41 @@ class Prova extends ReduceradKod {
 		$this->pröva_reduktion and $ok = isset($this->reducerad_kod[$this->reducera_kodord($tipsrad_012)]);
 
 		if ($ok && $this->pröva_garderingar) {
-			foreach (array_keys($this->garderingar) as $i) {
-				$ok and $this->andel_garderingar[$i] > 0 and $ok = $this->pröva_gardering($this->garderingar[$i], $this->andel_garderingar[$i], $tipsrad_012);
-			}
+			$ok = $this->pröva_garderingar($tipsrad_012);
 		}
 
 		return $ok || $this->tick();
 	}
 
 	/**
-	 * Pröva gardering.
-	 * @param array<int, string[]> $system
+	 * Pröva garderingar.
+	 * Reducera komplexitet.
 	 */
-	private function pröva_gardering(array $system, int $andel_garderingar, string $tipsrad_012): bool {
+	private function pröva_garderingar(string $tipsrad_012): bool {
+		$ok = true;
+
+		/**
+		 * Iterera över garderingar.
+		 */
+		foreach (array_keys($this->garderingar) as $index) {
+			$ok and $this->andel_garderingar[$index] > 0 and $ok = $this->pröva_gardering(
+				$this->garderingar[$index],
+				$this->andel_garderingar[$index],
+				$tipsrad_012
+			);
+		}
+
+		return $ok;
+	}
+
+	/**
+	 * Pröva gardering.
+	 * @param array<int, string[]> $garderingar
+	 */
+	private function pröva_gardering(array $garderingar, int $andel_garderingar, string $tipsrad_012): bool {
 		$antal_garderade = 0;
-		foreach ($system as $i => $s) {
-			if ($s[(int) $tipsrad_012[$i]] > '') {
+		foreach ($garderingar as $index => $gardering) {
+			if ($gardering[(int) $tipsrad_012[$index]] > '') {
 				$antal_garderade++;
 			}
 		}

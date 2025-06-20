@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1750363161">
-  <project timestamp="1750363161" name="Clover Coverage">
+<coverage generated="1750399015">
+  <project timestamp="1750399015" name="Clover Coverage">
     <package name="Tips\Ajax">
       <file name="/Users/nik/Sites/tips/src/Ajax/InvesteraAjax.php">
         <class name="Tips\Ajax\InvesteraAjax" namespace="Tips\Ajax">
@@ -97,34 +97,34 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Ajax/OmgangAjax.php">
         <class name="Tips\Ajax\OmgangAjax" namespace="Tips\Ajax">
-          <metrics complexity="7" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="22" coveredelements="0"/>
+          <metrics complexity="7" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="16" elements="22" coveredelements="19"/>
         </class>
-        <line num="23" type="stmt" count="0"/>
-        <line num="24" type="stmt" count="0"/>
-        <line num="39" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="40" type="stmt" count="0"/>
-        <line num="41" type="stmt" count="0"/>
-        <line num="42" type="stmt" count="0"/>
-        <line num="49" type="method" name="radera_omgång" visibility="private" complexity="3" crap="12" count="0"/>
-        <line num="50" type="stmt" count="0"/>
-        <line num="51" type="stmt" count="0"/>
-        <line num="53" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="39" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="49" type="method" name="radera_omgång" visibility="private" complexity="3" crap="3.21" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
         <line num="54" type="stmt" count="0"/>
         <line num="55" type="stmt" count="0"/>
-        <line num="59" type="stmt" count="0"/>
-        <line num="60" type="stmt" count="0"/>
-        <line num="67" type="method" name="investera_sparad" visibility="private" complexity="2" crap="6" count="0"/>
-        <line num="68" type="stmt" count="0"/>
-        <line num="70" type="stmt" count="0"/>
-        <line num="71" type="stmt" count="0"/>
-        <line num="72" type="stmt" count="0"/>
-        <line num="74" type="stmt" count="0"/>
-        <line num="75" type="stmt" count="0"/>
-        <line num="82" type="method" name="strategi" visibility="private" complexity="1" crap="2" count="0"/>
-        <line num="83" type="stmt" count="0"/>
-        <line num="84" type="stmt" count="0"/>
-        <line num="88" type="stmt" count="0"/>
-        <metrics loc="89" ncloc="64" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="0" elements="25" coveredelements="0"/>
+        <line num="59" type="stmt" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="67" type="method" name="investera_sparad" visibility="private" complexity="2" crap="2" count="1"/>
+        <line num="68" type="stmt" count="1"/>
+        <line num="70" type="stmt" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <line num="72" type="stmt" count="1"/>
+        <line num="74" type="stmt" count="1"/>
+        <line num="75" type="stmt" count="1"/>
+        <line num="82" type="method" name="strategi" visibility="private" complexity="1" crap="1" count="1"/>
+        <line num="83" type="stmt" count="1"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <metrics loc="89" ncloc="64" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="19" elements="25" coveredelements="22"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Ajax/PackaData.php">
         <class name="Tips\Ajax\PackaData" namespace="Tips\Ajax">
@@ -398,13 +398,13 @@
         <class name="Tips\Egenskaper\Ajax" namespace="Tips\Egenskaper">
           <metrics complexity="5" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="5" elements="9" coveredelements="5"/>
         </class>
-        <line num="25" type="method" name="förgrena" visibility="private" complexity="4" crap="4.07" count="6"/>
-        <line num="26" type="stmt" count="6"/>
-        <line num="27" type="stmt" count="6"/>
-        <line num="28" type="stmt" count="6"/>
-        <line num="29" type="stmt" count="6"/>
+        <line num="25" type="method" name="förgrena" visibility="private" complexity="4" crap="4.07" count="7"/>
+        <line num="26" type="stmt" count="7"/>
+        <line num="27" type="stmt" count="7"/>
+        <line num="28" type="stmt" count="7"/>
+        <line num="29" type="stmt" count="7"/>
         <line num="30" type="stmt" count="0"/>
-        <line num="31" type="stmt" count="6"/>
+        <line num="31" type="stmt" count="7"/>
         <line num="37" type="method" name="ändra_attraktionsfaktor" visibility="private" complexity="1" crap="2" count="0"/>
         <line num="38" type="stmt" count="0"/>
         <metrics loc="41" ncloc="28" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="5" elements="9" coveredelements="5"/>
@@ -413,8 +413,8 @@
         <class name="Tips\Egenskaper\Eka" namespace="Tips\Egenskaper">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
         </class>
-        <line num="19" type="method" name="eka" visibility="private" complexity="1" crap="1" count="10"/>
-        <line num="20" type="stmt" count="10"/>
+        <line num="19" type="method" name="eka" visibility="private" complexity="1" crap="1" count="12"/>
+        <line num="20" type="stmt" count="12"/>
         <metrics loc="23" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Egenskaper/Huvud.php">
@@ -486,9 +486,9 @@
         <class name="Tips\Egenskaper\Tick" namespace="Tips\Egenskaper">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
         </class>
-        <line num="22" type="method" name="tick" visibility="protected" complexity="1" crap="1" count="2"/>
-        <line num="23" type="stmt" count="2"/>
-        <line num="24" type="stmt" count="2"/>
+        <line num="22" type="method" name="tick" visibility="protected" complexity="1" crap="1" count="3"/>
+        <line num="23" type="stmt" count="3"/>
+        <line num="24" type="stmt" count="3"/>
         <line num="30" type="method" name="attraktionsfaktor" visibility="protected" complexity="1" crap="1" count="1"/>
         <line num="31" type="stmt" count="1"/>
         <line num="32" type="stmt" count="1"/>
@@ -498,41 +498,41 @@
         <class name="Tips\Egenskaper\Varden" namespace="Tips\Egenskaper">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="34" coveredstatements="34" elements="35" coveredelements="35"/>
         </class>
-        <line num="43" type="method" name="hämta_värden" visibility="protected" complexity="1" crap="1" count="14"/>
-        <line num="44" type="stmt" count="14"/>
-        <line num="46" type="stmt" count="14"/>
-        <line num="47" type="stmt" count="14"/>
-        <line num="48" type="stmt" count="14"/>
-        <line num="49" type="stmt" count="14"/>
-        <line num="51" type="stmt" count="14"/>
-        <line num="52" type="stmt" count="14"/>
-        <line num="53" type="stmt" count="14"/>
-        <line num="54" type="stmt" count="14"/>
-        <line num="55" type="stmt" count="14"/>
-        <line num="56" type="stmt" count="14"/>
-        <line num="57" type="stmt" count="14"/>
-        <line num="59" type="stmt" count="14"/>
-        <line num="60" type="stmt" count="14"/>
-        <line num="61" type="stmt" count="14"/>
-        <line num="62" type="stmt" count="14"/>
-        <line num="63" type="stmt" count="14"/>
-        <line num="64" type="stmt" count="14"/>
-        <line num="65" type="stmt" count="14"/>
-        <line num="67" type="stmt" count="14"/>
-        <line num="68" type="stmt" count="14"/>
-        <line num="69" type="stmt" count="14"/>
-        <line num="70" type="stmt" count="14"/>
-        <line num="71" type="stmt" count="14"/>
-        <line num="72" type="stmt" count="14"/>
-        <line num="73" type="stmt" count="14"/>
-        <line num="75" type="stmt" count="14"/>
-        <line num="76" type="stmt" count="14"/>
-        <line num="77" type="stmt" count="14"/>
-        <line num="78" type="stmt" count="14"/>
-        <line num="79" type="stmt" count="14"/>
-        <line num="80" type="stmt" count="14"/>
-        <line num="81" type="stmt" count="14"/>
-        <line num="82" type="stmt" count="14"/>
+        <line num="43" type="method" name="hämta_värden" visibility="protected" complexity="1" crap="1" count="16"/>
+        <line num="44" type="stmt" count="16"/>
+        <line num="46" type="stmt" count="16"/>
+        <line num="47" type="stmt" count="16"/>
+        <line num="48" type="stmt" count="16"/>
+        <line num="49" type="stmt" count="16"/>
+        <line num="51" type="stmt" count="16"/>
+        <line num="52" type="stmt" count="16"/>
+        <line num="53" type="stmt" count="16"/>
+        <line num="54" type="stmt" count="16"/>
+        <line num="55" type="stmt" count="16"/>
+        <line num="56" type="stmt" count="16"/>
+        <line num="57" type="stmt" count="16"/>
+        <line num="59" type="stmt" count="16"/>
+        <line num="60" type="stmt" count="16"/>
+        <line num="61" type="stmt" count="16"/>
+        <line num="62" type="stmt" count="16"/>
+        <line num="63" type="stmt" count="16"/>
+        <line num="64" type="stmt" count="16"/>
+        <line num="65" type="stmt" count="16"/>
+        <line num="67" type="stmt" count="16"/>
+        <line num="68" type="stmt" count="16"/>
+        <line num="69" type="stmt" count="16"/>
+        <line num="70" type="stmt" count="16"/>
+        <line num="71" type="stmt" count="16"/>
+        <line num="72" type="stmt" count="16"/>
+        <line num="73" type="stmt" count="16"/>
+        <line num="75" type="stmt" count="16"/>
+        <line num="76" type="stmt" count="16"/>
+        <line num="77" type="stmt" count="16"/>
+        <line num="78" type="stmt" count="16"/>
+        <line num="79" type="stmt" count="16"/>
+        <line num="80" type="stmt" count="16"/>
+        <line num="81" type="stmt" count="16"/>
+        <line num="82" type="stmt" count="16"/>
         <metrics loc="85" ncloc="72" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="34" coveredstatements="34" elements="35" coveredelements="35"/>
       </file>
     </package>
@@ -553,25 +553,25 @@
         <line num="22" type="stmt" count="3"/>
         <line num="23" type="stmt" count="0"/>
         <line num="24" type="stmt" count="0"/>
-        <line num="31" type="method" name="int_komparera_preferenser" visibility="public" complexity="2" crap="3.19" count="14"/>
-        <line num="32" type="stmt" count="14"/>
+        <line num="31" type="method" name="int_komparera_preferenser" visibility="public" complexity="2" crap="3.19" count="16"/>
+        <line num="32" type="stmt" count="16"/>
         <line num="33" type="stmt" count="0"/>
         <line num="34" type="stmt" count="0"/>
         <metrics loc="38" ncloc="25" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="2" elements="8" coveredelements="2"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Databas.php">
         <class name="Tips\Klasser\Databas" namespace="Tips\Klasser">
-          <metrics complexity="6" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="8" elements="19" coveredelements="8"/>
+          <metrics complexity="6" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="15" elements="19" coveredelements="15"/>
         </class>
-        <line num="22" type="method" name="radera_omgång" visibility="public" complexity="3" crap="12" count="0"/>
-        <line num="23" type="stmt" count="0"/>
-        <line num="24" type="stmt" count="0"/>
-        <line num="25" type="stmt" count="0"/>
-        <line num="26" type="stmt" count="0"/>
-        <line num="27" type="stmt" count="0"/>
-        <line num="28" type="stmt" count="0"/>
+        <line num="22" type="method" name="radera_omgång" visibility="public" complexity="3" crap="3.02" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="28" type="stmt" count="1"/>
         <line num="29" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="1"/>
         <line num="36" type="method" name="radera_sekvens" visibility="public" complexity="3" crap="3.01" count="1"/>
         <line num="37" type="stmt" count="1"/>
         <line num="38" type="stmt" count="1"/>
@@ -582,7 +582,7 @@
         <line num="43" type="stmt" count="1"/>
         <line num="44" type="stmt" count="0"/>
         <line num="45" type="stmt" count="1"/>
-        <metrics loc="48" ncloc="35" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="8" elements="19" coveredelements="8"/>
+        <metrics loc="48" ncloc="35" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="15" elements="19" coveredelements="15"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Felhanterare.php">
         <class name="Tips\Klasser\Felhanterare" namespace="Tips\Klasser">
@@ -605,20 +605,20 @@
         <class name="Tips\Klasser\Filer" namespace="Tips\Klasser">
           <metrics complexity="4" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="11" elements="15" coveredelements="13"/>
         </class>
-        <line num="18" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="18"/>
-        <line num="19" type="stmt" count="18"/>
-        <line num="24" type="method" name="filnamn" visibility="public" complexity="1" crap="1" count="18"/>
-        <line num="25" type="stmt" count="18"/>
-        <line num="31" type="method" name="mappnamn" visibility="public" complexity="2" crap="2.00" count="13"/>
-        <line num="32" type="stmt" count="13"/>
-        <line num="33" type="stmt" count="13"/>
-        <line num="34" type="stmt" count="13"/>
-        <line num="35" type="stmt" count="13"/>
-        <line num="36" type="stmt" count="13"/>
-        <line num="37" type="stmt" count="13"/>
-        <line num="38" type="stmt" count="13"/>
-        <line num="40" type="stmt" count="13"/>
-        <line num="41" type="stmt" count="13"/>
+        <line num="18" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="19" type="stmt" count="20"/>
+        <line num="24" type="method" name="filnamn" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="25" type="stmt" count="20"/>
+        <line num="31" type="method" name="mappnamn" visibility="public" complexity="2" crap="2.00" count="15"/>
+        <line num="32" type="stmt" count="15"/>
+        <line num="33" type="stmt" count="15"/>
+        <line num="34" type="stmt" count="15"/>
+        <line num="35" type="stmt" count="15"/>
+        <line num="36" type="stmt" count="15"/>
+        <line num="37" type="stmt" count="15"/>
+        <line num="38" type="stmt" count="15"/>
+        <line num="40" type="stmt" count="15"/>
+        <line num="41" type="stmt" count="15"/>
         <line num="44" type="stmt" count="0"/>
         <metrics loc="47" ncloc="34" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="11" elements="15" coveredelements="13"/>
       </file>
@@ -649,32 +649,32 @@
         <class name="Tips\Klasser\Graf" namespace="Tips\Klasser">
           <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
         </class>
-        <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="22" type="stmt" count="13"/>
-        <line num="23" type="stmt" count="13"/>
-        <line num="29" type="method" name="initiera_graf" visibility="private" complexity="2" crap="2" count="13"/>
-        <line num="30" type="stmt" count="13"/>
-        <line num="32" type="stmt" count="13"/>
-        <line num="33" type="stmt" count="13"/>
-        <line num="34" type="stmt" count="13"/>
-        <line num="35" type="stmt" count="13"/>
-        <line num="36" type="stmt" count="13"/>
-        <line num="37" type="stmt" count="13"/>
-        <line num="38" type="stmt" count="13"/>
-        <line num="39" type="stmt" count="13"/>
-        <line num="40" type="stmt" count="13"/>
-        <line num="41" type="stmt" count="13"/>
-        <line num="42" type="stmt" count="13"/>
-        <line num="43" type="stmt" count="13"/>
+        <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="22" type="stmt" count="15"/>
+        <line num="23" type="stmt" count="15"/>
+        <line num="29" type="method" name="initiera_graf" visibility="private" complexity="2" crap="2" count="15"/>
+        <line num="30" type="stmt" count="15"/>
+        <line num="32" type="stmt" count="15"/>
+        <line num="33" type="stmt" count="15"/>
+        <line num="34" type="stmt" count="15"/>
+        <line num="35" type="stmt" count="15"/>
+        <line num="36" type="stmt" count="15"/>
+        <line num="37" type="stmt" count="15"/>
+        <line num="38" type="stmt" count="15"/>
+        <line num="39" type="stmt" count="15"/>
+        <line num="40" type="stmt" count="15"/>
+        <line num="41" type="stmt" count="15"/>
+        <line num="42" type="stmt" count="15"/>
+        <line num="43" type="stmt" count="15"/>
         <metrics loc="47" ncloc="34" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Investera.php">
         <class name="Tips\Klasser\Investera" namespace="Tips\Klasser">
-          <metrics complexity="7" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="0" elements="40" coveredelements="0"/>
+          <metrics complexity="7" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="2" elements="40" coveredelements="2"/>
         </class>
-        <line num="26" type="method" name="investera" visibility="public" complexity="5" crap="30" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="31" type="stmt" count="0"/>
+        <line num="26" type="method" name="investera" visibility="public" complexity="5" crap="26.06" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
         <line num="38" type="stmt" count="0"/>
         <line num="39" type="stmt" count="0"/>
         <line num="40" type="stmt" count="0"/>
@@ -712,38 +712,38 @@
         <line num="103" type="method" name="radera_graf" visibility="private" complexity="2" crap="6" count="0"/>
         <line num="104" type="stmt" count="0"/>
         <line num="105" type="stmt" count="0"/>
-        <metrics loc="109" ncloc="66" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="0" elements="40" coveredelements="0"/>
+        <metrics loc="109" ncloc="66" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="2" elements="40" coveredelements="2"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/JusteradePrediktioner.php">
         <class name="Tips\Klasser\JusteradePrediktioner" namespace="Tips\Klasser">
           <metrics complexity="6" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
         </class>
-        <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="24" type="stmt" count="13"/>
-        <line num="25" type="stmt" count="13"/>
-        <line num="31" type="method" name="hämta_historik" visibility="public" complexity="5" crap="5" count="13"/>
-        <line num="32" type="stmt" count="13"/>
-        <line num="33" type="stmt" count="13"/>
-        <line num="36" type="stmt" count="13"/>
-        <line num="37" type="stmt" count="13"/>
-        <line num="40" type="stmt" count="13"/>
-        <line num="41" type="stmt" count="13"/>
-        <line num="42" type="stmt" count="13"/>
-        <line num="43" type="stmt" count="13"/>
-        <line num="44" type="stmt" count="13"/>
-        <line num="45" type="stmt" count="13"/>
+        <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="24" type="stmt" count="15"/>
+        <line num="25" type="stmt" count="15"/>
+        <line num="31" type="method" name="hämta_historik" visibility="public" complexity="5" crap="5" count="15"/>
+        <line num="32" type="stmt" count="15"/>
+        <line num="33" type="stmt" count="15"/>
+        <line num="36" type="stmt" count="15"/>
+        <line num="37" type="stmt" count="15"/>
+        <line num="40" type="stmt" count="15"/>
+        <line num="41" type="stmt" count="15"/>
+        <line num="42" type="stmt" count="15"/>
+        <line num="43" type="stmt" count="15"/>
+        <line num="44" type="stmt" count="15"/>
+        <line num="45" type="stmt" count="15"/>
         <metrics loc="48" ncloc="35" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Logg.php">
         <class name="Tips\Klasser\Logg" namespace="Tips\Klasser">
           <metrics complexity="4" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="15" coveredelements="15"/>
         </class>
-        <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="18"/>
-        <line num="22" type="stmt" count="18"/>
-        <line num="27" type="method" name="logga" visibility="public" complexity="1" crap="1" count="5"/>
-        <line num="28" type="stmt" count="5"/>
-        <line num="29" type="stmt" count="5"/>
-        <line num="30" type="stmt" count="5"/>
+        <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="22" type="stmt" count="20"/>
+        <line num="27" type="method" name="logga" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="28" type="stmt" count="6"/>
+        <line num="29" type="stmt" count="6"/>
+        <line num="30" type="stmt" count="6"/>
         <line num="36" type="method" name="hämta_logg" visibility="public" complexity="2" crap="2" count="1"/>
         <line num="37" type="stmt" count="1"/>
         <line num="38" type="stmt" count="1"/>
@@ -759,26 +759,26 @@
         <class name="Tips\Klasser\Matcher" namespace="Tips\Klasser">
           <metrics complexity="8" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="36" elements="41" coveredelements="37"/>
         </class>
-        <line num="38" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="14"/>
-        <line num="39" type="stmt" count="14"/>
-        <line num="45" type="method" name="hämta_matcher" visibility="public" complexity="3" crap="3.00" count="14"/>
-        <line num="49" type="stmt" count="14"/>
-        <line num="50" type="stmt" count="14"/>
-        <line num="55" type="stmt" count="14"/>
-        <line num="56" type="stmt" count="14"/>
-        <line num="57" type="stmt" count="14"/>
-        <line num="58" type="stmt" count="14"/>
-        <line num="59" type="stmt" count="14"/>
-        <line num="65" type="stmt" count="14"/>
+        <line num="38" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="39" type="stmt" count="16"/>
+        <line num="45" type="method" name="hämta_matcher" visibility="public" complexity="3" crap="3.00" count="16"/>
+        <line num="49" type="stmt" count="16"/>
+        <line num="50" type="stmt" count="16"/>
+        <line num="55" type="stmt" count="16"/>
+        <line num="56" type="stmt" count="16"/>
+        <line num="57" type="stmt" count="16"/>
+        <line num="58" type="stmt" count="16"/>
+        <line num="59" type="stmt" count="16"/>
+        <line num="65" type="stmt" count="16"/>
         <line num="66" type="stmt" count="0"/>
-        <line num="73" type="stmt" count="14"/>
-        <line num="74" type="stmt" count="14"/>
-        <line num="75" type="stmt" count="14"/>
-        <line num="80" type="stmt" count="14"/>
-        <line num="81" type="stmt" count="14"/>
-        <line num="82" type="stmt" count="14"/>
-        <line num="83" type="stmt" count="14"/>
-        <line num="84" type="stmt" count="14"/>
+        <line num="73" type="stmt" count="16"/>
+        <line num="74" type="stmt" count="16"/>
+        <line num="75" type="stmt" count="16"/>
+        <line num="80" type="stmt" count="16"/>
+        <line num="81" type="stmt" count="16"/>
+        <line num="82" type="stmt" count="16"/>
+        <line num="83" type="stmt" count="16"/>
+        <line num="84" type="stmt" count="16"/>
         <line num="91" type="method" name="spara_matcher" visibility="public" complexity="4" crap="4" count="1"/>
         <line num="95" type="stmt" count="1"/>
         <line num="96" type="stmt" count="1"/>
@@ -859,25 +859,25 @@
         <class name="Tips\Klasser\Prediktioner" namespace="Tips\Klasser">
           <metrics complexity="5" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="19" coveredelements="19"/>
         </class>
-        <line num="30" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="13"/>
-        <line num="31" type="stmt" count="13"/>
-        <line num="32" type="stmt" count="13"/>
-        <line num="33" type="stmt" count="13"/>
-        <line num="35" type="stmt" count="13"/>
-        <line num="36" type="stmt" count="13"/>
-        <line num="38" type="stmt" count="13"/>
-        <line num="39" type="stmt" count="13"/>
-        <line num="41" type="stmt" count="13"/>
-        <line num="42" type="stmt" count="13"/>
-        <line num="49" type="method" name="sannolikheter_till_enkelrad" visibility="private" complexity="1" crap="1" count="13"/>
-        <line num="50" type="stmt" count="13"/>
-        <line num="51" type="stmt" count="13"/>
-        <line num="57" type="method" name="stila_prediktioner" visibility="private" complexity="2" crap="2" count="13"/>
-        <line num="58" type="stmt" count="13"/>
-        <line num="59" type="stmt" count="13"/>
-        <line num="61" type="stmt" count="13"/>
-        <line num="62" type="stmt" count="13"/>
-        <line num="63" type="stmt" count="13"/>
+        <line num="30" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="15"/>
+        <line num="31" type="stmt" count="15"/>
+        <line num="32" type="stmt" count="15"/>
+        <line num="33" type="stmt" count="15"/>
+        <line num="35" type="stmt" count="15"/>
+        <line num="36" type="stmt" count="15"/>
+        <line num="38" type="stmt" count="15"/>
+        <line num="39" type="stmt" count="15"/>
+        <line num="41" type="stmt" count="15"/>
+        <line num="42" type="stmt" count="15"/>
+        <line num="49" type="method" name="sannolikheter_till_enkelrad" visibility="private" complexity="1" crap="1" count="15"/>
+        <line num="50" type="stmt" count="15"/>
+        <line num="51" type="stmt" count="15"/>
+        <line num="57" type="method" name="stila_prediktioner" visibility="private" complexity="2" crap="2" count="15"/>
+        <line num="58" type="stmt" count="15"/>
+        <line num="59" type="stmt" count="15"/>
+        <line num="61" type="stmt" count="15"/>
+        <line num="62" type="stmt" count="15"/>
+        <line num="63" type="stmt" count="15"/>
         <metrics loc="67" ncloc="47" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="19" coveredelements="19"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Preferenser.php">
@@ -928,58 +928,61 @@
         <line num="16" type="stmt" count="0"/>
         <line num="17" type="stmt" count="0"/>
         <line num="18" type="stmt" count="0"/>
-        <line num="28" type="method" name="__construct" visibility="public" complexity="5" crap="5.39" count="24"/>
-        <line num="32" type="stmt" count="24"/>
-        <line num="37" type="stmt" count="24"/>
-        <line num="38" type="stmt" count="24"/>
-        <line num="43" type="stmt" count="24"/>
-        <line num="44" type="stmt" count="24"/>
-        <line num="45" type="stmt" count="24"/>
-        <line num="52" type="stmt" count="24"/>
+        <line num="28" type="method" name="__construct" visibility="public" complexity="5" crap="5.39" count="26"/>
+        <line num="32" type="stmt" count="26"/>
+        <line num="37" type="stmt" count="26"/>
+        <line num="38" type="stmt" count="26"/>
+        <line num="43" type="stmt" count="26"/>
+        <line num="44" type="stmt" count="26"/>
+        <line num="45" type="stmt" count="26"/>
+        <line num="52" type="stmt" count="26"/>
         <line num="53" type="stmt" count="0"/>
         <line num="54" type="stmt" count="0"/>
         <line num="55" type="stmt" count="0"/>
-        <line num="61" type="stmt" count="24"/>
-        <line num="62" type="stmt" count="24"/>
-        <line num="67" type="stmt" count="24"/>
-        <line num="68" type="stmt" count="24"/>
-        <line num="73" type="stmt" count="24"/>
+        <line num="61" type="stmt" count="26"/>
+        <line num="62" type="stmt" count="26"/>
+        <line num="67" type="stmt" count="26"/>
+        <line num="68" type="stmt" count="26"/>
+        <line num="73" type="stmt" count="26"/>
         <line num="74" type="stmt" count="0"/>
         <metrics loc="78" ncloc="41" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="12" elements="20" coveredelements="12"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Scheman.php">
         <class name="Tips\Klasser\Scheman" namespace="Tips\Klasser">
-          <metrics complexity="9" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="22" elements="28" coveredelements="23"/>
+          <metrics complexity="10" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="28" coveredstatements="24" elements="31" coveredelements="26"/>
         </class>
         <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
         <line num="20" type="stmt" count="1"/>
         <line num="21" type="stmt" count="1"/>
         <line num="22" type="stmt" count="1"/>
-        <line num="28" type="method" name="visa_scheman" visibility="public" complexity="8" crap="8.34" count="1"/>
+        <line num="28" type="method" name="visa_scheman" visibility="public" complexity="7" crap="7.34" count="1"/>
         <line num="29" type="stmt" count="1"/>
         <line num="31" type="stmt" count="1"/>
         <line num="33" type="stmt" count="1"/>
         <line num="34" type="stmt" count="1"/>
         <line num="35" type="stmt" count="1"/>
         <line num="36" type="stmt" count="1"/>
-        <line num="37" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
         <line num="44" type="stmt" count="1"/>
         <line num="45" type="stmt" count="1"/>
-        <line num="51" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
         <line num="52" type="stmt" count="1"/>
-        <line num="53" type="stmt" count="1"/>
-        <line num="55" type="stmt" count="1"/>
-        <line num="56" type="stmt" count="0"/>
-        <line num="57" type="stmt" count="1"/>
         <line num="58" type="stmt" count="1"/>
-        <line num="60" type="stmt" count="1"/>
-        <line num="66" type="stmt" count="1"/>
-        <line num="67" type="stmt" count="0"/>
-        <line num="68" type="stmt" count="0"/>
-        <line num="69" type="stmt" count="0"/>
-        <line num="76" type="stmt" count="1"/>
-        <line num="82" type="stmt" count="1"/>
-        <metrics loc="85" ncloc="57" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="22" elements="28" coveredelements="23"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="68" type="stmt" count="1"/>
+        <line num="74" type="stmt" count="1"/>
+        <line num="81" type="method" name="extrahera_namn" visibility="private" complexity="2" crap="2" count="1"/>
+        <line num="87" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <metrics loc="94" ncloc="62" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="28" coveredstatements="24" elements="31" coveredelements="26"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Sekvenser.php">
         <class name="Tips\Klasser\Sekvenser" namespace="Tips\Klasser">
@@ -1016,70 +1019,70 @@
         <class name="Tips\Klasser\Spel" namespace="Tips\Klasser">
           <metrics complexity="6" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="17" coveredelements="15"/>
         </class>
-        <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="18"/>
-        <line num="23" type="stmt" count="18"/>
-        <line num="24" type="stmt" count="18"/>
-        <line num="30" type="method" name="hämta_spel" visibility="private" complexity="5" crap="5.01" count="18"/>
-        <line num="31" type="stmt" count="18"/>
-        <line num="32" type="stmt" count="18"/>
-        <line num="33" type="stmt" count="18"/>
-        <line num="34" type="stmt" count="18"/>
-        <line num="35" type="stmt" count="18"/>
-        <line num="36" type="stmt" count="18"/>
-        <line num="37" type="stmt" count="18"/>
-        <line num="38" type="stmt" count="18"/>
-        <line num="42" type="stmt" count="18"/>
+        <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="23" type="stmt" count="20"/>
+        <line num="24" type="stmt" count="20"/>
+        <line num="30" type="method" name="hämta_spel" visibility="private" complexity="5" crap="5.01" count="20"/>
+        <line num="31" type="stmt" count="20"/>
+        <line num="32" type="stmt" count="20"/>
+        <line num="33" type="stmt" count="20"/>
+        <line num="34" type="stmt" count="20"/>
+        <line num="35" type="stmt" count="20"/>
+        <line num="36" type="stmt" count="20"/>
+        <line num="37" type="stmt" count="20"/>
+        <line num="38" type="stmt" count="20"/>
+        <line num="42" type="stmt" count="20"/>
         <line num="43" type="stmt" count="0"/>
-        <line num="46" type="stmt" count="18"/>
-        <line num="47" type="stmt" count="18"/>
-        <line num="48" type="stmt" count="18"/>
+        <line num="46" type="stmt" count="20"/>
+        <line num="47" type="stmt" count="20"/>
+        <line num="48" type="stmt" count="20"/>
         <metrics loc="52" ncloc="39" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="17" coveredelements="15"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Spelade.php">
         <class name="Tips\Klasser\Spelade" namespace="Tips\Klasser">
           <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="16" coveredelements="16"/>
         </class>
-        <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="23" type="stmt" count="13"/>
-        <line num="24" type="stmt" count="13"/>
-        <line num="30" type="method" name="hämta_genererade_rader" visibility="private" complexity="2" crap="2" count="13"/>
-        <line num="31" type="stmt" count="13"/>
-        <line num="32" type="stmt" count="13"/>
-        <line num="33" type="stmt" count="13"/>
-        <line num="34" type="stmt" count="13"/>
-        <line num="35" type="stmt" count="13"/>
-        <line num="36" type="stmt" count="13"/>
-        <line num="37" type="stmt" count="13"/>
-        <line num="38" type="stmt" count="13"/>
-        <line num="39" type="stmt" count="13"/>
-        <line num="40" type="stmt" count="13"/>
-        <line num="41" type="stmt" count="13"/>
-        <line num="42" type="stmt" count="13"/>
+        <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="23" type="stmt" count="15"/>
+        <line num="24" type="stmt" count="15"/>
+        <line num="30" type="method" name="hämta_genererade_rader" visibility="private" complexity="2" crap="2" count="15"/>
+        <line num="31" type="stmt" count="15"/>
+        <line num="32" type="stmt" count="15"/>
+        <line num="33" type="stmt" count="15"/>
+        <line num="34" type="stmt" count="15"/>
+        <line num="35" type="stmt" count="15"/>
+        <line num="36" type="stmt" count="15"/>
+        <line num="37" type="stmt" count="15"/>
+        <line num="38" type="stmt" count="15"/>
+        <line num="39" type="stmt" count="15"/>
+        <line num="40" type="stmt" count="15"/>
+        <line num="41" type="stmt" count="15"/>
+        <line num="42" type="stmt" count="15"/>
         <metrics loc="45" ncloc="32" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="16" coveredelements="16"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Speltyp.php">
         <class name="Tips\Klasser\Speltyp" namespace="Tips\Klasser">
           <metrics complexity="3" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
         </class>
-        <line num="22" type="method" name="produktnamn" visibility="public" complexity="3" crap="3" count="18"/>
-        <line num="23" type="stmt" count="18"/>
-        <line num="24" type="stmt" count="18"/>
-        <line num="25" type="stmt" count="18"/>
-        <line num="26" type="stmt" count="18"/>
+        <line num="22" type="method" name="produktnamn" visibility="public" complexity="3" crap="3" count="20"/>
+        <line num="23" type="stmt" count="20"/>
+        <line num="24" type="stmt" count="20"/>
+        <line num="25" type="stmt" count="20"/>
+        <line num="26" type="stmt" count="20"/>
         <metrics loc="29" ncloc="19" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Tips.php">
         <class name="Tips\Klasser\Tips" namespace="Tips\Klasser">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="15" coveredelements="15"/>
         </class>
-        <line num="27" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="28" type="stmt" count="13"/>
-        <line num="29" type="stmt" count="13"/>
-        <line num="30" type="stmt" count="13"/>
-        <line num="31" type="stmt" count="13"/>
-        <line num="32" type="stmt" count="13"/>
-        <line num="33" type="stmt" count="13"/>
-        <line num="34" type="stmt" count="13"/>
+        <line num="27" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="28" type="stmt" count="15"/>
+        <line num="29" type="stmt" count="15"/>
+        <line num="30" type="stmt" count="15"/>
+        <line num="31" type="stmt" count="15"/>
+        <line num="32" type="stmt" count="15"/>
+        <line num="33" type="stmt" count="15"/>
+        <line num="34" type="stmt" count="15"/>
         <line num="40" type="method" name="spara_tips" visibility="public" complexity="1" crap="1" count="1"/>
         <line num="41" type="stmt" count="1"/>
         <line num="42" type="stmt" count="1"/>
@@ -1091,47 +1094,48 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Tipsdata.php">
         <class name="Tips\Klasser\Tipsdata" namespace="Tips\Klasser">
-          <metrics complexity="17" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="0" elements="38" coveredelements="0"/>
+          <metrics complexity="18" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="0" elements="39" coveredelements="0"/>
         </class>
-        <line num="22" type="method" name="hämta_tipsdata" visibility="public" complexity="11" crap="132" count="0"/>
+        <line num="22" type="method" name="hämta_tipsdata" visibility="public" complexity="10" crap="110" count="0"/>
         <line num="23" type="stmt" count="0"/>
-        <line num="24" type="stmt" count="0"/>
-        <line num="25" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
         <line num="30" type="stmt" count="0"/>
         <line num="31" type="stmt" count="0"/>
         <line num="32" type="stmt" count="0"/>
         <line num="33" type="stmt" count="0"/>
-        <line num="34" type="stmt" count="0"/>
-        <line num="35" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
         <line num="40" type="stmt" count="0"/>
-        <line num="41" type="stmt" count="0"/>
-        <line num="42" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
         <line num="48" type="stmt" count="0"/>
         <line num="49" type="stmt" count="0"/>
         <line num="50" type="stmt" count="0"/>
-        <line num="51" type="stmt" count="0"/>
         <line num="52" type="stmt" count="0"/>
-        <line num="54" type="stmt" count="0"/>
-        <line num="59" type="stmt" count="0"/>
-        <line num="60" type="stmt" count="0"/>
-        <line num="68" type="method" name="bearbeta_tipsdata" visibility="private" complexity="6" crap="42" count="0"/>
-        <line num="72" type="stmt" count="0"/>
-        <line num="73" type="stmt" count="0"/>
-        <line num="74" type="stmt" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="64" type="method" name="url" visibility="private" complexity="2" crap="6" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="66" type="stmt" count="0"/>
+        <line num="74" type="method" name="bearbeta_tipsdata" visibility="private" complexity="6" crap="42" count="0"/>
+        <line num="78" type="stmt" count="0"/>
         <line num="79" type="stmt" count="0"/>
         <line num="80" type="stmt" count="0"/>
-        <line num="81" type="stmt" count="0"/>
-        <line num="84" type="stmt" count="0"/>
         <line num="85" type="stmt" count="0"/>
         <line num="86" type="stmt" count="0"/>
         <line num="87" type="stmt" count="0"/>
-        <line num="88" type="stmt" count="0"/>
+        <line num="90" type="stmt" count="0"/>
+        <line num="91" type="stmt" count="0"/>
+        <line num="92" type="stmt" count="0"/>
+        <line num="93" type="stmt" count="0"/>
         <line num="94" type="stmt" count="0"/>
-        <line num="95" type="stmt" count="0"/>
-        <line num="96" type="stmt" count="0"/>
-        <line num="97" type="stmt" count="0"/>
-        <line num="98" type="stmt" count="0"/>
-        <metrics loc="103" ncloc="64" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="0" elements="38" coveredelements="0"/>
+        <line num="100" type="stmt" count="0"/>
+        <line num="101" type="stmt" count="0"/>
+        <line num="102" type="stmt" count="0"/>
+        <line num="103" type="stmt" count="0"/>
+        <line num="104" type="stmt" count="0"/>
+        <metrics loc="109" ncloc="67" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="0" elements="39" coveredelements="0"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Tipsresultat.php">
         <class name="Tips\Klasser\Tipsresultat" namespace="Tips\Klasser">
@@ -1166,33 +1170,33 @@
         <class name="Tips\Klasser\Utdelning" namespace="Tips\Klasser">
           <metrics complexity="6" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="49" coveredstatements="48" elements="52" coveredelements="50"/>
         </class>
-        <line num="24" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="14"/>
-        <line num="25" type="stmt" count="14"/>
-        <line num="26" type="stmt" count="14"/>
-        <line num="32" type="method" name="hämta_utdelning" visibility="public" complexity="2" crap="2" count="14"/>
-        <line num="33" type="stmt" count="14"/>
-        <line num="35" type="stmt" count="14"/>
-        <line num="36" type="stmt" count="14"/>
-        <line num="37" type="stmt" count="14"/>
-        <line num="38" type="stmt" count="14"/>
-        <line num="39" type="stmt" count="14"/>
-        <line num="40" type="stmt" count="14"/>
-        <line num="45" type="stmt" count="14"/>
-        <line num="46" type="stmt" count="14"/>
-        <line num="47" type="stmt" count="14"/>
-        <line num="48" type="stmt" count="14"/>
-        <line num="49" type="stmt" count="14"/>
-        <line num="50" type="stmt" count="14"/>
-        <line num="55" type="stmt" count="14"/>
-        <line num="56" type="stmt" count="14"/>
-        <line num="57" type="stmt" count="14"/>
-        <line num="58" type="stmt" count="14"/>
-        <line num="59" type="stmt" count="14"/>
-        <line num="60" type="stmt" count="14"/>
-        <line num="62" type="stmt" count="14"/>
-        <line num="63" type="stmt" count="14"/>
-        <line num="64" type="stmt" count="14"/>
-        <line num="67" type="stmt" count="14"/>
+        <line num="24" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="25" type="stmt" count="16"/>
+        <line num="26" type="stmt" count="16"/>
+        <line num="32" type="method" name="hämta_utdelning" visibility="public" complexity="2" crap="2" count="16"/>
+        <line num="33" type="stmt" count="16"/>
+        <line num="35" type="stmt" count="16"/>
+        <line num="36" type="stmt" count="16"/>
+        <line num="37" type="stmt" count="16"/>
+        <line num="38" type="stmt" count="16"/>
+        <line num="39" type="stmt" count="16"/>
+        <line num="40" type="stmt" count="16"/>
+        <line num="45" type="stmt" count="16"/>
+        <line num="46" type="stmt" count="16"/>
+        <line num="47" type="stmt" count="16"/>
+        <line num="48" type="stmt" count="16"/>
+        <line num="49" type="stmt" count="16"/>
+        <line num="50" type="stmt" count="16"/>
+        <line num="55" type="stmt" count="16"/>
+        <line num="56" type="stmt" count="16"/>
+        <line num="57" type="stmt" count="16"/>
+        <line num="58" type="stmt" count="16"/>
+        <line num="59" type="stmt" count="16"/>
+        <line num="60" type="stmt" count="16"/>
+        <line num="62" type="stmt" count="16"/>
+        <line num="63" type="stmt" count="16"/>
+        <line num="64" type="stmt" count="16"/>
+        <line num="67" type="stmt" count="16"/>
         <line num="73" type="method" name="spara_utdelning" visibility="public" complexity="3" crap="3" count="1"/>
         <line num="74" type="stmt" count="1"/>
         <line num="78" type="stmt" count="1"/>
@@ -1224,49 +1228,49 @@
         <class name="Tips\Klasser\Utfallshistorik" namespace="Tips\Klasser">
           <metrics complexity="10" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="40" elements="43" coveredelements="43"/>
         </class>
-        <line num="33" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="34" type="stmt" count="13"/>
-        <line num="41" type="method" name="utfallshistorik" visibility="private" complexity="4" crap="4" count="13"/>
-        <line num="45" type="stmt" count="13"/>
-        <line num="46" type="stmt" count="13"/>
-        <line num="52" type="stmt" count="13"/>
-        <line num="53" type="stmt" count="13"/>
-        <line num="54" type="stmt" count="13"/>
-        <line num="55" type="stmt" count="13"/>
-        <line num="56" type="stmt" count="13"/>
-        <line num="57" type="stmt" count="13"/>
-        <line num="58" type="stmt" count="13"/>
-        <line num="59" type="stmt" count="13"/>
-        <line num="60" type="stmt" count="13"/>
-        <line num="61" type="stmt" count="13"/>
-        <line num="67" type="stmt" count="13"/>
-        <line num="68" type="stmt" count="13"/>
-        <line num="73" type="stmt" count="13"/>
-        <line num="74" type="stmt" count="13"/>
-        <line num="75" type="stmt" count="13"/>
-        <line num="82" type="method" name="resultat" visibility="private" complexity="5" crap="5" count="13"/>
-        <line num="83" type="stmt" count="13"/>
-        <line num="84" type="stmt" count="13"/>
-        <line num="89" type="stmt" count="13"/>
-        <line num="90" type="stmt" count="13"/>
-        <line num="95" type="stmt" count="13"/>
-        <line num="96" type="stmt" count="13"/>
-        <line num="97" type="stmt" count="13"/>
-        <line num="98" type="stmt" count="13"/>
-        <line num="99" type="stmt" count="13"/>
-        <line num="100" type="stmt" count="13"/>
-        <line num="101" type="stmt" count="13"/>
-        <line num="102" type="stmt" count="13"/>
-        <line num="103" type="stmt" count="13"/>
-        <line num="104" type="stmt" count="13"/>
-        <line num="108" type="stmt" count="13"/>
-        <line num="109" type="stmt" count="13"/>
-        <line num="114" type="stmt" count="13"/>
-        <line num="115" type="stmt" count="13"/>
-        <line num="116" type="stmt" count="13"/>
-        <line num="121" type="stmt" count="13"/>
-        <line num="122" type="stmt" count="13"/>
-        <line num="126" type="stmt" count="13"/>
+        <line num="33" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="34" type="stmt" count="15"/>
+        <line num="41" type="method" name="utfallshistorik" visibility="private" complexity="4" crap="4" count="15"/>
+        <line num="45" type="stmt" count="15"/>
+        <line num="46" type="stmt" count="15"/>
+        <line num="52" type="stmt" count="15"/>
+        <line num="53" type="stmt" count="15"/>
+        <line num="54" type="stmt" count="15"/>
+        <line num="55" type="stmt" count="15"/>
+        <line num="56" type="stmt" count="15"/>
+        <line num="57" type="stmt" count="15"/>
+        <line num="58" type="stmt" count="15"/>
+        <line num="59" type="stmt" count="15"/>
+        <line num="60" type="stmt" count="15"/>
+        <line num="61" type="stmt" count="15"/>
+        <line num="67" type="stmt" count="15"/>
+        <line num="68" type="stmt" count="15"/>
+        <line num="73" type="stmt" count="15"/>
+        <line num="74" type="stmt" count="15"/>
+        <line num="75" type="stmt" count="15"/>
+        <line num="82" type="method" name="resultat" visibility="private" complexity="5" crap="5" count="15"/>
+        <line num="83" type="stmt" count="15"/>
+        <line num="84" type="stmt" count="15"/>
+        <line num="89" type="stmt" count="15"/>
+        <line num="90" type="stmt" count="15"/>
+        <line num="95" type="stmt" count="15"/>
+        <line num="96" type="stmt" count="15"/>
+        <line num="97" type="stmt" count="15"/>
+        <line num="98" type="stmt" count="15"/>
+        <line num="99" type="stmt" count="15"/>
+        <line num="100" type="stmt" count="15"/>
+        <line num="101" type="stmt" count="15"/>
+        <line num="102" type="stmt" count="15"/>
+        <line num="103" type="stmt" count="15"/>
+        <line num="104" type="stmt" count="15"/>
+        <line num="108" type="stmt" count="15"/>
+        <line num="109" type="stmt" count="15"/>
+        <line num="114" type="stmt" count="15"/>
+        <line num="115" type="stmt" count="15"/>
+        <line num="116" type="stmt" count="15"/>
+        <line num="121" type="stmt" count="15"/>
+        <line num="122" type="stmt" count="15"/>
+        <line num="126" type="stmt" count="15"/>
         <metrics loc="129" ncloc="73" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="40" elements="43" coveredelements="43"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Vinstspridning.php">
@@ -1289,22 +1293,22 @@
         <class name="Tips\Klasser\DBPreferenser\InOut" namespace="Tips\Klasser\DBPreferenser">
           <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="26" coveredelements="26"/>
         </class>
-        <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="16"/>
-        <line num="23" type="stmt" count="16"/>
-        <line num="28" type="method" name="hämta_preferens" visibility="public" complexity="1" crap="1" count="14"/>
-        <line num="29" type="stmt" count="14"/>
-        <line num="30" type="stmt" count="14"/>
-        <line num="31" type="stmt" count="14"/>
-        <line num="32" type="stmt" count="14"/>
-        <line num="33" type="stmt" count="14"/>
-        <line num="34" type="stmt" count="14"/>
-        <line num="35" type="stmt" count="14"/>
-        <line num="36" type="stmt" count="14"/>
-        <line num="42" type="method" name="spara_preferens" visibility="public" complexity="1" crap="1" count="3"/>
-        <line num="43" type="stmt" count="3"/>
-        <line num="44" type="stmt" count="3"/>
-        <line num="45" type="stmt" count="3"/>
-        <line num="46" type="stmt" count="3"/>
+        <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="18"/>
+        <line num="23" type="stmt" count="18"/>
+        <line num="28" type="method" name="hämta_preferens" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="29" type="stmt" count="16"/>
+        <line num="30" type="stmt" count="16"/>
+        <line num="31" type="stmt" count="16"/>
+        <line num="32" type="stmt" count="16"/>
+        <line num="33" type="stmt" count="16"/>
+        <line num="34" type="stmt" count="16"/>
+        <line num="35" type="stmt" count="16"/>
+        <line num="36" type="stmt" count="16"/>
+        <line num="42" type="method" name="spara_preferens" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="43" type="stmt" count="4"/>
+        <line num="44" type="stmt" count="4"/>
+        <line num="45" type="stmt" count="4"/>
+        <line num="46" type="stmt" count="4"/>
         <line num="52" type="method" name="preferens_finns" visibility="public" complexity="1" crap="1" count="1"/>
         <line num="53" type="stmt" count="1"/>
         <line num="54" type="stmt" count="1"/>
@@ -1321,14 +1325,14 @@
         <class name="Tips\Klasser\DBPreferenser\Intervall" namespace="Tips\Klasser\DBPreferenser">
           <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
         </class>
-        <line num="19" type="method" name="preferens_i_intervall" visibility="public" complexity="2" crap="2" count="2"/>
-        <line num="20" type="stmt" count="2"/>
-        <line num="21" type="stmt" count="2"/>
-        <line num="22" type="stmt" count="2"/>
-        <line num="28" type="method" name="int_preferens_i_intervall" visibility="public" complexity="2" crap="2" count="14"/>
-        <line num="29" type="stmt" count="14"/>
-        <line num="30" type="stmt" count="14"/>
-        <line num="31" type="stmt" count="14"/>
+        <line num="19" type="method" name="preferens_i_intervall" visibility="public" complexity="2" crap="2" count="3"/>
+        <line num="20" type="stmt" count="3"/>
+        <line num="21" type="stmt" count="3"/>
+        <line num="22" type="stmt" count="3"/>
+        <line num="28" type="method" name="int_preferens_i_intervall" visibility="public" complexity="2" crap="2" count="16"/>
+        <line num="29" type="stmt" count="16"/>
+        <line num="30" type="stmt" count="16"/>
+        <line num="31" type="stmt" count="16"/>
         <metrics loc="34" ncloc="21" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/DBPreferenser/Validering.php">
@@ -1349,17 +1353,17 @@
         <class name="Tips\Klasser\Databas\Anslutning" namespace="Tips\Klasser\Databas">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="11" coveredelements="11"/>
         </class>
-        <line num="26" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="18"/>
-        <line num="27" type="stmt" count="18"/>
-        <line num="28" type="stmt" count="18"/>
-        <line num="34" type="method" name="anslut" visibility="public" complexity="1" crap="1" count="18"/>
-        <line num="35" type="stmt" count="18"/>
-        <line num="36" type="stmt" count="18"/>
-        <line num="37" type="stmt" count="18"/>
-        <line num="38" type="stmt" count="18"/>
-        <line num="39" type="stmt" count="18"/>
-        <line num="40" type="stmt" count="18"/>
-        <line num="41" type="stmt" count="18"/>
+        <line num="26" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="27" type="stmt" count="20"/>
+        <line num="28" type="stmt" count="20"/>
+        <line num="34" type="method" name="anslut" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="35" type="stmt" count="20"/>
+        <line num="36" type="stmt" count="20"/>
+        <line num="37" type="stmt" count="20"/>
+        <line num="38" type="stmt" count="20"/>
+        <line num="39" type="stmt" count="20"/>
+        <line num="40" type="stmt" count="20"/>
+        <line num="41" type="stmt" count="20"/>
         <metrics loc="44" ncloc="31" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="11" coveredelements="11"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Databas/Funktioner.php">
@@ -1493,21 +1497,21 @@
         <class name="Tips\Klasser\Graf\Element" namespace="Tips\Klasser\Graf">
           <metrics complexity="7" methods="7" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="8" elements="19" coveredelements="13"/>
         </class>
-        <line num="42" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="43" type="stmt" count="13"/>
-        <line num="44" type="stmt" count="13"/>
-        <line num="50" type="method" name="sätt_pixel" visibility="public" complexity="1" crap="1" count="3"/>
-        <line num="51" type="stmt" count="3"/>
-        <line num="57" type="method" name="sätt_rektangel" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="58" type="stmt" count="2"/>
-        <line num="59" type="stmt" count="2"/>
-        <line num="60" type="stmt" count="2"/>
+        <line num="42" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="43" type="stmt" count="15"/>
+        <line num="44" type="stmt" count="15"/>
+        <line num="50" type="method" name="sätt_pixel" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="51" type="stmt" count="4"/>
+        <line num="57" type="method" name="sätt_rektangel" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="58" type="stmt" count="3"/>
+        <line num="59" type="stmt" count="3"/>
+        <line num="60" type="stmt" count="3"/>
         <line num="66" type="method" name="fyll_rektangel" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="67" type="stmt" count="0"/>
         <line num="68" type="stmt" count="0"/>
         <line num="69" type="stmt" count="0"/>
-        <line num="75" type="method" name="sätt_linje" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="76" type="stmt" count="2"/>
+        <line num="75" type="method" name="sätt_linje" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="76" type="stmt" count="3"/>
         <line num="82" type="method" name="sätt_cirkel" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="83" type="stmt" count="0"/>
         <line num="89" type="method" name="sätt_text" visibility="public" complexity="1" crap="1" count="1"/>
@@ -1518,26 +1522,26 @@
         <class name="Tips\Klasser\Graf\Koordinater" namespace="Tips\Klasser\Graf">
           <metrics complexity="6" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="20" coveredelements="18"/>
         </class>
-        <line num="23" type="method" name="rendera_tipsgraf" visibility="public" complexity="1" crap="1" count="6"/>
-        <line num="24" type="stmt" count="6"/>
-        <line num="25" type="stmt" count="6"/>
-        <line num="31" type="method" name="spara_tipsgraf" visibility="public" complexity="1" crap="1" count="4"/>
-        <line num="32" type="stmt" count="4"/>
-        <line num="33" type="stmt" count="4"/>
-        <line num="34" type="stmt" count="4"/>
-        <line num="35" type="stmt" count="4"/>
-        <line num="42" type="method" name="serienummer" visibility="public" complexity="1" crap="1" count="4"/>
-        <line num="43" type="stmt" count="4"/>
-        <line num="51" type="method" name="tipsgrafskoordinater" visibility="public" complexity="1" crap="1" count="4"/>
-        <line num="52" type="stmt" count="4"/>
-        <line num="53" type="stmt" count="4"/>
-        <line num="59" type="method" name="vinstkors" visibility="public" complexity="2" crap="2.02" count="2"/>
-        <line num="60" type="stmt" count="2"/>
+        <line num="23" type="method" name="rendera_tipsgraf" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="24" type="stmt" count="7"/>
+        <line num="25" type="stmt" count="7"/>
+        <line num="31" type="method" name="spara_tipsgraf" visibility="public" complexity="1" crap="1" count="5"/>
+        <line num="32" type="stmt" count="5"/>
+        <line num="33" type="stmt" count="5"/>
+        <line num="34" type="stmt" count="5"/>
+        <line num="35" type="stmt" count="5"/>
+        <line num="42" type="method" name="serienummer" visibility="public" complexity="1" crap="1" count="5"/>
+        <line num="43" type="stmt" count="5"/>
+        <line num="51" type="method" name="tipsgrafskoordinater" visibility="public" complexity="1" crap="1" count="5"/>
+        <line num="52" type="stmt" count="5"/>
+        <line num="53" type="stmt" count="5"/>
+        <line num="59" type="method" name="vinstkors" visibility="public" complexity="2" crap="2.02" count="3"/>
+        <line num="60" type="stmt" count="3"/>
         <line num="61" type="stmt" count="0"/>
-        <line num="64" type="stmt" count="2"/>
-        <line num="65" type="stmt" count="2"/>
-        <line num="66" type="stmt" count="2"/>
-        <line num="67" type="stmt" count="2"/>
+        <line num="64" type="stmt" count="3"/>
+        <line num="65" type="stmt" count="3"/>
+        <line num="66" type="stmt" count="3"/>
+        <line num="67" type="stmt" count="3"/>
         <metrics loc="70" ncloc="45" classes="1" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="20" coveredelements="18"/>
       </file>
     </package>
@@ -1563,8 +1567,8 @@
         <class name="Tips\Klasser\Investera\Hamta" namespace="Tips\Klasser\Investera">
           <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="31" elements="35" coveredelements="35"/>
         </class>
-        <line num="38" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="39" type="stmt" count="1"/>
+        <line num="38" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="39" type="stmt" count="2"/>
         <line num="45" type="method" name="uppdatera_preferenser" visibility="protected" complexity="1" crap="1" count="1"/>
         <line num="46" type="stmt" count="1"/>
         <line num="47" type="stmt" count="1"/>
@@ -1825,8 +1829,8 @@
         <class name="Tips\Klasser\JusteradePrediktioner\HistorisktUtfall" namespace="Tips\Klasser\JusteradePrediktioner">
           <metrics complexity="9" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="29" coveredelements="29"/>
         </class>
-        <line num="35" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="36" type="stmt" count="13"/>
+        <line num="35" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="36" type="stmt" count="15"/>
         <line num="42" type="method" name="historiskt_utfall" visibility="protected" complexity="5" crap="5" count="1"/>
         <line num="46" type="stmt" count="1"/>
         <line num="47" type="stmt" count="1"/>
@@ -1860,13 +1864,13 @@
         <class name="Tips\Klasser\JusteradePrediktioner\JusteradeSannolikheter" namespace="Tips\Klasser\JusteradePrediktioner">
           <metrics complexity="3" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
         </class>
-        <line num="27" type="method" name="justerade_sann" visibility="protected" complexity="3" crap="3" count="13"/>
-        <line num="28" type="stmt" count="13"/>
-        <line num="29" type="stmt" count="13"/>
-        <line num="30" type="stmt" count="13"/>
-        <line num="31" type="stmt" count="13"/>
-        <line num="32" type="stmt" count="13"/>
-        <line num="36" type="stmt" count="13"/>
+        <line num="27" type="method" name="justerade_sann" visibility="protected" complexity="3" crap="3" count="15"/>
+        <line num="28" type="stmt" count="15"/>
+        <line num="29" type="stmt" count="15"/>
+        <line num="30" type="stmt" count="15"/>
+        <line num="31" type="stmt" count="15"/>
+        <line num="32" type="stmt" count="15"/>
+        <line num="36" type="stmt" count="15"/>
         <metrics loc="39" ncloc="23" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/JusteradePrediktioner/SparaHistorik.php">
@@ -1887,11 +1891,11 @@
         <class name="Tips\Klasser\Moduler\Annonsera" namespace="Tips\Klasser\Moduler">
           <metrics complexity="7" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="10" coveredelements="10"/>
         </class>
-        <line num="24" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="30" type="stmt" count="13"/>
-        <line num="35" type="method" name="annonsera_moduler" visibility="public" complexity="6" crap="6" count="13"/>
-        <line num="36" type="stmt" count="13"/>
-        <line num="37" type="stmt" count="13"/>
+        <line num="24" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="30" type="stmt" count="15"/>
+        <line num="35" type="method" name="annonsera_moduler" visibility="public" complexity="6" crap="6" count="15"/>
+        <line num="36" type="stmt" count="15"/>
+        <line num="37" type="stmt" count="15"/>
         <line num="38" type="stmt" count="1"/>
         <line num="39" type="stmt" count="1"/>
         <line num="40" type="stmt" count="1"/>
@@ -1903,25 +1907,25 @@
         <class name="Tips\Klasser\Moduler\Initiera" namespace="Tips\Klasser\Moduler">
           <metrics complexity="6" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="19" coveredelements="19"/>
         </class>
-        <line num="30" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="36" type="stmt" count="13"/>
-        <line num="37" type="stmt" count="13"/>
-        <line num="43" type="method" name="initiera_moduler" visibility="public" complexity="5" crap="5" count="13"/>
-        <line num="44" type="stmt" count="13"/>
-        <line num="45" type="stmt" count="13"/>
-        <line num="47" type="stmt" count="13"/>
-        <line num="49" type="stmt" count="13"/>
-        <line num="50" type="stmt" count="13"/>
-        <line num="51" type="stmt" count="13"/>
-        <line num="52" type="stmt" count="13"/>
+        <line num="30" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="36" type="stmt" count="15"/>
+        <line num="37" type="stmt" count="15"/>
+        <line num="43" type="method" name="initiera_moduler" visibility="public" complexity="5" crap="5" count="15"/>
+        <line num="44" type="stmt" count="15"/>
+        <line num="45" type="stmt" count="15"/>
+        <line num="47" type="stmt" count="15"/>
+        <line num="49" type="stmt" count="15"/>
+        <line num="50" type="stmt" count="15"/>
+        <line num="51" type="stmt" count="15"/>
+        <line num="52" type="stmt" count="15"/>
         <line num="53" type="stmt" count="1"/>
-        <line num="57" type="stmt" count="13"/>
+        <line num="57" type="stmt" count="15"/>
         <line num="58" type="stmt" count="1"/>
         <line num="59" type="stmt" count="1"/>
         <line num="60" type="stmt" count="1"/>
         <line num="62" type="stmt" count="1"/>
         <line num="63" type="stmt" count="1"/>
-        <line num="67" type="stmt" count="13"/>
+        <line num="67" type="stmt" count="15"/>
         <metrics loc="70" ncloc="53" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="19" coveredelements="19"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Moduler/Kombinationsgraf.php">
@@ -1947,37 +1951,37 @@
         <class name="Tips\Klasser\Moduler\Kontrollera" namespace="Tips\Klasser\Moduler">
           <metrics complexity="10" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="28" elements="31" coveredelements="29"/>
         </class>
-        <line num="22" type="method" name="kontrollera_nya_moduler" visibility="public" complexity="4" crap="4.00" count="13"/>
-        <line num="26" type="stmt" count="13"/>
+        <line num="22" type="method" name="kontrollera_nya_moduler" visibility="public" complexity="4" crap="4.00" count="15"/>
+        <line num="26" type="stmt" count="15"/>
         <line num="27" type="stmt" count="1"/>
-        <line num="30" type="stmt" count="12"/>
-        <line num="31" type="stmt" count="12"/>
-        <line num="33" type="stmt" count="12"/>
-        <line num="34" type="stmt" count="12"/>
-        <line num="36" type="stmt" count="12"/>
-        <line num="38" type="stmt" count="12"/>
-        <line num="39" type="stmt" count="12"/>
-        <line num="44" type="stmt" count="12"/>
+        <line num="30" type="stmt" count="14"/>
+        <line num="31" type="stmt" count="14"/>
+        <line num="33" type="stmt" count="14"/>
+        <line num="34" type="stmt" count="14"/>
+        <line num="36" type="stmt" count="14"/>
+        <line num="38" type="stmt" count="14"/>
+        <line num="39" type="stmt" count="14"/>
+        <line num="44" type="stmt" count="14"/>
         <line num="45" type="stmt" count="0"/>
-        <line num="51" type="stmt" count="12"/>
-        <line num="53" type="stmt" count="12"/>
-        <line num="54" type="stmt" count="12"/>
-        <line num="55" type="stmt" count="12"/>
-        <line num="56" type="stmt" count="12"/>
-        <line num="57" type="stmt" count="12"/>
-        <line num="58" type="stmt" count="12"/>
-        <line num="59" type="stmt" count="12"/>
-        <line num="69" type="method" name="hämta_moduler" visibility="private" complexity="6" crap="6" count="12"/>
-        <line num="70" type="stmt" count="12"/>
-        <line num="72" type="stmt" count="12"/>
-        <line num="74" type="stmt" count="12"/>
-        <line num="75" type="stmt" count="12"/>
+        <line num="51" type="stmt" count="14"/>
+        <line num="53" type="stmt" count="14"/>
+        <line num="54" type="stmt" count="14"/>
+        <line num="55" type="stmt" count="14"/>
+        <line num="56" type="stmt" count="14"/>
+        <line num="57" type="stmt" count="14"/>
+        <line num="58" type="stmt" count="14"/>
+        <line num="59" type="stmt" count="14"/>
+        <line num="69" type="method" name="hämta_moduler" visibility="private" complexity="6" crap="6" count="14"/>
+        <line num="70" type="stmt" count="14"/>
+        <line num="72" type="stmt" count="14"/>
+        <line num="74" type="stmt" count="14"/>
+        <line num="75" type="stmt" count="14"/>
         <line num="76" type="stmt" count="1"/>
         <line num="77" type="stmt" count="1"/>
-        <line num="80" type="stmt" count="12"/>
-        <line num="81" type="stmt" count="12"/>
-        <line num="82" type="stmt" count="12"/>
-        <line num="83" type="stmt" count="12"/>
+        <line num="80" type="stmt" count="14"/>
+        <line num="81" type="stmt" count="14"/>
+        <line num="82" type="stmt" count="14"/>
+        <line num="83" type="stmt" count="14"/>
         <metrics loc="88" ncloc="60" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="28" elements="31" coveredelements="29"/>
       </file>
     </package>
@@ -2060,23 +2064,23 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Omgang/GridMatcher.php">
         <class name="Tips\Klasser\Omgang\GridMatcher" namespace="Tips\Klasser\Omgang">
-          <metrics complexity="6" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="41" coveredstatements="41" elements="42" coveredelements="42"/>
+          <metrics complexity="7" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="52" coveredstatements="52" elements="54" coveredelements="54"/>
         </class>
         <line num="15" type="stmt" count="1"/>
         <line num="16" type="stmt" count="1"/>
-        <line num="38" type="method" name="visa" visibility="public" complexity="6" crap="6" count="1"/>
+        <line num="38" type="method" name="visa" visibility="public" complexity="3" crap="3" count="1"/>
         <line num="42" type="stmt" count="1"/>
-        <line num="43" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
         <line num="49" type="stmt" count="1"/>
         <line num="50" type="stmt" count="1"/>
-        <line num="51" type="stmt" count="1"/>
-        <line num="56" type="stmt" count="1"/>
-        <line num="61" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="66" type="stmt" count="1"/>
         <line num="67" type="stmt" count="1"/>
-        <line num="68" type="stmt" count="1"/>
+        <line num="73" type="stmt" count="1"/>
         <line num="74" type="stmt" count="1"/>
         <line num="75" type="stmt" count="1"/>
-        <line num="76" type="stmt" count="1"/>
+        <line num="80" type="stmt" count="1"/>
         <line num="81" type="stmt" count="1"/>
         <line num="85" type="stmt" count="1"/>
         <line num="86" type="stmt" count="1"/>
@@ -2092,21 +2096,33 @@
         <line num="115" type="stmt" count="1"/>
         <line num="116" type="stmt" count="1"/>
         <line num="117" type="stmt" count="1"/>
-        <line num="118" type="stmt" count="1"/>
-        <line num="119" type="stmt" count="1"/>
         <line num="120" type="stmt" count="1"/>
-        <line num="121" type="stmt" count="1"/>
-        <line num="122" type="stmt" count="1"/>
-        <line num="123" type="stmt" count="1"/>
-        <line num="124" type="stmt" count="1"/>
-        <line num="125" type="stmt" count="1"/>
-        <line num="126" type="stmt" count="1"/>
-        <line num="127" type="stmt" count="1"/>
-        <line num="128" type="stmt" count="1"/>
-        <line num="129" type="stmt" count="1"/>
-        <line num="132" type="stmt" count="1"/>
-        <line num="135" type="stmt" count="1"/>
-        <metrics loc="138" ncloc="73" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="43" elements="44" coveredelements="44"/>
+        <line num="133" type="method" name="eka_tabell" visibility="private" complexity="4" crap="4" count="1"/>
+        <line num="157" type="stmt" count="1"/>
+        <line num="158" type="stmt" count="1"/>
+        <line num="159" type="stmt" count="1"/>
+        <line num="160" type="stmt" count="1"/>
+        <line num="161" type="stmt" count="1"/>
+        <line num="162" type="stmt" count="1"/>
+        <line num="163" type="stmt" count="1"/>
+        <line num="164" type="stmt" count="1"/>
+        <line num="165" type="stmt" count="1"/>
+        <line num="166" type="stmt" count="1"/>
+        <line num="167" type="stmt" count="1"/>
+        <line num="168" type="stmt" count="1"/>
+        <line num="169" type="stmt" count="1"/>
+        <line num="170" type="stmt" count="1"/>
+        <line num="171" type="stmt" count="1"/>
+        <line num="172" type="stmt" count="1"/>
+        <line num="173" type="stmt" count="1"/>
+        <line num="174" type="stmt" count="1"/>
+        <line num="175" type="stmt" count="1"/>
+        <line num="176" type="stmt" count="1"/>
+        <line num="177" type="stmt" count="1"/>
+        <line num="178" type="stmt" count="1"/>
+        <line num="179" type="stmt" count="1"/>
+        <line num="182" type="stmt" count="1"/>
+        <metrics loc="185" ncloc="97" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="54" elements="56" coveredelements="56"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Omgang/GridMatcherFordelning.php">
         <class name="Tips\Klasser\Omgang\GridMatcherFordelning" namespace="Tips\Klasser\Omgang">
@@ -2165,45 +2181,37 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Omgang/GridOmgang.php">
         <class name="Tips\Klasser\Omgang\GridOmgang" namespace="Tips\Klasser\Omgang">
-          <metrics complexity="8" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="33" elements="36" coveredelements="36"/>
+          <metrics complexity="5" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="28" coveredelements="28"/>
         </class>
-        <line num="26" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="27" type="stmt" count="1"/>
-        <line num="32" type="method" name="visa" visibility="public" complexity="6" crap="6" count="1"/>
-        <line num="36" type="stmt" count="1"/>
-        <line num="41" type="stmt" count="1"/>
-        <line num="42" type="stmt" count="1"/>
-        <line num="43" type="stmt" count="1"/>
+        <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="29" type="method" name="visa" visibility="public" complexity="3" crap="3" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
         <line num="49" type="stmt" count="1"/>
-        <line num="50" type="stmt" count="1"/>
-        <line num="51" type="stmt" count="1"/>
-        <line num="52" type="stmt" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="1"/>
         <line num="57" type="stmt" count="1"/>
         <line num="58" type="stmt" count="1"/>
-        <line num="59" type="stmt" count="1"/>
-        <line num="60" type="stmt" count="1"/>
-        <line num="61" type="stmt" count="1"/>
-        <line num="67" type="stmt" count="1"/>
-        <line num="68" type="stmt" count="1"/>
-        <line num="69" type="stmt" count="1"/>
-        <line num="74" type="stmt" count="1"/>
-        <line num="75" type="stmt" count="1"/>
-        <line num="77" type="stmt" count="1"/>
-        <line num="80" type="stmt" count="1"/>
+        <line num="64" type="stmt" count="1"/>
+        <line num="65" type="stmt" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <line num="77" type="method" name="antal_kompletta" visibility="private" complexity="1" crap="1" count="1"/>
         <line num="82" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="1"/>
         <line num="86" type="stmt" count="1"/>
         <line num="87" type="stmt" count="1"/>
         <line num="88" type="stmt" count="1"/>
         <line num="89" type="stmt" count="1"/>
-        <line num="95" type="method" name="antal_kompletta" visibility="private" complexity="1" crap="1" count="1"/>
-        <line num="100" type="stmt" count="1"/>
-        <line num="103" type="stmt" count="1"/>
-        <line num="104" type="stmt" count="1"/>
-        <line num="105" type="stmt" count="1"/>
-        <line num="106" type="stmt" count="1"/>
-        <line num="107" type="stmt" count="1"/>
-        <line num="112" type="stmt" count="1"/>
-        <metrics loc="115" ncloc="69" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="33" elements="36" coveredelements="36"/>
+        <line num="94" type="stmt" count="1"/>
+        <metrics loc="97" ncloc="51" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="28" coveredelements="28"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Omgang/GridOmgangsdata.php">
         <class name="Tips\Klasser\Omgang\GridOmgangsdata" namespace="Tips\Klasser\Omgang">
@@ -2376,6 +2384,24 @@
         <line num="71" type="stmt" count="1"/>
         <metrics loc="74" ncloc="55" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="15" elements="18" coveredelements="16"/>
       </file>
+      <file name="/Users/nik/Sites/tips/src/Klasser/Omgang/RenderaOmgang.php">
+        <class name="Tips\Klasser\Omgang\RenderaOmgang" namespace="Tips\Klasser\Omgang">
+          <metrics complexity="5" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
+        </class>
+        <line num="24" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="30" type="method" name="rendera_html" visibility="public" complexity="4" crap="4" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <metrics loc="58" ncloc="42" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
+      </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Omgang/Terminera.php">
         <class name="Tips\Klasser\Omgang\Terminera" namespace="Tips\Klasser\Omgang">
           <metrics complexity="8" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="15" elements="22" coveredelements="16"/>
@@ -2473,8 +2499,8 @@
         <class name="Tips\Klasser\Parallellisering\Databas" namespace="Tips\Klasser\Parallellisering">
           <metrics complexity="8" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="17" elements="21" coveredelements="19"/>
         </class>
-        <line num="27" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="28" type="stmt" count="13"/>
+        <line num="27" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="28" type="stmt" count="15"/>
         <line num="36" type="method" name="vänta_på_databas" visibility="public" complexity="6" crap="6.02" count="2"/>
         <line num="37" type="stmt" count="2"/>
         <line num="38" type="stmt" count="2"/>
@@ -2502,18 +2528,18 @@
         <class name="Tips\Klasser\Prediktioner\Hamta" namespace="Tips\Klasser\Prediktioner">
           <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
         </class>
-        <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="23" type="stmt" count="13"/>
-        <line num="28" type="method" name="hämta_prediktioner" visibility="protected" complexity="2" crap="2" count="13"/>
-        <line num="29" type="stmt" count="13"/>
-        <line num="30" type="stmt" count="13"/>
-        <line num="31" type="stmt" count="13"/>
-        <line num="32" type="stmt" count="13"/>
-        <line num="33" type="stmt" count="13"/>
-        <line num="34" type="stmt" count="13"/>
-        <line num="35" type="stmt" count="13"/>
-        <line num="36" type="stmt" count="13"/>
-        <line num="37" type="stmt" count="13"/>
+        <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="23" type="stmt" count="15"/>
+        <line num="28" type="method" name="hämta_prediktioner" visibility="protected" complexity="2" crap="2" count="15"/>
+        <line num="29" type="stmt" count="15"/>
+        <line num="30" type="stmt" count="15"/>
+        <line num="31" type="stmt" count="15"/>
+        <line num="32" type="stmt" count="15"/>
+        <line num="33" type="stmt" count="15"/>
+        <line num="34" type="stmt" count="15"/>
+        <line num="35" type="stmt" count="15"/>
+        <line num="36" type="stmt" count="15"/>
+        <line num="37" type="stmt" count="15"/>
         <metrics loc="41" ncloc="30" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Prediktioner/Prediktionsdata.php">
@@ -2538,19 +2564,19 @@
         <class name="Tips\Klasser\Prediktioner\Sannolikheter" namespace="Tips\Klasser\Prediktioner">
           <metrics complexity="6" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="11" elements="13" coveredelements="11"/>
         </class>
-        <line num="25" type="method" name="prediktioner_till_sannolikheter" visibility="protected" complexity="6" crap="6.02" count="13"/>
-        <line num="26" type="stmt" count="13"/>
-        <line num="27" type="stmt" count="13"/>
-        <line num="28" type="stmt" count="13"/>
+        <line num="25" type="method" name="prediktioner_till_sannolikheter" visibility="protected" complexity="6" crap="6.02" count="15"/>
+        <line num="26" type="stmt" count="15"/>
+        <line num="27" type="stmt" count="15"/>
+        <line num="28" type="stmt" count="15"/>
         <line num="29" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="13"/>
-        <line num="32" type="stmt" count="13"/>
-        <line num="33" type="stmt" count="13"/>
-        <line num="34" type="stmt" count="13"/>
-        <line num="37" type="stmt" count="13"/>
-        <line num="38" type="stmt" count="13"/>
-        <line num="39" type="stmt" count="13"/>
-        <line num="42" type="stmt" count="13"/>
+        <line num="30" type="stmt" count="15"/>
+        <line num="32" type="stmt" count="15"/>
+        <line num="33" type="stmt" count="15"/>
+        <line num="34" type="stmt" count="15"/>
+        <line num="37" type="stmt" count="15"/>
+        <line num="38" type="stmt" count="15"/>
+        <line num="39" type="stmt" count="15"/>
+        <line num="42" type="stmt" count="15"/>
         <metrics loc="45" ncloc="30" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="11" elements="13" coveredelements="11"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Prediktioner/Spara.php">
@@ -2650,16 +2676,16 @@
         <class name="Tips\Klasser\Spel\Komplett" namespace="Tips\Klasser\Spel">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="19" coveredelements="19"/>
         </class>
-        <line num="23" type="method" name="spel_komplett" visibility="protected" complexity="1" crap="1" count="18"/>
-        <line num="24" type="stmt" count="18"/>
-        <line num="25" type="stmt" count="18"/>
-        <line num="29" type="stmt" count="18"/>
-        <line num="30" type="stmt" count="18"/>
-        <line num="31" type="stmt" count="18"/>
-        <line num="32" type="stmt" count="18"/>
-        <line num="33" type="stmt" count="18"/>
-        <line num="34" type="stmt" count="18"/>
-        <line num="35" type="stmt" count="18"/>
+        <line num="23" type="method" name="spel_komplett" visibility="protected" complexity="1" crap="1" count="20"/>
+        <line num="24" type="stmt" count="20"/>
+        <line num="25" type="stmt" count="20"/>
+        <line num="29" type="stmt" count="20"/>
+        <line num="30" type="stmt" count="20"/>
+        <line num="31" type="stmt" count="20"/>
+        <line num="32" type="stmt" count="20"/>
+        <line num="33" type="stmt" count="20"/>
+        <line num="34" type="stmt" count="20"/>
+        <line num="35" type="stmt" count="20"/>
         <line num="41" type="method" name="omgång_existerar" visibility="public" complexity="1" crap="1" count="4"/>
         <line num="42" type="stmt" count="4"/>
         <line num="43" type="stmt" count="4"/>
@@ -2673,48 +2699,48 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Spel/Omgang.php">
         <class name="Tips\Klasser\Spel\Omgang" namespace="Tips\Klasser\Spel">
-          <metrics complexity="4" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="10" elements="17" coveredelements="11"/>
+          <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
         </class>
-        <line num="22" type="method" name="senaste_omgång" visibility="public" complexity="2" crap="2" count="2"/>
-        <line num="23" type="stmt" count="2"/>
-        <line num="24" type="stmt" count="2"/>
-        <line num="25" type="stmt" count="2"/>
-        <line num="26" type="stmt" count="2"/>
-        <line num="27" type="stmt" count="2"/>
-        <line num="28" type="stmt" count="2"/>
-        <line num="30" type="stmt" count="2"/>
-        <line num="31" type="stmt" count="2"/>
-        <line num="32" type="stmt" count="2"/>
-        <line num="33" type="stmt" count="2"/>
-        <line num="40" type="method" name="radera_omgång" visibility="public" complexity="2" crap="6" count="0"/>
-        <line num="41" type="stmt" count="0"/>
-        <line num="42" type="stmt" count="0"/>
-        <line num="43" type="stmt" count="0"/>
-        <line num="46" type="stmt" count="0"/>
-        <line num="47" type="stmt" count="0"/>
-        <metrics loc="50" ncloc="37" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="10" elements="17" coveredelements="11"/>
+        <line num="22" type="method" name="senaste_omgång" visibility="public" complexity="2" crap="2" count="3"/>
+        <line num="23" type="stmt" count="3"/>
+        <line num="24" type="stmt" count="3"/>
+        <line num="25" type="stmt" count="3"/>
+        <line num="26" type="stmt" count="3"/>
+        <line num="27" type="stmt" count="3"/>
+        <line num="28" type="stmt" count="3"/>
+        <line num="30" type="stmt" count="3"/>
+        <line num="31" type="stmt" count="3"/>
+        <line num="32" type="stmt" count="3"/>
+        <line num="33" type="stmt" count="3"/>
+        <line num="40" type="method" name="radera_omgång" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <metrics loc="50" ncloc="37" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Spel/Sekvenser.php">
         <class name="Tips\Klasser\Spel\Sekvenser" namespace="Tips\Klasser\Spel">
           <metrics complexity="5" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="15" elements="19" coveredelements="16"/>
         </class>
-        <line num="35" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="18"/>
-        <line num="36" type="stmt" count="18"/>
-        <line num="37" type="stmt" count="18"/>
-        <line num="43" type="method" name="hämta_sekvenser" visibility="public" complexity="4" crap="4.04" count="18"/>
-        <line num="44" type="stmt" count="18"/>
-        <line num="45" type="stmt" count="18"/>
-        <line num="46" type="stmt" count="18"/>
-        <line num="47" type="stmt" count="18"/>
-        <line num="48" type="stmt" count="18"/>
-        <line num="49" type="stmt" count="18"/>
-        <line num="50" type="stmt" count="18"/>
-        <line num="51" type="stmt" count="18"/>
-        <line num="52" type="stmt" count="18"/>
-        <line num="55" type="stmt" count="18"/>
-        <line num="56" type="stmt" count="18"/>
-        <line num="57" type="stmt" count="2"/>
-        <line num="60" type="stmt" count="18"/>
+        <line num="35" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="36" type="stmt" count="20"/>
+        <line num="37" type="stmt" count="20"/>
+        <line num="43" type="method" name="hämta_sekvenser" visibility="public" complexity="4" crap="4.04" count="20"/>
+        <line num="44" type="stmt" count="20"/>
+        <line num="45" type="stmt" count="20"/>
+        <line num="46" type="stmt" count="20"/>
+        <line num="47" type="stmt" count="20"/>
+        <line num="48" type="stmt" count="20"/>
+        <line num="49" type="stmt" count="20"/>
+        <line num="50" type="stmt" count="20"/>
+        <line num="51" type="stmt" count="20"/>
+        <line num="52" type="stmt" count="20"/>
+        <line num="55" type="stmt" count="20"/>
+        <line num="56" type="stmt" count="20"/>
+        <line num="57" type="stmt" count="3"/>
+        <line num="60" type="stmt" count="20"/>
         <line num="63" type="stmt" count="0"/>
         <line num="64" type="stmt" count="0"/>
         <metrics loc="67" ncloc="50" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="15" elements="19" coveredelements="16"/>
@@ -2723,22 +2749,22 @@
         <class name="Tips\Klasser\Spel\Spara" namespace="Tips\Klasser\Spel">
           <metrics complexity="4" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="12" elements="16" coveredelements="12"/>
         </class>
-        <line num="23" type="method" name="spara_spel" visibility="public" complexity="4" crap="4.13" count="3"/>
-        <line num="24" type="stmt" count="3"/>
+        <line num="23" type="method" name="spara_spel" visibility="public" complexity="4" crap="4.13" count="4"/>
+        <line num="24" type="stmt" count="4"/>
         <line num="25" type="stmt" count="0"/>
-        <line num="28" type="stmt" count="3"/>
-        <line num="30" type="stmt" count="3"/>
-        <line num="35" type="stmt" count="3"/>
-        <line num="37" type="stmt" count="3"/>
-        <line num="38" type="stmt" count="3"/>
-        <line num="39" type="stmt" count="3"/>
-        <line num="40" type="stmt" count="3"/>
-        <line num="41" type="stmt" count="3"/>
-        <line num="43" type="stmt" count="3"/>
+        <line num="28" type="stmt" count="4"/>
+        <line num="30" type="stmt" count="4"/>
+        <line num="35" type="stmt" count="4"/>
+        <line num="37" type="stmt" count="4"/>
+        <line num="38" type="stmt" count="4"/>
+        <line num="39" type="stmt" count="4"/>
+        <line num="40" type="stmt" count="4"/>
+        <line num="41" type="stmt" count="4"/>
+        <line num="43" type="stmt" count="4"/>
         <line num="44" type="stmt" count="0"/>
         <line num="45" type="stmt" count="0"/>
-        <line num="48" type="stmt" count="3"/>
-        <line num="49" type="stmt" count="3"/>
+        <line num="48" type="stmt" count="4"/>
+        <line num="49" type="stmt" count="4"/>
         <metrics loc="52" ncloc="39" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="12" elements="16" coveredelements="12"/>
       </file>
     </package>
@@ -2810,124 +2836,124 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Spelade/Radera.php">
         <class name="Tips\Klasser\Spelade\Radera" namespace="Tips\Klasser\Spelade">
-          <metrics complexity="10" methods="4" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="7" elements="21" coveredelements="8"/>
+          <metrics complexity="10" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="15" elements="21" coveredelements="18"/>
         </class>
         <line num="22" type="method" name="radera_sekvens" visibility="public" complexity="1" crap="1" count="1"/>
         <line num="23" type="stmt" count="1"/>
         <line num="24" type="stmt" count="1"/>
-        <line num="30" type="method" name="radera_omgång" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <line num="37" type="method" name="radera_filer" visibility="public" complexity="3" crap="3.21" count="1"/>
-        <line num="38" type="stmt" count="1"/>
-        <line num="39" type="stmt" count="1"/>
-        <line num="40" type="stmt" count="0"/>
-        <line num="43" type="stmt" count="1"/>
-        <line num="44" type="stmt" count="1"/>
-        <line num="45" type="stmt" count="1"/>
-        <line num="46" type="stmt" count="0"/>
-        <line num="53" type="method" name="radera_fil" visibility="private" complexity="5" crap="30" count="0"/>
-        <line num="54" type="stmt" count="0"/>
+        <line num="30" type="method" name="radera_omgång" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="37" type="method" name="radera_filer" visibility="public" complexity="3" crap="3" count="2"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="39" type="stmt" count="2"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="2"/>
+        <line num="44" type="stmt" count="2"/>
+        <line num="45" type="stmt" count="2"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="53" type="method" name="radera_fil" visibility="private" complexity="5" crap="5.58" count="1"/>
+        <line num="54" type="stmt" count="1"/>
         <line num="55" type="stmt" count="0"/>
-        <line num="58" type="stmt" count="0"/>
-        <line num="59" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="1"/>
+        <line num="59" type="stmt" count="1"/>
         <line num="60" type="stmt" count="0"/>
-        <line num="61" type="stmt" count="0"/>
-        <line num="63" type="stmt" count="0"/>
-        <metrics loc="66" ncloc="46" classes="1" methods="4" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="7" elements="21" coveredelements="8"/>
+        <line num="61" type="stmt" count="1"/>
+        <line num="63" type="stmt" count="1"/>
+        <metrics loc="66" ncloc="46" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="15" elements="21" coveredelements="18"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Spelade/Spara.php">
         <class name="Tips\Klasser\Spelade\Spara" namespace="Tips\Klasser\Spelade">
-          <metrics complexity="4" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="8" elements="41" coveredelements="9"/>
+          <metrics complexity="4" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="38" elements="41" coveredelements="39"/>
         </class>
-        <line num="42" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="43" type="stmt" count="13"/>
-        <line num="44" type="stmt" count="13"/>
-        <line num="45" type="stmt" count="13"/>
-        <line num="46" type="stmt" count="13"/>
-        <line num="47" type="stmt" count="13"/>
-        <line num="48" type="stmt" count="13"/>
-        <line num="49" type="stmt" count="13"/>
-        <line num="50" type="stmt" count="13"/>
-        <line num="56" type="method" name="spara_genererade_tipsrader_db" visibility="public" complexity="3" crap="12" count="0"/>
-        <line num="60" type="stmt" count="0"/>
-        <line num="61" type="stmt" count="0"/>
-        <line num="63" type="stmt" count="0"/>
-        <line num="64" type="stmt" count="0"/>
-        <line num="65" type="stmt" count="0"/>
-        <line num="66" type="stmt" count="0"/>
-        <line num="67" type="stmt" count="0"/>
-        <line num="68" type="stmt" count="0"/>
-        <line num="69" type="stmt" count="0"/>
-        <line num="70" type="stmt" count="0"/>
-        <line num="71" type="stmt" count="0"/>
-        <line num="72" type="stmt" count="0"/>
-        <line num="73" type="stmt" count="0"/>
-        <line num="74" type="stmt" count="0"/>
-        <line num="79" type="stmt" count="0"/>
-        <line num="81" type="stmt" count="0"/>
-        <line num="82" type="stmt" count="0"/>
-        <line num="83" type="stmt" count="0"/>
-        <line num="84" type="stmt" count="0"/>
-        <line num="85" type="stmt" count="0"/>
-        <line num="86" type="stmt" count="0"/>
-        <line num="87" type="stmt" count="0"/>
-        <line num="88" type="stmt" count="0"/>
-        <line num="89" type="stmt" count="0"/>
-        <line num="94" type="stmt" count="0"/>
-        <line num="95" type="stmt" count="0"/>
+        <line num="42" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="43" type="stmt" count="15"/>
+        <line num="44" type="stmt" count="15"/>
+        <line num="45" type="stmt" count="15"/>
+        <line num="46" type="stmt" count="15"/>
+        <line num="47" type="stmt" count="15"/>
+        <line num="48" type="stmt" count="15"/>
+        <line num="49" type="stmt" count="15"/>
+        <line num="50" type="stmt" count="15"/>
+        <line num="56" type="method" name="spara_genererade_tipsrader_db" visibility="public" complexity="3" crap="3" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="61" type="stmt" count="1"/>
+        <line num="63" type="stmt" count="1"/>
+        <line num="64" type="stmt" count="1"/>
+        <line num="65" type="stmt" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="67" type="stmt" count="1"/>
+        <line num="68" type="stmt" count="1"/>
+        <line num="69" type="stmt" count="1"/>
+        <line num="70" type="stmt" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <line num="72" type="stmt" count="1"/>
+        <line num="73" type="stmt" count="1"/>
+        <line num="74" type="stmt" count="1"/>
+        <line num="79" type="stmt" count="1"/>
+        <line num="81" type="stmt" count="1"/>
+        <line num="82" type="stmt" count="1"/>
+        <line num="83" type="stmt" count="1"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="95" type="stmt" count="1"/>
         <line num="96" type="stmt" count="0"/>
-        <line num="97" type="stmt" count="0"/>
-        <line num="99" type="stmt" count="0"/>
-        <line num="100" type="stmt" count="0"/>
-        <line num="105" type="stmt" count="0"/>
-        <metrics loc="108" ncloc="69" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="8" elements="41" coveredelements="9"/>
+        <line num="97" type="stmt" count="1"/>
+        <line num="99" type="stmt" count="1"/>
+        <line num="100" type="stmt" count="1"/>
+        <line num="105" type="stmt" count="1"/>
+        <metrics loc="108" ncloc="69" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="38" elements="41" coveredelements="39"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Spelade/SparaFil.php">
         <class name="Tips\Klasser\Spelade\SparaFil" namespace="Tips\Klasser\Spelade">
-          <metrics complexity="4" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="11" coveredelements="0"/>
+          <metrics complexity="4" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="9" elements="11" coveredelements="9"/>
         </class>
-        <line num="19" type="method" name="spara_genererade_tipsrader_fil" visibility="public" complexity="4" crap="20" count="0"/>
-        <line num="20" type="stmt" count="0"/>
-        <line num="21" type="stmt" count="0"/>
-        <line num="24" type="stmt" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <line num="32" type="stmt" count="0"/>
+        <line num="19" type="method" name="spara_genererade_tipsrader_fil" visibility="public" complexity="4" crap="4.02" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
         <line num="33" type="stmt" count="0"/>
-        <line num="34" type="stmt" count="0"/>
-        <line num="36" type="stmt" count="0"/>
-        <line num="37" type="stmt" count="0"/>
-        <metrics loc="40" ncloc="26" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="11" coveredelements="0"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <metrics loc="40" ncloc="26" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="9" elements="11" coveredelements="9"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Spelade/Tipsgraf.php">
         <class name="Tips\Klasser\Spelade\Tipsgraf" namespace="Tips\Klasser\Spelade">
-          <metrics complexity="10" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="8" elements="24" coveredelements="8"/>
+          <metrics complexity="10" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="15" elements="24" coveredelements="15"/>
         </class>
-        <line num="21" type="method" name="generera_tipsgraf" visibility="public" complexity="9" crap="26.50" count="1"/>
-        <line num="25" type="stmt" count="1"/>
-        <line num="27" type="stmt" count="1"/>
-        <line num="28" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <line num="36" type="stmt" count="0"/>
+        <line num="21" type="method" name="generera_tipsgraf" visibility="public" complexity="9" crap="10.27" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
         <line num="37" type="stmt" count="0"/>
         <line num="38" type="stmt" count="0"/>
         <line num="39" type="stmt" count="0"/>
         <line num="40" type="stmt" count="0"/>
-        <line num="41" type="stmt" count="0"/>
-        <line num="42" type="stmt" count="0"/>
-        <line num="45" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
         <line num="46" type="stmt" count="0"/>
-        <line num="50" type="stmt" count="1"/>
-        <line num="51" type="stmt" count="1"/>
-        <line num="52" type="stmt" count="1"/>
-        <line num="53" type="stmt" count="1"/>
-        <line num="54" type="stmt" count="1"/>
-        <line num="55" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="2"/>
+        <line num="51" type="stmt" count="2"/>
+        <line num="52" type="stmt" count="2"/>
+        <line num="53" type="stmt" count="2"/>
+        <line num="54" type="stmt" count="2"/>
+        <line num="55" type="stmt" count="2"/>
         <line num="61" type="method" name="pixla" visibility="private" complexity="1" crap="2" count="0"/>
         <line num="62" type="stmt" count="0"/>
         <line num="63" type="stmt" count="0"/>
-        <metrics loc="66" ncloc="47" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="8" elements="24" coveredelements="8"/>
+        <metrics loc="66" ncloc="47" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="15" elements="24" coveredelements="15"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Spelade/Visa.php">
         <class name="Tips\Klasser\Spelade\Visa" namespace="Tips\Klasser\Spelade">
@@ -2953,8 +2979,8 @@
         <class name="Tips\Klasser\Utdelning\Utdelningsdata" namespace="Tips\Klasser\Utdelning">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="15" coveredelements="15"/>
         </class>
-        <line num="36" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="14"/>
-        <line num="37" type="stmt" count="14"/>
+        <line num="36" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="37" type="stmt" count="16"/>
         <line num="43" type="method" name="utdelningsdata" visibility="public" complexity="1" crap="1" count="1"/>
         <line num="44" type="stmt" count="1"/>
         <line num="45" type="stmt" count="1"/>
@@ -2992,9 +3018,9 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Klasser/Vinstspridning/Rita.php">
         <class name="Tips\Klasser\Vinstspridning\Rita" namespace="Tips\Klasser\Vinstspridning">
-          <metrics complexity="8" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="16" coveredelements="0"/>
+          <metrics complexity="10" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="20" coveredelements="0"/>
         </class>
-        <line num="23" type="method" name="rita" visibility="protected" complexity="7" crap="56" count="0"/>
+        <line num="23" type="method" name="rita" visibility="protected" complexity="4" crap="20" count="0"/>
         <line num="24" type="stmt" count="0"/>
         <line num="25" type="stmt" count="0"/>
         <line num="26" type="stmt" count="0"/>
@@ -3002,15 +3028,19 @@
         <line num="32" type="stmt" count="0"/>
         <line num="33" type="stmt" count="0"/>
         <line num="34" type="stmt" count="0"/>
-        <line num="35" type="stmt" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="40" type="stmt" count="0"/>
-        <line num="44" type="stmt" count="0"/>
-        <line num="47" type="stmt" count="0"/>
-        <line num="53" type="method" name="pixla" visibility="private" complexity="1" crap="2" count="0"/>
-        <line num="54" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="54" type="method" name="rita_10r" visibility="private" complexity="3" crap="12" count="0"/>
         <line num="55" type="stmt" count="0"/>
-        <metrics loc="58" ncloc="41" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="16" coveredelements="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <line num="64" type="method" name="rita_11r" visibility="private" complexity="2" crap="6" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="66" type="stmt" count="0"/>
+        <line num="73" type="method" name="pixla" visibility="private" complexity="1" crap="2" count="0"/>
+        <line num="74" type="stmt" count="0"/>
+        <line num="75" type="stmt" count="0"/>
+        <metrics loc="78" ncloc="48" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="20" coveredelements="0"/>
       </file>
     </package>
     <package name="Tips\Koder">
@@ -5603,26 +5633,26 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/FANN.php">
         <class name="Tips\Moduler\FANN" namespace="Tips\Moduler">
-          <metrics complexity="7" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
+          <metrics complexity="8" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="10" elements="17" coveredelements="11"/>
         </class>
-        <line num="31" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="37" type="stmt" count="0"/>
-        <line num="38" type="stmt" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="45" type="method" name="initiera_fann" visibility="private" complexity="6" crap="42" count="0"/>
-        <line num="46" type="stmt" count="0"/>
+        <line num="31" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="37" type="stmt" count="2"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="39" type="stmt" count="2"/>
+        <line num="45" type="method" name="initiera_fann" visibility="private" complexity="7" crap="10.54" count="2"/>
+        <line num="46" type="stmt" count="2"/>
         <line num="47" type="stmt" count="0"/>
         <line num="48" type="stmt" count="0"/>
         <line num="49" type="stmt" count="0"/>
-        <line num="52" type="stmt" count="0"/>
-        <line num="53" type="stmt" count="0"/>
-        <line num="56" type="stmt" count="0"/>
-        <line num="57" type="stmt" count="0"/>
-        <line num="59" type="stmt" count="0"/>
-        <line num="60" type="stmt" count="0"/>
-        <line num="67" type="stmt" count="0"/>
-        <line num="69" type="stmt" count="0"/>
-        <metrics loc="73" ncloc="55" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
+        <line num="52" type="stmt" count="2"/>
+        <line num="53" type="stmt" count="2"/>
+        <line num="56" type="stmt" count="2"/>
+        <line num="57" type="stmt" count="2"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="2"/>
+        <line num="61" type="stmt" count="2"/>
+        <line num="62" type="stmt" count="0"/>
+        <metrics loc="66" ncloc="52" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="10" elements="17" coveredelements="11"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/HG.php">
         <class name="Tips\Moduler\HG" namespace="Tips\Moduler">
@@ -6380,227 +6410,227 @@
     <package name="Tips\Moduler\FANN">
       <file name="/Users/nik/Sites/tips/src/Moduler/FANN/Data.php">
         <class name="Tips\Moduler\FANN\Data" namespace="Tips\Moduler\FANN">
-          <metrics complexity="2" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="15" coveredelements="0"/>
+          <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="15" coveredelements="15"/>
         </class>
-        <line num="26" type="method" name="fanndata" visibility="protected" complexity="2" crap="6" count="0"/>
-        <line num="27" type="stmt" count="0"/>
-        <line num="28" type="stmt" count="0"/>
-        <line num="33" type="stmt" count="0"/>
-        <line num="34" type="stmt" count="0"/>
-        <line num="35" type="stmt" count="0"/>
-        <line num="37" type="stmt" count="0"/>
-        <line num="38" type="stmt" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="40" type="stmt" count="0"/>
-        <line num="41" type="stmt" count="0"/>
-        <line num="42" type="stmt" count="0"/>
-        <line num="43" type="stmt" count="0"/>
-        <line num="48" type="stmt" count="0"/>
-        <line num="51" type="stmt" count="0"/>
-        <metrics loc="54" ncloc="40" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="15" coveredelements="0"/>
+        <line num="26" type="method" name="fanndata" visibility="protected" complexity="2" crap="2" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <metrics loc="54" ncloc="40" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="15" coveredelements="15"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/FANN/Konstanter.php">
         <class name="Tips\Moduler\FANN\Konstanter" namespace="Tips\Moduler\FANN">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
-        <line num="12" type="stmt" count="0"/>
+        <line num="12" type="stmt" count="1"/>
         <line num="13" type="stmt" count="0"/>
-        <metrics loc="30" ncloc="23" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="2" coveredelements="0"/>
+        <metrics loc="30" ncloc="23" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="2" coveredelements="1"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/FANN/Matchtabell.php">
         <class name="Tips\Moduler\FANN\Matchtabell" namespace="Tips\Moduler\FANN">
-          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="0" elements="25" coveredelements="0"/>
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="25" coveredelements="25"/>
         </class>
-        <line num="25" type="method" name="matchtabell" visibility="protected" complexity="1" crap="2" count="0"/>
-        <line num="34" type="stmt" count="0"/>
-        <line num="35" type="stmt" count="0"/>
-        <line num="36" type="stmt" count="0"/>
-        <line num="37" type="stmt" count="0"/>
-        <line num="38" type="stmt" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="40" type="stmt" count="0"/>
-        <line num="41" type="stmt" count="0"/>
-        <line num="42" type="stmt" count="0"/>
-        <line num="43" type="stmt" count="0"/>
-        <line num="44" type="stmt" count="0"/>
-        <line num="45" type="stmt" count="0"/>
-        <line num="46" type="stmt" count="0"/>
-        <line num="47" type="stmt" count="0"/>
-        <line num="48" type="stmt" count="0"/>
-        <line num="49" type="stmt" count="0"/>
-        <line num="50" type="stmt" count="0"/>
-        <line num="53" type="stmt" count="0"/>
-        <line num="61" type="method" name="grupp" visibility="private" complexity="1" crap="2" count="0"/>
-        <line num="62" type="stmt" count="0"/>
-        <line num="63" type="stmt" count="0"/>
-        <line num="64" type="stmt" count="0"/>
-        <line num="65" type="stmt" count="0"/>
-        <line num="66" type="stmt" count="0"/>
-        <metrics loc="69" ncloc="46" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="0" elements="25" coveredelements="0"/>
+        <line num="25" type="method" name="matchtabell" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="61" type="method" name="grupp" visibility="private" complexity="1" crap="1" count="1"/>
+        <line num="62" type="stmt" count="1"/>
+        <line num="63" type="stmt" count="1"/>
+        <line num="64" type="stmt" count="1"/>
+        <line num="65" type="stmt" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <metrics loc="69" ncloc="46" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="25" coveredelements="25"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/FANN/Omgang.php">
         <class name="Tips\Moduler\FANN\Omgang" namespace="Tips\Moduler\FANN">
-          <metrics complexity="6" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="17" coveredelements="0"/>
+          <metrics complexity="6" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="17" coveredelements="17"/>
         </class>
-        <line num="19" type="method" name="fannomgång" visibility="protected" complexity="6" crap="42" count="0"/>
-        <line num="20" type="stmt" count="0"/>
-        <line num="22" type="stmt" count="0"/>
-        <line num="23" type="stmt" count="0"/>
-        <line num="24" type="stmt" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <line num="32" type="stmt" count="0"/>
-        <line num="33" type="stmt" count="0"/>
-        <line num="35" type="stmt" count="0"/>
-        <line num="41" type="stmt" count="0"/>
-        <line num="42" type="stmt" count="0"/>
-        <line num="43" type="stmt" count="0"/>
-        <line num="47" type="stmt" count="0"/>
-        <line num="57" type="stmt" count="0"/>
-        <line num="58" type="stmt" count="0"/>
-        <metrics loc="61" ncloc="45" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="17" coveredelements="0"/>
+        <line num="19" type="method" name="fannomgång" visibility="protected" complexity="6" crap="6" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <line num="58" type="stmt" count="1"/>
+        <metrics loc="61" ncloc="45" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="17" coveredelements="17"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/FANN/Parametrar.php">
         <class name="Tips\Moduler\FANN\Parametrar" namespace="Tips\Moduler\FANN">
-          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="9" coveredelements="0"/>
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
         </class>
-        <line num="20" type="method" name="fannparametrar" visibility="protected" complexity="1" crap="2" count="0"/>
-        <line num="21" type="stmt" count="0"/>
-        <line num="22" type="stmt" count="0"/>
-        <line num="25" type="stmt" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="33" type="stmt" count="0"/>
-        <line num="37" type="stmt" count="0"/>
-        <line num="40" type="stmt" count="0"/>
-        <line num="42" type="stmt" count="0"/>
-        <metrics loc="45" ncloc="34" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="9" coveredelements="0"/>
+        <line num="20" type="method" name="fannparametrar" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <metrics loc="45" ncloc="34" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/FANN/Prediktera.php">
         <class name="Tips\Moduler\FANN\Prediktera" namespace="Tips\Moduler\FANN">
-          <metrics complexity="13" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="34" coveredstatements="0" elements="38" coveredelements="0"/>
+          <metrics complexity="13" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="34" coveredstatements="31" elements="38" coveredelements="34"/>
         </class>
-        <line num="38" type="method" name="prediktera" visibility="protected" complexity="3" crap="12" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="40" type="stmt" count="0"/>
-        <line num="41" type="stmt" count="0"/>
-        <line num="45" type="stmt" count="0"/>
-        <line num="46" type="stmt" count="0"/>
-        <line num="47" type="stmt" count="0"/>
-        <line num="48" type="stmt" count="0"/>
-        <line num="49" type="stmt" count="0"/>
-        <line num="50" type="stmt" count="0"/>
-        <line num="51" type="stmt" count="0"/>
-        <line num="52" type="stmt" count="0"/>
-        <line num="53" type="stmt" count="0"/>
-        <line num="54" type="stmt" count="0"/>
-        <line num="57" type="stmt" count="0"/>
-        <line num="58" type="stmt" count="0"/>
-        <line num="59" type="stmt" count="0"/>
-        <line num="60" type="stmt" count="0"/>
-        <line num="61" type="stmt" count="0"/>
-        <line num="71" type="method" name="beräkna_utdata" visibility="public" complexity="6" crap="42" count="0"/>
-        <line num="72" type="stmt" count="0"/>
-        <line num="73" type="stmt" count="0"/>
-        <line num="74" type="stmt" count="0"/>
-        <line num="75" type="stmt" count="0"/>
-        <line num="80" type="stmt" count="0"/>
-        <line num="81" type="stmt" count="0"/>
-        <line num="82" type="stmt" count="0"/>
-        <line num="83" type="stmt" count="0"/>
-        <line num="84" type="stmt" count="0"/>
-        <line num="85" type="stmt" count="0"/>
-        <line num="86" type="stmt" count="0"/>
-        <line num="88" type="stmt" count="0"/>
-        <line num="95" type="method" name="fann_rätt" visibility="protected" complexity="2" crap="6" count="0"/>
-        <line num="96" type="stmt" count="0"/>
+        <line num="38" type="method" name="prediktera" visibility="protected" complexity="3" crap="3" count="2"/>
+        <line num="39" type="stmt" count="2"/>
+        <line num="40" type="stmt" count="2"/>
+        <line num="41" type="stmt" count="2"/>
+        <line num="45" type="stmt" count="2"/>
+        <line num="46" type="stmt" count="2"/>
+        <line num="47" type="stmt" count="2"/>
+        <line num="48" type="stmt" count="2"/>
+        <line num="49" type="stmt" count="2"/>
+        <line num="50" type="stmt" count="2"/>
+        <line num="51" type="stmt" count="2"/>
+        <line num="52" type="stmt" count="2"/>
+        <line num="53" type="stmt" count="2"/>
+        <line num="54" type="stmt" count="2"/>
+        <line num="57" type="stmt" count="2"/>
+        <line num="58" type="stmt" count="2"/>
+        <line num="59" type="stmt" count="2"/>
+        <line num="60" type="stmt" count="2"/>
+        <line num="61" type="stmt" count="2"/>
+        <line num="71" type="method" name="beräkna_utdata" visibility="public" complexity="6" crap="6" count="2"/>
+        <line num="72" type="stmt" count="2"/>
+        <line num="73" type="stmt" count="2"/>
+        <line num="74" type="stmt" count="2"/>
+        <line num="75" type="stmt" count="2"/>
+        <line num="80" type="stmt" count="2"/>
+        <line num="81" type="stmt" count="2"/>
+        <line num="82" type="stmt" count="2"/>
+        <line num="83" type="stmt" count="2"/>
+        <line num="84" type="stmt" count="2"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="2"/>
+        <line num="88" type="stmt" count="2"/>
+        <line num="95" type="method" name="fann_rätt" visibility="protected" complexity="2" crap="2" count="2"/>
+        <line num="96" type="stmt" count="2"/>
         <line num="102" type="method" name="beräkna_rader" visibility="protected" complexity="2" crap="6" count="0"/>
         <line num="103" type="stmt" count="0"/>
         <line num="104" type="stmt" count="0"/>
         <line num="106" type="stmt" count="0"/>
-        <metrics loc="109" ncloc="67" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="34" coveredstatements="0" elements="38" coveredelements="0"/>
+        <metrics loc="109" ncloc="67" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="34" coveredstatements="31" elements="38" coveredelements="34"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/FANN/Preferenser.php">
         <class name="Tips\Moduler\FANN\Preferenser" namespace="Tips\Moduler\FANN">
-          <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="0" elements="31" coveredelements="0"/>
+          <metrics complexity="4" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="27" elements="31" coveredelements="28"/>
         </class>
-        <line num="34" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="40" type="stmt" count="0"/>
-        <line num="46" type="method" name="uppdatera_preferenser" visibility="protected" complexity="3" crap="12" count="0"/>
-        <line num="47" type="stmt" count="0"/>
-        <line num="48" type="stmt" count="0"/>
-        <line num="49" type="stmt" count="0"/>
-        <line num="50" type="stmt" count="0"/>
-        <line num="51" type="stmt" count="0"/>
-        <line num="52" type="stmt" count="0"/>
-        <line num="53" type="stmt" count="0"/>
-        <line num="55" type="stmt" count="0"/>
-        <line num="56" type="stmt" count="0"/>
-        <line num="57" type="stmt" count="0"/>
-        <line num="58" type="stmt" count="0"/>
-        <line num="59" type="stmt" count="0"/>
-        <line num="60" type="stmt" count="0"/>
-        <line num="61" type="stmt" count="0"/>
-        <line num="63" type="stmt" count="0"/>
-        <line num="64" type="stmt" count="0"/>
-        <line num="65" type="stmt" count="0"/>
-        <line num="66" type="stmt" count="0"/>
-        <line num="67" type="stmt" count="0"/>
-        <line num="68" type="stmt" count="0"/>
-        <line num="69" type="stmt" count="0"/>
-        <line num="71" type="stmt" count="0"/>
-        <line num="72" type="stmt" count="0"/>
-        <line num="73" type="stmt" count="0"/>
-        <line num="74" type="stmt" count="0"/>
-        <line num="77" type="stmt" count="0"/>
+        <line num="34" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="40" type="stmt" count="2"/>
+        <line num="46" type="method" name="uppdatera_preferenser" visibility="protected" complexity="3" crap="3.00" count="2"/>
+        <line num="47" type="stmt" count="2"/>
+        <line num="48" type="stmt" count="2"/>
+        <line num="49" type="stmt" count="2"/>
+        <line num="50" type="stmt" count="2"/>
+        <line num="51" type="stmt" count="2"/>
+        <line num="52" type="stmt" count="2"/>
+        <line num="53" type="stmt" count="2"/>
+        <line num="55" type="stmt" count="2"/>
+        <line num="56" type="stmt" count="2"/>
+        <line num="57" type="stmt" count="2"/>
+        <line num="58" type="stmt" count="2"/>
+        <line num="59" type="stmt" count="2"/>
+        <line num="60" type="stmt" count="2"/>
+        <line num="61" type="stmt" count="2"/>
+        <line num="63" type="stmt" count="2"/>
+        <line num="64" type="stmt" count="2"/>
+        <line num="65" type="stmt" count="2"/>
+        <line num="66" type="stmt" count="2"/>
+        <line num="67" type="stmt" count="2"/>
+        <line num="68" type="stmt" count="2"/>
+        <line num="69" type="stmt" count="2"/>
+        <line num="71" type="stmt" count="2"/>
+        <line num="72" type="stmt" count="2"/>
+        <line num="73" type="stmt" count="2"/>
+        <line num="74" type="stmt" count="2"/>
+        <line num="77" type="stmt" count="2"/>
         <line num="80" type="stmt" count="0"/>
         <line num="81" type="stmt" count="0"/>
-        <metrics loc="84" ncloc="70" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="0" elements="31" coveredelements="0"/>
+        <metrics loc="84" ncloc="70" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="27" elements="31" coveredelements="28"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/FANN/Prova.php">
         <class name="Tips\Moduler\FANN\Prova" namespace="Tips\Moduler\FANN">
-          <metrics complexity="9" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="0" elements="22" coveredelements="0"/>
+          <metrics complexity="9" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="16" elements="22" coveredelements="20"/>
         </class>
-        <line num="24" type="method" name="pröva_tipsrad" visibility="public" complexity="2" crap="6" count="0"/>
-        <line num="25" type="stmt" count="0"/>
-        <line num="31" type="method" name="annonsera" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="32" type="stmt" count="0"/>
-        <line num="35" type="stmt" count="0"/>
-        <line num="36" type="stmt" count="0"/>
-        <line num="38" type="stmt" count="0"/>
-        <line num="39" type="stmt" count="0"/>
+        <line num="24" type="method" name="pröva_tipsrad" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="31" type="method" name="annonsera" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
         <line num="45" type="method" name="kommentar" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="46" type="stmt" count="0"/>
-        <line num="53" type="method" name="beräkna_rader" visibility="protected" complexity="2" crap="6" count="0"/>
-        <line num="54" type="stmt" count="0"/>
-        <line num="55" type="stmt" count="0"/>
-        <line num="56" type="stmt" count="0"/>
-        <line num="58" type="stmt" count="0"/>
-        <line num="65" type="method" name="generatorsträng" visibility="protected" complexity="3" crap="12" count="0"/>
-        <line num="66" type="stmt" count="0"/>
-        <line num="68" type="stmt" count="0"/>
-        <line num="69" type="stmt" count="0"/>
-        <line num="70" type="stmt" count="0"/>
-        <line num="71" type="stmt" count="0"/>
-        <line num="74" type="stmt" count="0"/>
-        <metrics loc="77" ncloc="52" classes="1" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="0" elements="22" coveredelements="0"/>
+        <line num="53" type="method" name="beräkna_rader" visibility="protected" complexity="2" crap="2" count="2"/>
+        <line num="54" type="stmt" count="2"/>
+        <line num="55" type="stmt" count="2"/>
+        <line num="56" type="stmt" count="2"/>
+        <line num="58" type="stmt" count="2"/>
+        <line num="65" type="method" name="generatorsträng" visibility="protected" complexity="3" crap="3" count="2"/>
+        <line num="66" type="stmt" count="2"/>
+        <line num="68" type="stmt" count="2"/>
+        <line num="69" type="stmt" count="2"/>
+        <line num="70" type="stmt" count="2"/>
+        <line num="71" type="stmt" count="2"/>
+        <line num="74" type="stmt" count="2"/>
+        <metrics loc="77" ncloc="52" classes="1" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="16" elements="22" coveredelements="20"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/FANN/Visa.php">
         <class name="Tips\Moduler\FANN\Visa" namespace="Tips\Moduler\FANN">
-          <metrics complexity="3" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="11" coveredelements="0"/>
+          <metrics complexity="3" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="11" coveredelements="11"/>
         </class>
-        <line num="26" type="method" name="visa_modul" visibility="public" complexity="3" crap="12" count="0"/>
-        <line num="27" type="stmt" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="33" type="stmt" count="0"/>
-        <line num="34" type="stmt" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="42" type="stmt" count="0"/>
-        <line num="45" type="stmt" count="0"/>
-        <line num="47" type="stmt" count="0"/>
-        <line num="49" type="stmt" count="0"/>
-        <metrics loc="52" ncloc="40" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="11" coveredelements="0"/>
+        <line num="26" type="method" name="visa_modul" visibility="public" complexity="3" crap="3" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <metrics loc="52" ncloc="40" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="11" coveredelements="11"/>
       </file>
     </package>
     <package name="Tips\Moduler\FANNGenerera">
@@ -7181,9 +7211,9 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/System/Hamta.php">
         <class name="Tips\Moduler\System\Hamta" namespace="Tips\Moduler\System">
-          <metrics complexity="10" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="20" elements="31" coveredelements="20"/>
+          <metrics complexity="11" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="21" elements="33" coveredelements="21"/>
         </class>
-        <line num="27" type="method" name="hämta_system" visibility="protected" complexity="7" crap="7.66" count="2"/>
+        <line num="27" type="method" name="hämta_system" visibility="protected" complexity="4" crap="4.21" count="2"/>
         <line num="28" type="stmt" count="2"/>
         <line num="29" type="stmt" count="2"/>
         <line num="30" type="stmt" count="2"/>
@@ -7201,20 +7231,22 @@
         <line num="48" type="stmt" count="0"/>
         <line num="55" type="stmt" count="2"/>
         <line num="56" type="stmt" count="2"/>
-        <line num="60" type="stmt" count="2"/>
-        <line num="61" type="stmt" count="0"/>
-        <line num="65" type="stmt" count="2"/>
+        <line num="62" type="method" name="extrahera_halvgarderingar" visibility="private" complexity="4" crap="4.13" count="2"/>
+        <line num="63" type="stmt" count="2"/>
+        <line num="64" type="stmt" count="2"/>
         <line num="68" type="stmt" count="2"/>
-        <line num="74" type="method" name="spara_reduktion" visibility="private" complexity="3" crap="4.12" count="2"/>
-        <line num="75" type="stmt" count="2"/>
+        <line num="69" type="stmt" count="0"/>
+        <line num="73" type="stmt" count="2"/>
+        <line num="80" type="method" name="spara_reduktion" visibility="private" complexity="3" crap="4.12" count="2"/>
         <line num="81" type="stmt" count="2"/>
-        <line num="82" type="stmt" count="2"/>
-        <line num="83" type="stmt" count="0"/>
-        <line num="84" type="stmt" count="0"/>
-        <line num="85" type="stmt" count="0"/>
-        <line num="86" type="stmt" count="0"/>
         <line num="87" type="stmt" count="2"/>
-        <metrics loc="90" ncloc="60" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="20" elements="31" coveredelements="20"/>
+        <line num="88" type="stmt" count="2"/>
+        <line num="89" type="stmt" count="0"/>
+        <line num="90" type="stmt" count="0"/>
+        <line num="91" type="stmt" count="0"/>
+        <line num="92" type="stmt" count="0"/>
+        <line num="93" type="stmt" count="2"/>
+        <metrics loc="96" ncloc="63" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="21" elements="33" coveredelements="21"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/System/Kombo.php">
         <class name="Tips\Moduler\System\Kombo" namespace="Tips\Moduler\System">
@@ -7230,11 +7262,11 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/System/Matchtabeller.php">
         <class name="Tips\Moduler\System\Matchtabeller" namespace="Tips\Moduler\System">
-          <metrics complexity="9" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="45" coveredstatements="45" elements="47" coveredelements="47"/>
+          <metrics complexity="10" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="44" elements="47" coveredelements="47"/>
         </class>
-        <line num="24" type="method" name="matchtabeller" visibility="protected" complexity="5" crap="5" count="1"/>
-        <line num="25" type="stmt" count="1"/>
-        <line num="27" type="stmt" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="27" type="method" name="matchtabeller" visibility="protected" complexity="4" crap="4" count="1"/>
         <line num="28" type="stmt" count="1"/>
         <line num="30" type="stmt" count="1"/>
         <line num="31" type="stmt" count="1"/>
@@ -7243,43 +7275,45 @@
         <line num="39" type="stmt" count="1"/>
         <line num="40" type="stmt" count="1"/>
         <line num="45" type="stmt" count="1"/>
-        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
         <line num="51" type="stmt" count="1"/>
         <line num="52" type="stmt" count="1"/>
         <line num="53" type="stmt" count="1"/>
-        <line num="54" type="stmt" count="1"/>
         <line num="55" type="stmt" count="1"/>
-        <line num="56" type="stmt" count="1"/>
-        <line num="61" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <line num="58" type="stmt" count="1"/>
+        <line num="59" type="stmt" count="1"/>
+        <line num="60" type="stmt" count="1"/>
         <line num="62" type="stmt" count="1"/>
-        <line num="63" type="stmt" count="1"/>
-        <line num="64" type="stmt" count="1"/>
         <line num="65" type="stmt" count="1"/>
         <line num="66" type="stmt" count="1"/>
+        <line num="67" type="stmt" count="1"/>
         <line num="69" type="stmt" count="1"/>
-        <line num="70" type="stmt" count="1"/>
         <line num="71" type="stmt" count="1"/>
         <line num="73" type="stmt" count="1"/>
-        <line num="74" type="stmt" count="1"/>
-        <line num="75" type="stmt" count="1"/>
-        <line num="77" type="stmt" count="1"/>
-        <line num="79" type="stmt" count="1"/>
-        <line num="80" type="stmt" count="1"/>
-        <line num="81" type="stmt" count="1"/>
-        <line num="82" type="stmt" count="1"/>
-        <line num="84" type="stmt" count="1"/>
-        <line num="87" type="stmt" count="1"/>
+        <line num="76" type="stmt" count="1"/>
+        <line num="84" type="method" name="sätt_stil" visibility="private" complexity="2" crap="2" count="1"/>
         <line num="88" type="stmt" count="1"/>
         <line num="89" type="stmt" count="1"/>
-        <line num="91" type="stmt" count="1"/>
-        <line num="93" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
         <line num="95" type="stmt" count="1"/>
+        <line num="96" type="stmt" count="1"/>
+        <line num="97" type="stmt" count="1"/>
         <line num="98" type="stmt" count="1"/>
-        <line num="107" type="method" name="sätt_klass" visibility="private" complexity="4" crap="4" count="1"/>
+        <line num="99" type="stmt" count="1"/>
+        <line num="104" type="stmt" count="1"/>
+        <line num="105" type="stmt" count="1"/>
+        <line num="106" type="stmt" count="1"/>
+        <line num="107" type="stmt" count="1"/>
         <line num="108" type="stmt" count="1"/>
         <line num="109" type="stmt" count="1"/>
-        <line num="110" type="stmt" count="1"/>
-        <metrics loc="114" ncloc="61" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="45" coveredstatements="45" elements="47" coveredelements="47"/>
+        <line num="119" type="method" name="sätt_klass" visibility="private" complexity="4" crap="4" count="1"/>
+        <line num="120" type="stmt" count="1"/>
+        <line num="121" type="stmt" count="1"/>
+        <line num="122" type="stmt" count="1"/>
+        <metrics loc="126" ncloc="67" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="46" coveredstatements="46" elements="49" coveredelements="49"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/System/Oddstabellrad.php">
         <class name="Tips\Moduler\System\Oddstabellrad" namespace="Tips\Moduler\System">
@@ -7953,7 +7987,7 @@
         <line num="91" type="stmt" count="1"/>
         <line num="92" type="stmt" count="1"/>
         <line num="95" type="stmt" count="1"/>
-        <metrics loc="100" ncloc="65" classes="1" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="23" elements="29" coveredelements="27"/>
+        <metrics loc="99" ncloc="64" classes="1" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="23" elements="29" coveredelements="27"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/TT/Spara.php">
         <class name="Tips\Moduler\TT\Spara" namespace="Tips\Moduler\TT">
@@ -8439,27 +8473,30 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/TT/TTGridGenerera/ProvaRad.php">
         <class name="Tips\Moduler\TT\TTGridGenerera\ProvaRad" namespace="Tips\Moduler\TT\TTGridGenerera">
-          <metrics complexity="13" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="18" coveredelements="18"/>
+          <metrics complexity="14" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="21" coveredelements="21"/>
         </class>
-        <line num="21" type="method" name="pröva_rad" visibility="protected" complexity="7" crap="7" count="1"/>
+        <line num="21" type="method" name="pröva_rad" visibility="protected" complexity="5" crap="5" count="1"/>
         <line num="22" type="stmt" count="1"/>
         <line num="24" type="stmt" count="1"/>
         <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
         <line num="27" type="stmt" count="1"/>
         <line num="28" type="stmt" count="1"/>
         <line num="29" type="stmt" count="1"/>
         <line num="30" type="stmt" count="1"/>
-        <line num="31" type="stmt" count="1"/>
-        <line num="32" type="stmt" count="1"/>
-        <line num="33" type="stmt" count="1"/>
-        <line num="37" type="stmt" count="1"/>
-        <line num="43" type="method" name="pröva_intervall" visibility="private" complexity="6" crap="6" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="40" type="method" name="reduktion_intervall" visibility="private" complexity="3" crap="3" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
         <line num="44" type="stmt" count="1"/>
         <line num="45" type="stmt" count="1"/>
-        <line num="46" type="stmt" count="1"/>
-        <line num="47" type="stmt" count="1"/>
-        <line num="48" type="stmt" count="1"/>
-        <metrics loc="51" ncloc="38" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="18" coveredelements="18"/>
+        <line num="51" type="method" name="pröva_intervall" visibility="private" complexity="6" crap="6" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <metrics loc="59" ncloc="43" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="21" coveredelements="21"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/TT/TTGridGenerera/Tackning.php">
         <class name="Tips\Moduler\TT\TTGridGenerera\Tackning" namespace="Tips\Moduler\TT\TTGridGenerera">
@@ -8661,28 +8698,28 @@
       </file>
     </package>
     <file name="/Users/nik/Sites/tips/src/_data/skarp/version.php">
-      <metrics loc="267" ncloc="3" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      <metrics loc="268" ncloc="3" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <file name="/Users/nik/Sites/tips/src/funktioner/assistenter.php">
-      <line num="9" type="stmt" count="15"/>
-      <line num="17" type="stmt" count="14"/>
-      <line num="25" type="stmt" count="14"/>
+      <line num="9" type="stmt" count="17"/>
+      <line num="17" type="stmt" count="16"/>
+      <line num="25" type="stmt" count="16"/>
       <line num="33" type="stmt" count="2"/>
       <line num="34" type="stmt" count="2"/>
       <line num="36" type="stmt" count="2"/>
       <line num="37" type="stmt" count="2"/>
       <line num="39" type="stmt" count="2"/>
-      <line num="48" type="stmt" count="5"/>
-      <line num="49" type="stmt" count="5"/>
-      <line num="50" type="stmt" count="5"/>
-      <line num="51" type="stmt" count="5"/>
-      <line num="52" type="stmt" count="5"/>
-      <line num="53" type="stmt" count="5"/>
-      <line num="54" type="stmt" count="5"/>
-      <line num="55" type="stmt" count="5"/>
+      <line num="48" type="stmt" count="6"/>
+      <line num="49" type="stmt" count="6"/>
+      <line num="50" type="stmt" count="6"/>
+      <line num="51" type="stmt" count="6"/>
+      <line num="52" type="stmt" count="6"/>
+      <line num="53" type="stmt" count="6"/>
+      <line num="54" type="stmt" count="6"/>
+      <line num="55" type="stmt" count="6"/>
       <line num="62" type="stmt" count="1"/>
-      <line num="69" type="stmt" count="14"/>
-      <line num="76" type="stmt" count="8"/>
+      <line num="69" type="stmt" count="16"/>
+      <line num="76" type="stmt" count="9"/>
       <line num="84" type="stmt" count="3"/>
       <line num="85" type="stmt" count="3"/>
       <line num="86" type="stmt" count="3"/>
@@ -8816,20 +8853,20 @@
       <metrics loc="124" ncloc="95" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="74" coveredstatements="0" elements="74" coveredelements="0"/>
     </file>
     <file name="/Users/nik/Sites/tips/src/funktioner/matriser.php">
-      <line num="11" type="stmt" count="14"/>
-      <line num="12" type="stmt" count="14"/>
-      <line num="13" type="stmt" count="14"/>
-      <line num="14" type="stmt" count="14"/>
-      <line num="15" type="stmt" count="14"/>
-      <line num="16" type="stmt" count="14"/>
-      <line num="17" type="stmt" count="14"/>
-      <line num="19" type="stmt" count="14"/>
-      <line num="21" type="stmt" count="14"/>
-      <line num="22" type="stmt" count="14"/>
-      <line num="23" type="stmt" count="14"/>
-      <line num="24" type="stmt" count="14"/>
-      <line num="25" type="stmt" count="14"/>
-      <line num="27" type="stmt" count="14"/>
+      <line num="11" type="stmt" count="16"/>
+      <line num="12" type="stmt" count="16"/>
+      <line num="13" type="stmt" count="16"/>
+      <line num="14" type="stmt" count="16"/>
+      <line num="15" type="stmt" count="16"/>
+      <line num="16" type="stmt" count="16"/>
+      <line num="17" type="stmt" count="16"/>
+      <line num="19" type="stmt" count="16"/>
+      <line num="21" type="stmt" count="16"/>
+      <line num="22" type="stmt" count="16"/>
+      <line num="23" type="stmt" count="16"/>
+      <line num="24" type="stmt" count="16"/>
+      <line num="25" type="stmt" count="16"/>
+      <line num="27" type="stmt" count="16"/>
       <line num="36" type="stmt" count="2"/>
       <line num="37" type="stmt" count="2"/>
       <line num="38" type="stmt" count="2"/>
@@ -8839,14 +8876,14 @@
       <line num="42" type="stmt" count="2"/>
       <line num="43" type="stmt" count="2"/>
       <line num="44" type="stmt" count="2"/>
-      <line num="53" type="stmt" count="13"/>
-      <line num="54" type="stmt" count="13"/>
-      <line num="55" type="stmt" count="13"/>
-      <line num="56" type="stmt" count="13"/>
-      <line num="57" type="stmt" count="13"/>
-      <line num="58" type="stmt" count="13"/>
-      <line num="59" type="stmt" count="13"/>
-      <line num="60" type="stmt" count="13"/>
+      <line num="53" type="stmt" count="15"/>
+      <line num="54" type="stmt" count="15"/>
+      <line num="55" type="stmt" count="15"/>
+      <line num="56" type="stmt" count="15"/>
+      <line num="57" type="stmt" count="15"/>
+      <line num="58" type="stmt" count="15"/>
+      <line num="59" type="stmt" count="15"/>
+      <line num="60" type="stmt" count="15"/>
       <line num="69" type="stmt" count="4"/>
       <line num="70" type="stmt" count="4"/>
       <line num="71" type="stmt" count="4"/>
@@ -8870,59 +8907,59 @@
       <line num="107" type="stmt" count="1"/>
       <line num="108" type="stmt" count="1"/>
       <line num="109" type="stmt" count="1"/>
-      <line num="118" type="stmt" count="13"/>
-      <line num="119" type="stmt" count="13"/>
-      <line num="120" type="stmt" count="13"/>
-      <line num="121" type="stmt" count="13"/>
-      <line num="122" type="stmt" count="13"/>
-      <line num="124" type="stmt" count="13"/>
-      <line num="125" type="stmt" count="13"/>
-      <line num="134" type="stmt" count="14"/>
-      <line num="135" type="stmt" count="14"/>
-      <line num="136" type="stmt" count="14"/>
-      <line num="137" type="stmt" count="14"/>
-      <line num="138" type="stmt" count="14"/>
-      <line num="139" type="stmt" count="14"/>
-      <line num="140" type="stmt" count="14"/>
-      <line num="141" type="stmt" count="14"/>
-      <line num="142" type="stmt" count="14"/>
-      <line num="150" type="stmt" count="13"/>
+      <line num="118" type="stmt" count="15"/>
+      <line num="119" type="stmt" count="15"/>
+      <line num="120" type="stmt" count="15"/>
+      <line num="121" type="stmt" count="15"/>
+      <line num="122" type="stmt" count="15"/>
+      <line num="124" type="stmt" count="15"/>
+      <line num="125" type="stmt" count="15"/>
+      <line num="134" type="stmt" count="16"/>
+      <line num="135" type="stmt" count="16"/>
+      <line num="136" type="stmt" count="16"/>
+      <line num="137" type="stmt" count="16"/>
+      <line num="138" type="stmt" count="16"/>
+      <line num="139" type="stmt" count="16"/>
+      <line num="140" type="stmt" count="16"/>
+      <line num="141" type="stmt" count="16"/>
+      <line num="142" type="stmt" count="16"/>
+      <line num="150" type="stmt" count="15"/>
       <line num="158" type="stmt" count="2"/>
       <line num="159" type="stmt" count="2"/>
       <metrics loc="161" ncloc="114" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="73" coveredstatements="73" elements="73" coveredelements="73"/>
     </file>
     <file name="/Users/nik/Sites/tips/src/funktioner/stil.php">
-      <line num="9" type="stmt" count="13"/>
-      <line num="10" type="stmt" count="13"/>
-      <line num="11" type="stmt" count="13"/>
-      <line num="12" type="stmt" count="13"/>
-      <line num="21" type="stmt" count="13"/>
-      <line num="22" type="stmt" count="13"/>
-      <line num="23" type="stmt" count="13"/>
-      <line num="24" type="stmt" count="13"/>
-      <line num="25" type="stmt" count="13"/>
-      <line num="26" type="stmt" count="13"/>
-      <line num="30" type="stmt" count="13"/>
+      <line num="9" type="stmt" count="15"/>
+      <line num="10" type="stmt" count="15"/>
+      <line num="11" type="stmt" count="15"/>
+      <line num="12" type="stmt" count="15"/>
+      <line num="21" type="stmt" count="15"/>
+      <line num="22" type="stmt" count="15"/>
+      <line num="23" type="stmt" count="15"/>
+      <line num="24" type="stmt" count="15"/>
+      <line num="25" type="stmt" count="15"/>
+      <line num="26" type="stmt" count="15"/>
+      <line num="30" type="stmt" count="15"/>
       <line num="38" type="stmt" count="2"/>
       <line num="39" type="stmt" count="2"/>
       <line num="40" type="stmt" count="2"/>
       <metrics loc="43" ncloc="32" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="14" coveredelements="14"/>
     </file>
     <file name="/Users/nik/Sites/tips/src/funktioner/tipsrader.php">
-      <line num="10" type="stmt" count="4"/>
-      <line num="11" type="stmt" count="4"/>
-      <line num="12" type="stmt" count="4"/>
-      <line num="13" type="stmt" count="4"/>
-      <line num="14" type="stmt" count="4"/>
-      <line num="17" type="stmt" count="4"/>
+      <line num="10" type="stmt" count="6"/>
+      <line num="11" type="stmt" count="6"/>
+      <line num="12" type="stmt" count="6"/>
+      <line num="13" type="stmt" count="6"/>
+      <line num="14" type="stmt" count="6"/>
+      <line num="17" type="stmt" count="6"/>
       <line num="24" type="stmt" count="3"/>
-      <line num="31" type="stmt" count="15"/>
-      <line num="38" type="stmt" count="2"/>
-      <line num="47" type="stmt" count="13"/>
-      <line num="48" type="stmt" count="13"/>
-      <line num="49" type="stmt" count="13"/>
-      <line num="50" type="stmt" count="13"/>
-      <line num="51" type="stmt" count="13"/>
+      <line num="31" type="stmt" count="17"/>
+      <line num="38" type="stmt" count="3"/>
+      <line num="47" type="stmt" count="15"/>
+      <line num="48" type="stmt" count="15"/>
+      <line num="49" type="stmt" count="15"/>
+      <line num="50" type="stmt" count="15"/>
+      <line num="51" type="stmt" count="15"/>
       <line num="60" type="stmt" count="2"/>
       <line num="61" type="stmt" count="2"/>
       <line num="62" type="stmt" count="2"/>
@@ -8946,6 +8983,6 @@
       <line num="19" type="stmt" count="0"/>
       <metrics loc="20" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="4" coveredelements="0"/>
     </file>
-    <metrics files="469" loc="25381" ncloc="16969" classes="445" methods="741" coveredmethods="515" conditionals="0" coveredconditionals="0" statements="5345" coveredstatements="3823" elements="6086" coveredelements="4338"/>
+    <metrics files="470" loc="25522" ncloc="17042" classes="446" methods="751" coveredmethods="542" conditionals="0" coveredconditionals="0" statements="5366" coveredstatements="4085" elements="6117" coveredelements="4627"/>
   </project>
 </coverage>

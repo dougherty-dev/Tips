@@ -6,13 +6,17 @@ filter:
 
 build:
     image: default-bionic
-
     nodes:
         my-tests:
             environment:
                 php:
                     version: 8.3.22
+                    pecl_extensions:
+                        - fann
         analysis:
+            dependencies:
+                before:
+                    - sudo apt-get install -y libfann-dev
             tests:
                 override:
                     - php-scrutinizer-run

@@ -27,9 +27,6 @@ class PGenereraTest extends TestCase
 		$_REQUEST['k'] = '0';
 		$_REQUEST['l'] = '0';
 		$this->assertInstanceOf("\Tips\Parallellisering\PGenerera", new PGenerera());
-		unset($_REQUEST['i']);
-		unset($_REQUEST['j']);
-		unset($_REQUEST['k']);
-		unset($_REQUEST['l']);
+		unset($_REQUEST['i'], $_REQUEST['j'], $_REQUEST['k'], $_REQUEST['l']);
 	}
 }

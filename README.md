@@ -7,7 +7,7 @@ Tips är ett enkelt litet desktopprogram för det svenska stryktipset och europa
 
 ### Features
 
-- Integrering med Svenska spels API
+- Integrering mot Svenska spels API
 - Parallell exekvering
 - Modulsystem
 - Kompletta R-system
@@ -20,7 +20,7 @@ Tips är ett enkelt litet desktopprogram för det svenska stryktipset och europa
 - PHP GD
 - SQLite 3
 
-Optionellt krävs även FANN 2.1 för beräkningar med neuralt nätverk. Installera med `pecl install fann` för PHP tillsammans med fannlib för din maskin.
+Optionellt krävs även FANN 2.1 för beräkningar med neuralt nätverk. Installera med `pecl install fann` för PHP tillsammans med libfann-dev för din maskin.
 
 En utvecklingsmiljö är definierad via composer. Den består av:
 

@@ -36,7 +36,7 @@ final class TTReduceradKod extends Reduktion {
 		 * Kräv överensstämmelse i garderingar med system.
 		 */
 		if (
-			count($this->helgarderingar) !== $this->tt->rkod->helgarderingar() ||
+			count($this->helgarderingar) != $this->tt->rkod->helgarderingar() ||
 			$antal_hg != $this->tt->rkod->halvgarderingar()
 		) {
 			return;

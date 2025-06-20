@@ -50,8 +50,16 @@ class Hamta extends Preferenser {
 		}
 
 		/**
-		 * Extrahera halvgarderingar.
+		 * Extrahera halvgarderingar, spara reduktion.
 		 */
+		$this->extrahera_halvgarderingar();
+		$this->spara_reduktion();
+	}
+
+	/**
+	 * Extrahera halvgarderingar.
+	 */
+	private function extrahera_halvgarderingar(): void {
 		foreach ($this->garderingar as $index => $gardering) {
 			foreach ($gardering as $tecken) {
 				/**
@@ -64,8 +72,6 @@ class Hamta extends Preferenser {
 
 			$this->antal_garderingar[$index] = min($this->andel_garderingar[$index], $this->antal_garderingar[$index]);
 		}
-
-		$this->spara_reduktion();
 	}
 
 	/**

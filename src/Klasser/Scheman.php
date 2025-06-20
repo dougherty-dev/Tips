@@ -33,17 +33,9 @@ final class Scheman extends Hamta {
 		$scheman = '';
 		foreach ($this->scheman as $id => $schema) {
 			$schemarad = '';
-			$data = [];
 			$schemamoduler = [];
 
-			/**
-			 * Associativt fält $data[$namn]:
-			 * [schema_namn] => R_4_5_238_1 F2/4
-			 * [schema_antal_rader] => 100
-			 */
-			foreach (explode(',', $schema['data']) as $dat) {
-				[$namn, $data[$namn]] = explode(':', $dat);
-			}
+			$data = $this->extrahera_namn($schema['data']);
 
 			/**
 			 * Lägg till rader för aktiva moduler.
@@ -80,5 +72,22 @@ final class Scheman extends Hamta {
 			 * Eka ut tabeller.
 			 */
 		echo $this->schema($scheman);
+	}
+
+	/**
+	 * Extrahera schemanamn.
+	 * @return string[] $data
+	 */
+	private function extrahera_namn(string $schema_data): array {
+		/**
+		 * Associativt fält $data[$namn]:
+		 * [schema_namn] => R_4_5_238_1 F2/4
+		 * [schema_antal_rader] => 100
+		 */
+		$data = [];
+		foreach (explode(',', $schema_data) as $dat) {
+			[$namn, $data[$namn]] = explode(':', $dat);
+		}
+		return $data;
 	}
 }

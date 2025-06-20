@@ -20,9 +20,7 @@ final class Tipsdata extends Tipsresultat {
 	 * Tanken var att hämta data för äldre spel, men dessa är ofta ofullständiga.
 	 */
 	public function hämta_tipsdata(Tips &$tips, bool $senaste = true): bool {
-		$url = ($senaste) ? "{$this->site}/draws?accesskey={$this->api}" :
-			"{$this->site}/draws/{$tips->spel->omgång}?accesskey={$this->api}";
-		$objekt = hämta_objekt($url);
+		$objekt = hämta_objekt($this->url($tips, $senaste));
 
 		/**
 		 * Säkerställ att data från Svenska spel finns.
@@ -58,6 +56,14 @@ final class Tipsdata extends Tipsresultat {
 		 */
 		$tips->spel->db->logg->logga(self::class . ": ✅ Hämtade tipsdata. ({$tips->spel->omgång})");
 		return true;
+	}
+
+	/**
+	 * Bestäm URL.
+	 */
+	private function url(Tips $tips, bool $senaste): string {
+		return ($senaste) ? "{$this->site}/draws?accesskey={$this->api}" :
+			"{$this->site}/draws/{$tips->spel->omgång}?accesskey={$this->api}";
 	}
 
 	/**

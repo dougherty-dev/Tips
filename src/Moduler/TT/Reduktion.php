@@ -86,14 +86,13 @@ class Reduktion {
 		 * $kodord[$j]:
 		 * 1X/X2 = 1, 1X2 = 2, annars 0.
 		 */
-		if ($antal_hg) {
-			foreach ($kod_helgarderingar as $nyckel => $kodord) {
+		foreach ($kod_helgarderingar as $nyckel => $kodord) {
+			if ($antal_hg) {
 				foreach ($kod_halvgarderingar[$nyckel] as $j => $tecken) {
 					$kodord[$j] += $tecken;
 				}
-
-				$this->reducerad_kod[$this->reducera_kodord(implode('', $kodord))] = 1;
 			}
+			$this->reducerad_kod[$this->reducera_kodord(implode('', $kodord))] = 1;
 		}
 	}
 }

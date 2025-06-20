@@ -39,7 +39,6 @@ final class GridMatcher extends GridMatcherFordelning {
 		/**
 		 * Initiera.
 		 */
-		$grid_matcher = '';
 		$rätt = ['odds' => 0, 'streck' => 0];
 
 		/**
@@ -53,7 +52,7 @@ final class GridMatcher extends GridMatcherFordelning {
 		/**
 		 * Nollställ stilar.
 		 */
-		[$oddsstil, $streckstil, $fördelning] = [ODDSSTIL, STRECKSTIL, TOM_ODDSMATRIS];
+		$fördelning = TOM_ODDSMATRIS;
 
 		/**
 		 * Beräkna fördelning av tecken i respektive match.
@@ -78,6 +77,7 @@ final class GridMatcher extends GridMatcherFordelning {
 		/**
 		 * Iterera över matcher.
 		 */
+		$grid_matcher = '';
 		foreach (array_keys($this->tips->odds->sannolikheter) as $index) {
 			/**
 			 * Nollställ stil.
@@ -104,7 +104,57 @@ final class GridMatcher extends GridMatcherFordelning {
 			 * 22–24: Streckodds
 			 * 25: JS streckodds => odds då odds saknas.
 			 */
-			$grid_matcher .= <<< EOT
+			$grid_matcher .= $this->eka_tabell(
+				$index,
+				$odds_finns,
+				$teckenfördelning,
+				$formaterad_dist,
+				$odds,
+				$streckodds,
+				$oddsstil,
+				$streckstil,
+				$tix
+			);
+		}
+
+		return $this->matchtabell($rätt, $grid_matcher);
+	}
+
+	/**
+	 * Eka matcher
+	 * @param array<int, string[]> $teckenfördelning
+	 * @param array<int, string[]> $formaterad_dist
+	 * @param array<int, string[]> $odds
+	 * @param array<int, string[]> $streckodds
+	 * @param string[] $oddsstil
+	 * @param string[] $streckstil
+	 * @param array<string, int[]> $tix
+	 */
+	private function eka_tabell(
+		int $index,
+		string $odds_finns,
+		array $teckenfördelning,
+		array $formaterad_dist,
+		array $odds,
+		array $streckodds,
+		array $oddsstil,
+		array $streckstil,
+		array $tix
+	): string {
+		/**
+		 * Bygg tabellrad.
+		 * 1: Matchnummer
+		 * 2–4: Fördelning av tecken för spelade matcher
+		 * 5–7: Matchstatus, lag, favoritskap
+		 * 8–9: Resultat, tipstecken
+		 * 10–12: Odds
+		 * 13–15: Decimalodds
+		 * 16–18: Streck
+		 * 19–21: Sannolikheter
+		 * 22–24: Streckodds
+		 * 25: JS streckodds => odds då odds saknas.
+		 */
+		return <<< EOT
 								<tr>
 									<td class="match höger">{$this->eka(strval($index + 1))}</td>
 									<td{$teckenfördelning[$index][0]}>{$formaterad_dist[$index][0]}</td>
@@ -130,8 +180,5 @@ final class GridMatcher extends GridMatcherFordelning {
 								</tr>
 
 EOT;
-		}
-
-		return $this->matchtabell($rätt, $grid_matcher);
 	}
 }

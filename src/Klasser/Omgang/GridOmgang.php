@@ -11,15 +11,12 @@ namespace Tips\Klasser\Omgang;
 
 use PDO;
 use Tips\Klasser\Tips;
-use Tips\Egenskaper\Eka;
 
 /**
  * Klass GridOmgang.
  * Välj omgångsnummer medelst rullgardinsmeny, pilar eller manuell inmatning.
  */
 final class GridOmgang {
-	use Eka;
-
 	/**
 	 * Init.
 	 */
@@ -65,28 +62,13 @@ final class GridOmgang {
 		 * Bilda navigeringspilar.
 		 */
 		$index = (int) array_search($this->tips->spel->omgång, $omgångar, true);
-		$föregående = $omgångar[$index + 1] ?? '';
-		$nästa = $omgångar[$index - 1] ?? '';
+		$föregående = strval($omgångar[$index + 1] ?? '');
+		$nästa = strval($omgångar[$index - 1] ?? '');
 
 		/**
 		 * Eka ut resultatet i HTML.
 		 */
-		return <<< EOT
-						<a href="/"><div class="logotyp {$this->tips->spel->speltyp->produktnamn()}">
-							<img src="/img/ss.svg" height="30" class="ss-logo" alt="Svenska spel">
-							<img src="/img/{$this->tips->spel->speltyp->produktnamn()}.svg" height="45" alt="{$this->tips->spel->speltyp->produktnamn()}">
-						</div></a>
-						<form id="manuell">
-							<span style="font-size: 2em; vertical-align: middle;">{$this->eka($this->tips->spel->komplett ? '✅' : '❌')}</span>
-							<select id="genererad_omgång">
-$grid_omgång							</select>
-							<input type="text" autocomplete="off" id="manuell_omgång" size="6" value="">
-							<input type="submit" value="Manuell"><br>
-						</form>
-						<button{$this->eka($föregående ? '' : ' disabled="disabled"')} id="föregående" value="$föregående">⇦</button>
-						<button{$this->eka($nästa ? '' : ' disabled="disabled"')} id="nästa" value="$nästa">⇨</button>
-						($antal_kompletta / $antal_omgångar)
-EOT;
+		return (new RenderaOmgang($this->tips))->rendera_html($grid_omgång, $föregående, $nästa, $antal_kompletta, $antal_omgångar);
 	}
 
 	/**

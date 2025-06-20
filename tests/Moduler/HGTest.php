@@ -28,10 +28,10 @@ class HGTest extends TestCase
 		new Preludium();
 		$spel = new Spel();
 		$tips = new Tips($spel);
-		$hg = new HG($tips->utdelning, $tips->odds, $tips->streck, $tips->matcher);
-		$this->assertInstanceOf("\Tips\Moduler\HG", $hg);
+		$hg_modul = new HG($tips->utdelning, $tips->odds, $tips->streck, $tips->matcher);
+		$this->assertInstanceOf("\Tips\Moduler\HG", $hg_modul);
 
-		$hg->visa_modul();
+		$hg_modul->visa_modul();
 		$this->expectOutputRegex('*Justerade*');
 	}
 }

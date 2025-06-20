@@ -28,10 +28,10 @@ class AutospikTest extends TestCase
 		new Preludium();
 		$spel = new Spel();
 		$tips = new Tips($spel);
-		$as = new Autospik($tips->utdelning, $tips->odds, $tips->streck, $tips->matcher);
-		$this->assertInstanceOf("\Tips\Moduler\Autospik", $as);
+		$autospik = new Autospik($tips->utdelning, $tips->odds, $tips->streck, $tips->matcher);
+		$this->assertInstanceOf("\Tips\Moduler\Autospik", $autospik);
 
-		$as->visa_modul();
+		$autospik->visa_modul();
 		$this->expectOutputRegex('*matcher*');
 	}
 }

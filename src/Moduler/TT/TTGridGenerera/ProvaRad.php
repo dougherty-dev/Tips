@@ -19,10 +19,7 @@ class ProvaRad extends Prova {
 	 * Pröva TT-rad.
 	 */
 	protected function pröva_rad(string $tipsrad_012): bool {
-		$ok = true;
-
-		$this->tt->tt_pröva_reduktion and $ok = $this->pröva_reduktion($tipsrad_012);
-		$ok and $this->pröva_intervall($tipsrad_012);
+		$ok = $this->reduktion_intervall($tipsrad_012);
 
 		if ($ok && $this->tt->tt_pröva_spikar) {
 			foreach (array_keys($this->tt->spikar) as $index) {
@@ -34,6 +31,17 @@ class ProvaRad extends Prova {
 			}
 		}
 
+		return $ok;
+	}
+
+	/**
+	 * Pröva reduktion och intervall, delberäkning.
+	 */
+	private function reduktion_intervall(string $tipsrad_012): bool {
+		$ok = true;
+
+		$this->tt->tt_pröva_reduktion and $ok = $this->pröva_reduktion($tipsrad_012);
+		$ok and $ok = $this->pröva_intervall($tipsrad_012);
 		return $ok;
 	}
 

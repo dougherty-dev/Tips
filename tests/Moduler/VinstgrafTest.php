@@ -28,6 +28,7 @@ class VinstgrafTest extends TestCase
 		new Preludium();
 		$spel = new Spel();
 		$tips = new Tips($spel);
+		unlink(GRAF . "/vinstgraf.png");
 		$vinstgraf = new Vinstgraf($tips->utdelning, $tips->odds, $tips->streck, $tips->matcher);
 		$this->assertInstanceOf("\Tips\Moduler\Vinstgraf", $vinstgraf);
 

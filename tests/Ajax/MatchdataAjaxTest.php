@@ -35,7 +35,8 @@ class MatchdataAjaxTest extends TestCase
 
 		$_REQUEST['spara_matchdata'] = unserialize($serialized);
 
-		new MatchdataAjax();
+		$this->assertInstanceOf("\Tips\Ajax\MatchdataAjax", new MatchdataAjax());
+
 		$spel = new Spel();
 		$tips = new Tips($spel);
 		$this->assertEquals('XXX12X11X1X2X', $tips->utdelning->tipsrad);

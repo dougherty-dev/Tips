@@ -28,8 +28,7 @@ class OmgangAjaxTest extends TestCase
 		new Preludium();
 
 		$_REQUEST['investera_sparad'] = true;
-		$omgangajax = new OmgangAjax();
-		$this->assertInstanceOf("\Tips\Ajax\OmgangAjax", $omgangajax);
+		$this->assertInstanceOf("\Tips\Ajax\OmgangAjax", new OmgangAjax());
 		unset($_REQUEST['investera_sparad']);
 
 		$_REQUEST['strategi'] = 'Min strategi';

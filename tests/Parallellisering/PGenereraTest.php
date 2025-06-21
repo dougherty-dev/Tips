@@ -12,6 +12,7 @@ namespace Tips\Tests\Parallellisering;
 use PHPUnit\Framework\TestCase;
 use Tips\Klasser\Preludium;
 use Tips\Parallellisering\PGenerera;
+use Tips\Parallellisering\PDistribution;
 
 /**
  * Klass PGenereraTest.
@@ -27,6 +28,14 @@ class PGenereraTest extends TestCase
 		$_REQUEST['k'] = '0';
 		$_REQUEST['l'] = '0';
 		$this->assertInstanceOf("\Tips\Parallellisering\PGenerera", new PGenerera());
+		unset($_REQUEST['i'], $_REQUEST['j'], $_REQUEST['k'], $_REQUEST['l']);
+
+		$_REQUEST['i'] = '1';
+		$_REQUEST['j'] = '0';
+		$_REQUEST['k'] = '0';
+		$_REQUEST['l'] = '0';
+		unlink(GRAF . DISTRIBUTION . "/stryktipset-t1-o4905-s1.png");
+		$this->assertInstanceOf("\Tips\Parallellisering\PDistribution", new PDistribution());
 		unset($_REQUEST['i'], $_REQUEST['j'], $_REQUEST['k'], $_REQUEST['l']);
 	}
 }

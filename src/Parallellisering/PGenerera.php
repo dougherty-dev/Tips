@@ -12,7 +12,9 @@ namespace Tips\Parallellisering;
 /**
  * Kontrollera inte nya moduler under parallell exekvering.
  */
-define('GENERERA', true);
+if (!defined('GENERERA')) {
+	define('GENERERA', true);
+}
 
 use Tips\Klasser\Preludium;
 use Tips\Klasser\Spel;

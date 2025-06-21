@@ -14,7 +14,7 @@ namespace Tips\Moduler\HG;
  */
 trait Konstanter {
 	public const HG_MIN = 8;
-	public const HG_MAX = MATCHRYMD;
+	public const HG_MAX = MATCHANTAL;
 	public const HG_STD = 10;
 
 	/**

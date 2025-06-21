@@ -21,17 +21,13 @@ use Tips\Klasser\Matcher;
 class MatcherTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Ladda matcher och kontrollera egenskaper.
 	 */
-	public function testCreateObject(): void
+	public function testMatcher(): void
 	{
 		new Preludium();
-//		$this->assertInstanceOf("\Tips\Klasser\Omgang", new Omgang());
 		$this->assertInstanceOf("\Tips\Klasser\Spel", $spel = new Spel());
 		$this->assertInstanceOf("\Tips\Klasser\Matcher", $matcher = new Matcher($spel));
 		$matcher->hämta_matcher();
-
-		$this->assertObjectHasProperty('filnamn', $spel);
-		$this->assertTrue($spel->omgång_existerar($spel->omgång));
 	}
 }

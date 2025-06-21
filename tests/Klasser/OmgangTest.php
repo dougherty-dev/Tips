@@ -10,11 +10,10 @@ declare(strict_types=1);
 namespace Tips\Tests\Klasser;
 
 use PHPUnit\Framework\TestCase;
-use Tips\Klasser\Omgang;
-use Tips\Klasser\Utdelning;
-use Tips\Klasser\Spel;
 use Tips\Klasser\Preludium;
+use Tips\Klasser\Spel;
 use Tips\Klasser\Tips;
+use Tips\Klasser\Omgang;
 use Tips\Klasser\Generera;
 use Tips\Klasser\Omgang\Uppmarkning;
 
@@ -24,18 +23,39 @@ use Tips\Klasser\Omgang\Uppmarkning;
 class OmgangTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Ladda omgång, kontrollera flöde, generering, filer med mera.
 	 */
-	public function testCreateObject(): void
+	public function testOmgang(): void
 	{
-		new Preludium();
-		$omg = new Omgang();
+		$prel = new Preludium();
+		$this->assertInstanceOf("\Tips\Klasser\Preludium", $prel);
+
+		if (is_file(GRAF . "/ack_investeringsgraf.png")) {
+			unlink(GRAF . "/ack_investeringsgraf.png");
+		}
+
+		if (is_file(GRAF . "/investeringsgraf.png")) {
+			unlink(GRAF . "/investeringsgraf.png");
+		}
+
+		if (is_file(GRAF . "/kombinationsgraf.png")) {
+			unlink(GRAF . "/kombinationsgraf.png");
+		}
+
+		if (is_file(GRAF . "/TT-vinstgraf.png")) {
+			unlink(GRAF . "/TT-vinstgraf.png");
+		}
+
+		if (is_file(BAS . GENERERADE . "/2025/stryktipset/stryktipset-t1-o4905-s1.txt")) {
+			unlink(BAS . GENERERADE . "/2025/stryktipset/stryktipset-t1-o4905-s1.txt");
+		}
+
+		$this->assertInstanceOf("\Tips\Klasser\Omgang", new Omgang());
 		$this->expectOutputRegex('*Resultat*');
-		$this->assertInstanceOf("\Tips\Klasser\Omgang", $omg);
+
 		$this->assertInstanceOf("\Tips\Klasser\Spel", $spel = new Spel());
 		$this->assertInstanceOf("\Tips\Klasser\Tips", $tips = new Tips($spel));
-		$this->assertObjectHasProperty('filnamn', $spel);
-		$this->assertTrue($spel->omgång_existerar($spel->omgång));
+
 		$this->assertInstanceOf("\Tips\Klasser\Omgang\Uppmarkning", new Uppmarkning($tips));
 		$this->assertInstanceOf("\Tips\Klasser\Generera", new Generera($tips));
 	}

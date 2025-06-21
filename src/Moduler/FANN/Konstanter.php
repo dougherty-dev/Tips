@@ -18,7 +18,7 @@ if (!extension_loaded('fann')) {
  */
 trait Konstanter {
 	public const FANN_MIN = 8;
-	public const FANN_MAX = MATCHRYMD;
+	public const FANN_MAX = MATCHANTAL;
 	public const FANN_STD = 10;
 
 	public const FANN_FELTOLERANS_MIN = 0.0;

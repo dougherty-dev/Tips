@@ -32,7 +32,12 @@ class SpelTest extends TestCase
 		$this->assertInstanceOf("\Tips\Klasser\Spel\Sekvenser", new Sekvenser());
 		$this->assertInstanceOf("\Tips\Klasser\Spel\Komplett", new Komplett());
 		$this->assertInstanceOf("\Tips\Klasser\Spel\Spara", new Spara());
+
 		$spel = new Spel();
 		$this->assertObjectHasProperty('filnamn', $spel);
+		$this->assertTrue($spel->omgång_existerar($spel->omgång));
+		$this->assertEquals($spel->speltyp->value, 1);
+		$this->assertEquals($spel->sekvens, 1);
+		$this->assertEquals($spel->omgång, 4905);
 	}
 }

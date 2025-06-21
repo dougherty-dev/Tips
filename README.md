@@ -120,3 +120,4 @@ Linters ger inga anmärkningar, men självklart finns buggar, särskilt i randvi
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dougherty-dev/Tips/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/dougherty-dev/Tips/?branch=main)
 [![Code Coverage](https://scrutinizer-ci.com/g/dougherty-dev/Tips/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/dougherty-dev/Tips/?branch=main)
 [![Build Status](https://scrutinizer-ci.com/g/dougherty-dev/Tips/badges/build.png?b=main)](https://scrutinizer-ci.com/g/dougherty-dev/Tips/build-status/main)
+[![PHP Composer](https://github.com/dougherty-dev/Tips/actions/workflows/php.yml/badge.svg)](https://github.com/dougherty-dev/Tips/actions/workflows/php.yml)

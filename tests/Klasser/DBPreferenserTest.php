@@ -21,9 +21,9 @@ use Tips\Klasser\Preludium;
 class DBPreferenserTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för DBPreferenser med metoder.
 	 */
-	public function testCreateObject(): void
+	public function testDBPreferenser(): void
 	{
 		new Preludium();
 		$spel = new Spel();

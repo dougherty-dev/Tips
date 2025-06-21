@@ -21,9 +21,9 @@ use Tips\Moduler\HG;
 class HGTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Testa HG med metoder.
 	 */
-	public function testCreateObject(): void
+	public function testHG(): void
 	{
 		new Preludium();
 		$spel = new Spel();

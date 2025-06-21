@@ -21,7 +21,7 @@ use Tips\Klasser\DBPreferenser;
 class OmgangAjaxTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för OmgangAjax med metoder.
 	 */
 	public function testOmgangAjax(): void
 	{

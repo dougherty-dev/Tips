@@ -21,7 +21,7 @@ use Tips\Klasser\Tips;
 class RaderAjaxTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för RaderAjax med metoder.
 	 */
 	public function testRaderAjax(): void
 	{

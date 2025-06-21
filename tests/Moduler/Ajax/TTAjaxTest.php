@@ -23,7 +23,7 @@ use Tips\Klasser\DBPreferenser;
 class TTAjaxTest extends TestCase
 {
 	/**
-	 * Testa ajaxanrop.
+	 * Tester för TTAjaxTest med metoder.
 	 */
 	public function testTTAjax(): void
 	{

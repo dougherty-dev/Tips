@@ -21,9 +21,9 @@ use Tips\Moduler\Distribution;
 class DistributionTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Testa Distribution med metoder.
 	 */
-	public function testCreateObject(): void
+	public function testDistribution(): void
 	{
 		new Preludium();
 		$spel = new Spel();

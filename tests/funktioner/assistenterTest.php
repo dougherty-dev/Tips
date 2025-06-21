@@ -18,9 +18,9 @@ use Tips\Klasser\Preludium;
 class assistenterTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för assistenter med metoder.
 	 */
-	public function testCreateObject(): void
+	public function testAssistenter(): void
 	{
 		new Preludium();
 		$this->assertTrue(in(2, 1, 3));

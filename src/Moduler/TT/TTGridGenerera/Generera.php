@@ -46,7 +46,7 @@ final class Generera extends Tackning {
 		$radretur = "{$this->tt->typer['externa']},Omg={$this->tt->omgång},Insats=1\r\n" .
 			implode("\r\n", array_map(fn (string $rad): string => "E," . kommatisera($rad), $this->tt->rader));
 
-		is_dir($this->tt::TT_MAPP) or mkdir($this->tt::TT_MAPP, 0770, true);
+		is_dir(BAS . GENERERADE . '/topptipset') or mkdir(BAS . GENERERADE . '/topptipset', 0770, true);
 		$kommentar = match (file_put_contents($this->tt::TT_TEXTFIL, $radretur) > 0) {
 			true => ": ✅ Sparade",
 			false => ": ❌ Kunde inte spara"

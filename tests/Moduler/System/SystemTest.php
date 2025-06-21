@@ -22,7 +22,7 @@ use Tips\Moduler\System;
 class SystemTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för System med metoder.
 	 */
 	public function testCreateObject(): void
 	{

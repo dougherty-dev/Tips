@@ -24,7 +24,7 @@ use Tips\Moduler\TT;
 class SekvensAjaxTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för SekvensAjax med metoder.
 	 */
 	public function testSekvensAjax(): void
 	{

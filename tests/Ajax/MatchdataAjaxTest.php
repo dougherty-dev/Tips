@@ -21,9 +21,9 @@ use Tips\Klasser\Tips;
 class MatchdataAjaxTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för MatchdataAjax med metoder.
 	 */
-	public function testModulerAjax(): void
+	public function testMatchdataAjax(): void
 	{
 		new Preludium();
 

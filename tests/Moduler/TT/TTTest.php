@@ -11,14 +11,11 @@ namespace Tips\Tests\Moduler\TT;
 
 use PHPUnit\Framework\TestCase;
 use Tips\Moduler\TT;
-use Tips\Klasser\Utdelning;
 use Tips\Klasser\Spel;
 use Tips\Klasser\Preludium;
 use Tips\Klasser\Tips;
-use Tips\Klasser\Prediktioner;
 use Tips\Moduler\TT\TTGridGenerera\Generera;
 use Tips\Moduler\TT\Visa;
-use Tips\Klasser\Databas\DB;
 
 /**
  * Klass TTTest.
@@ -26,9 +23,9 @@ use Tips\Klasser\Databas\DB;
 class TTTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för Topptipset.
 	 */
-	public function testCreateObject(): void
+	public function testTopptipset(): void
 	{
 		new Preludium();
 		$spel = new Spel();
@@ -41,8 +38,7 @@ class TTTest extends TestCase
 		$this->expectOutputRegex('*Kodanalys*');
 
 		$_REQUEST['generera_topptips'] = true;
-		$tt_ajax = new Generera($tt);
-		$this->assertInstanceOf("\Tips\Moduler\TT\TTGridGenerera\Generera", $tt_ajax);
+		$this->assertInstanceOf("\Tips\Moduler\TT\TTGridGenerera\Generera", new Generera($tt));
 		unset($_REQUEST['generera_topptips']);
 	}
 }

@@ -23,7 +23,7 @@ use Tips\Klasser\DBPreferenser;
 class SystemAjaxTest extends TestCase
 {
 	/**
-	 * Testa ajaxanrop.
+	 * Tester för SystemAjax med metoder.
 	 */
 	public function testSystemAjax(): void
 	{

@@ -18,9 +18,9 @@ use Tips\Klasser\Preludium;
 class matriserTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för matriser med metoder.
 	 */
-	public function testCreateObject(): void
+	public function testMatriser(): void
 	{
 		new Preludium();
 

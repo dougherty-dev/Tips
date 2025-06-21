@@ -22,9 +22,9 @@ use Tips\Klasser\Preludium;
 class VinstspridningTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för Vinstspridning med metoder.
 	 */
-	public function testCreateObject(): void
+	public function testVinstspridning(): void
 	{
 		new Preludium();
 		$spel = new Spel();

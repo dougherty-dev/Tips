@@ -22,7 +22,7 @@ use Tips\Klasser\Tips;
 class VinstgrafAjaxTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för VinstgrafAjax med metoder.
 	 */
 	public function testVinstgrafAjax(): void
 	{

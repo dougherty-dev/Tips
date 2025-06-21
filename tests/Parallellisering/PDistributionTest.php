@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Klass PGenereraTest.
+ * Klass PDistributionTest.
  * @author Niklas Dougherty
  */
 
@@ -11,17 +11,17 @@ namespace Tips\Tests\Parallellisering;
 
 use PHPUnit\Framework\TestCase;
 use Tips\Klasser\Preludium;
-use Tips\Parallellisering\PGenerera;
+use Tips\Parallellisering\PDistribution;
 
 /**
- * Klass PGenereraTest.
+ * Klass PDistributionTest.
  */
-class PGenereraTest extends TestCase
+class PDistributionTest extends TestCase
 {
 	/**
-	 * Testa PGenerera med metoder.
+	 * Testa PDistribution med metoder.
 	 */
-	public function testPGenerera(): void
+	public function testPDistribution(): void
 	{
 		new Preludium();
 
@@ -29,7 +29,8 @@ class PGenereraTest extends TestCase
 		$_REQUEST['j'] = '0';
 		$_REQUEST['k'] = '0';
 		$_REQUEST['l'] = '0';
-		$this->assertInstanceOf("\Tips\Parallellisering\PGenerera", new PGenerera());
+		unlink(GRAF . DISTRIBUTION . "/stryktipset-t1-o4905-s1.png");
+		$this->assertInstanceOf("\Tips\Parallellisering\PDistribution", new PDistribution());
 		unset($_REQUEST['i'], $_REQUEST['j'], $_REQUEST['k'], $_REQUEST['l']);
 	}
 }

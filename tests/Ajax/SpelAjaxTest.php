@@ -23,7 +23,7 @@ use Tips\Moduler\TT;
 class SpelAjaxTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för SpelAjax med metoder.
 	 */
 	public function testSpelAjax(): void
 	{

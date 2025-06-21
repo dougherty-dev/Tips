@@ -24,9 +24,9 @@ use Tips\Klasser\Preludium;
 class SpelTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för Spel med metoder.
 	 */
-	public function testCreateObject(): void
+	public function testSpel(): void
 	{
 		new Preludium();
 		$this->assertInstanceOf("\Tips\Klasser\Spel\Sekvenser", new Sekvenser());

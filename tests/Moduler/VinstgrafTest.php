@@ -21,9 +21,9 @@ use Tips\Moduler\Vinstgraf;
 class VinstgrafTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Testa Vinstgraf med metoder.
 	 */
-	public function testCreateObject(): void
+	public function testVinstgraf(): void
 	{
 		new Preludium();
 		$spel = new Spel();

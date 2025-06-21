@@ -21,7 +21,10 @@ use Tips\Klasser\Tips;
  */
 class PreferenserAjaxTest extends TestCase
 {
-	public function testModulerAjax(): void
+	/**
+	 * Tester för PreferenserAjax med metoder.
+	 */
+	public function testPreferenserAjax(): void
 	{
 		new Preludium();
 

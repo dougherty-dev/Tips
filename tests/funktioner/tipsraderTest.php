@@ -18,9 +18,9 @@ use Tips\Klasser\Preludium;
 class tipsraderTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Tester för tipsrader med metoder.
 	 */
-	public function testCreateObject(): void
+	public function testTipsrader(): void
 	{
 		new Preludium();
 

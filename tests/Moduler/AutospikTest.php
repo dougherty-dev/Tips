@@ -21,9 +21,9 @@ use Tips\Moduler\Autospik;
 class AutospikTest extends TestCase
 {
 	/**
-	 * Construct object with argument and verify that the object has the expected properties.
+	 * Testa Autospik med metoder.
 	 */
-	public function testCreateObject(): void
+	public function testAutospik(): void
 	{
 		new Preludium();
 		$spel = new Spel();

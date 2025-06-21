@@ -27,14 +27,14 @@ class DistributionAjaxTest extends TestCase
 	{
 		new Preludium();
 
-		$_REQUEST['distribution_minprocent'] = '101';
-		$_REQUEST['distribution_maxprocent'] = '102';
+		$_REQUEST['distribution_minprocent'] = 101;
+		$_REQUEST['distribution_maxprocent'] = 102;
 		$this->assertInstanceOf("\Tips\Moduler\Ajax\DistributionAjax", new DistributionAjax());
 
 		$spel = new Spel();
 		$dbprefs = new DBPreferenser($spel->db);
-		$dist_minprocent = $dbprefs->hämta_preferens('distribution.distribution_minprocent');
-		$dist_maxprocent = $dbprefs->hämta_preferens('distribution.distribution_maxprocent');
+		$dist_minprocent = (int) $dbprefs->hämta_preferens('distribution.distribution_minprocent');
+		$dist_maxprocent = (int) $dbprefs->hämta_preferens('distribution.distribution_maxprocent');
 		$this->assertNotEquals($dist_minprocent, 101);
 		$this->assertNotEquals($dist_maxprocent, 102);
 		unset($_REQUEST['distribution_minprocent'], $_REQUEST['distribution_maxprocent']);
@@ -53,8 +53,8 @@ class DistributionAjaxTest extends TestCase
 
 		$spel = new Spel();
 		$dbprefs = new DBPreferenser($spel->db);
-		$grund_minprocent = $dbprefs->hämta_preferens('distribution.grund_minprocent');
-		$grund_maxprocent = $dbprefs->hämta_preferens('distribution.grund_maxprocent');
+		$grund_minprocent = (float) $dbprefs->hämta_preferens('distribution.grund_minprocent');
+		$grund_maxprocent = (float) $dbprefs->hämta_preferens('distribution.grund_maxprocent');
 		$this->assertNotEquals($grund_minprocent, 101);
 		$this->assertNotEquals($grund_maxprocent, 102);
 		unset($_REQUEST['grund_minprocent'], $_REQUEST['grund_maxprocent']);

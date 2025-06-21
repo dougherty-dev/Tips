@@ -1,115 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="/Users/nik/Sites/tips/phpunit.xml" tests="41" assertions="1029" errors="0" failures="0" skipped="0" time="11.052482">
-    <testsuite name="default" tests="41" assertions="1029" errors="0" failures="0" skipped="0" time="11.052482">
-      <testsuite name="Tips\Tests\Ajax\MatchdataAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/MatchdataAjaxTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="2.285412">
-        <testcase name="testModulerAjax" file="/Users/nik/Sites/tips/tests/Ajax/MatchdataAjaxTest.php" line="26" class="Tips\Tests\Ajax\MatchdataAjaxTest" classname="Tips.Tests.Ajax.MatchdataAjaxTest" assertions="3" time="2.285412"/>
+  <testsuite name="/Users/nik/Sites/tips/phpunit.xml" tests="41" assertions="1029" errors="0" failures="0" skipped="0" time="10.771206">
+    <testsuite name="default" tests="41" assertions="1029" errors="0" failures="0" skipped="0" time="10.771206">
+      <testsuite name="Tips\Tests\Ajax\MatchdataAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/MatchdataAjaxTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="2.104327">
+        <testcase name="testModulerAjax" file="/Users/nik/Sites/tips/tests/Ajax/MatchdataAjaxTest.php" line="26" class="Tips\Tests\Ajax\MatchdataAjaxTest" classname="Tips.Tests.Ajax.MatchdataAjaxTest" assertions="3" time="2.104327"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Ajax\OmgangAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/OmgangAjaxTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.247322">
-        <testcase name="testOmgangAjax" file="/Users/nik/Sites/tips/tests/Ajax/OmgangAjaxTest.php" line="26" class="Tips\Tests\Ajax\OmgangAjaxTest" classname="Tips.Tests.Ajax.OmgangAjaxTest" assertions="3" time="0.247322"/>
+      <testsuite name="Tips\Tests\Ajax\OmgangAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/OmgangAjaxTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.266566">
+        <testcase name="testOmgangAjax" file="/Users/nik/Sites/tips/tests/Ajax/OmgangAjaxTest.php" line="26" class="Tips\Tests\Ajax\OmgangAjaxTest" classname="Tips.Tests.Ajax.OmgangAjaxTest" assertions="3" time="0.266566"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Ajax\PreferenserAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/PreferenserAjaxTest.php" tests="1" assertions="10" errors="0" failures="0" skipped="0" time="0.244901">
-        <testcase name="testModulerAjax" file="/Users/nik/Sites/tips/tests/Ajax/PreferenserAjaxTest.php" line="24" class="Tips\Tests\Ajax\PreferenserAjaxTest" classname="Tips.Tests.Ajax.PreferenserAjaxTest" assertions="10" time="0.244901"/>
+      <testsuite name="Tips\Tests\Ajax\PreferenserAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/PreferenserAjaxTest.php" tests="1" assertions="10" errors="0" failures="0" skipped="0" time="0.229419">
+        <testcase name="testModulerAjax" file="/Users/nik/Sites/tips/tests/Ajax/PreferenserAjaxTest.php" line="24" class="Tips\Tests\Ajax\PreferenserAjaxTest" classname="Tips.Tests.Ajax.PreferenserAjaxTest" assertions="10" time="0.229419"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Ajax\RaderAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/RaderAjaxTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.003534">
-        <testcase name="testRaderAjax" file="/Users/nik/Sites/tips/tests/Ajax/RaderAjaxTest.php" line="26" class="Tips\Tests\Ajax\RaderAjaxTest" classname="Tips.Tests.Ajax.RaderAjaxTest" assertions="2" time="0.003534"/>
+      <testsuite name="Tips\Tests\Ajax\RaderAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/RaderAjaxTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.003622">
+        <testcase name="testRaderAjax" file="/Users/nik/Sites/tips/tests/Ajax/RaderAjaxTest.php" line="26" class="Tips\Tests\Ajax\RaderAjaxTest" classname="Tips.Tests.Ajax.RaderAjaxTest" assertions="2" time="0.003622"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Ajax\SekvensAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/SekvensAjaxTest.php" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="0.086154">
-        <testcase name="testSekvensAjax" file="/Users/nik/Sites/tips/tests/Ajax/SekvensAjaxTest.php" line="29" class="Tips\Tests\Ajax\SekvensAjaxTest" classname="Tips.Tests.Ajax.SekvensAjaxTest" assertions="4" time="0.086154"/>
+      <testsuite name="Tips\Tests\Ajax\SekvensAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/SekvensAjaxTest.php" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="0.103772">
+        <testcase name="testSekvensAjax" file="/Users/nik/Sites/tips/tests/Ajax/SekvensAjaxTest.php" line="29" class="Tips\Tests\Ajax\SekvensAjaxTest" classname="Tips.Tests.Ajax.SekvensAjaxTest" assertions="4" time="0.103772"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Ajax\SpelAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/SpelAjaxTest.php" tests="1" assertions="7" errors="0" failures="0" skipped="0" time="0.022027">
-        <testcase name="testSpelAjax" file="/Users/nik/Sites/tips/tests/Ajax/SpelAjaxTest.php" line="28" class="Tips\Tests\Ajax\SpelAjaxTest" classname="Tips.Tests.Ajax.SpelAjaxTest" assertions="7" time="0.022027"/>
+      <testsuite name="Tips\Tests\Ajax\SpelAjaxTest" file="/Users/nik/Sites/tips/tests/Ajax/SpelAjaxTest.php" tests="1" assertions="7" errors="0" failures="0" skipped="0" time="0.025139">
+        <testcase name="testSpelAjax" file="/Users/nik/Sites/tips/tests/Ajax/SpelAjaxTest.php" line="28" class="Tips\Tests\Ajax\SpelAjaxTest" classname="Tips.Tests.Ajax.SpelAjaxTest" assertions="7" time="0.025139"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Klasser\DBPreferenserTest" file="/Users/nik/Sites/tips/tests/Klasser/DBPreferenserTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.001745">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Klasser/DBPreferenserTest.php" line="26" class="Tips\Tests\Klasser\DBPreferenserTest" classname="Tips.Tests.Klasser.DBPreferenserTest" assertions="3" time="0.001745"/>
+      <testsuite name="Tips\Tests\Klasser\DBPreferenserTest" file="/Users/nik/Sites/tips/tests/Klasser/DBPreferenserTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.002004">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Klasser/DBPreferenserTest.php" line="26" class="Tips\Tests\Klasser\DBPreferenserTest" classname="Tips.Tests.Klasser.DBPreferenserTest" assertions="3" time="0.002004"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Klasser\MatcherTest" file="/Users/nik/Sites/tips/tests/Klasser/MatcherTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.001718">
-        <testcase name="testMatcher" file="/Users/nik/Sites/tips/tests/Klasser/MatcherTest.php" line="26" class="Tips\Tests\Klasser\MatcherTest" classname="Tips.Tests.Klasser.MatcherTest" assertions="2" time="0.001718"/>
+      <testsuite name="Tips\Tests\Klasser\MatcherTest" file="/Users/nik/Sites/tips/tests/Klasser/MatcherTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.002188">
+        <testcase name="testMatcher" file="/Users/nik/Sites/tips/tests/Klasser/MatcherTest.php" line="26" class="Tips\Tests\Klasser\MatcherTest" classname="Tips.Tests.Klasser.MatcherTest" assertions="2" time="0.002188"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Klasser\OmgangTest" file="/Users/nik/Sites/tips/tests/Klasser/OmgangTest.php" tests="1" assertions="7" errors="0" failures="0" skipped="0" time="2.622058">
-        <testcase name="testOmgang" file="/Users/nik/Sites/tips/tests/Klasser/OmgangTest.php" line="28" class="Tips\Tests\Klasser\OmgangTest" classname="Tips.Tests.Klasser.OmgangTest" assertions="7" time="2.622058"/>
+      <testsuite name="Tips\Tests\Klasser\OmgangTest" file="/Users/nik/Sites/tips/tests/Klasser/OmgangTest.php" tests="1" assertions="7" errors="0" failures="0" skipped="0" time="2.564175">
+        <testcase name="testOmgang" file="/Users/nik/Sites/tips/tests/Klasser/OmgangTest.php" line="28" class="Tips\Tests\Klasser\OmgangTest" classname="Tips.Tests.Klasser.OmgangTest" assertions="7" time="2.564175"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Klasser\SpelTest" file="/Users/nik/Sites/tips/tests/Klasser/SpelTest.php" tests="1" assertions="8" errors="0" failures="0" skipped="0" time="0.006320">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Klasser/SpelTest.php" line="29" class="Tips\Tests\Klasser\SpelTest" classname="Tips.Tests.Klasser.SpelTest" assertions="8" time="0.006320"/>
+      <testsuite name="Tips\Tests\Klasser\SpelTest" file="/Users/nik/Sites/tips/tests/Klasser/SpelTest.php" tests="1" assertions="8" errors="0" failures="0" skipped="0" time="0.006276">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Klasser/SpelTest.php" line="29" class="Tips\Tests\Klasser\SpelTest" classname="Tips.Tests.Klasser.SpelTest" assertions="8" time="0.006276"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Klasser\VinstspridningTest" file="/Users/nik/Sites/tips/tests/Klasser/VinstspridningTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.157078">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Klasser/VinstspridningTest.php" line="27" class="Tips\Tests\Klasser\VinstspridningTest" classname="Tips.Tests.Klasser.VinstspridningTest" assertions="1" time="0.157078"/>
+      <testsuite name="Tips\Tests\Klasser\VinstspridningTest" file="/Users/nik/Sites/tips/tests/Klasser/VinstspridningTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.153860">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Klasser/VinstspridningTest.php" line="27" class="Tips\Tests\Klasser\VinstspridningTest" classname="Tips.Tests.Klasser.VinstspridningTest" assertions="1" time="0.153860"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\Ajax\AndelAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AndelAjaxTest.php" tests="3" assertions="7" errors="0" failures="0" skipped="0" time="0.018778">
-        <testcase name="testAndelAjax1" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AndelAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\AndelAjaxTest" classname="Tips.Tests.Moduler.Ajax.AndelAjaxTest" assertions="3" time="0.008649"/>
-        <testcase name="testAndelAjaxX" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AndelAjaxTest.php" line="46" class="Tips\Tests\Moduler\Ajax\AndelAjaxTest" classname="Tips.Tests.Moduler.Ajax.AndelAjaxTest" assertions="2" time="0.003935"/>
-        <testcase name="testAndelAjax2" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AndelAjaxTest.php" line="66" class="Tips\Tests\Moduler\Ajax\AndelAjaxTest" classname="Tips.Tests.Moduler.Ajax.AndelAjaxTest" assertions="2" time="0.006194"/>
+      <testsuite name="Tips\Tests\Moduler\Ajax\AndelAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AndelAjaxTest.php" tests="3" assertions="7" errors="0" failures="0" skipped="0" time="0.020081">
+        <testcase name="testAndelAjax1" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AndelAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\AndelAjaxTest" classname="Tips.Tests.Moduler.Ajax.AndelAjaxTest" assertions="3" time="0.009452"/>
+        <testcase name="testAndelAjaxX" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AndelAjaxTest.php" line="46" class="Tips\Tests\Moduler\Ajax\AndelAjaxTest" classname="Tips.Tests.Moduler.Ajax.AndelAjaxTest" assertions="2" time="0.004795"/>
+        <testcase name="testAndelAjax2" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AndelAjaxTest.php" line="66" class="Tips\Tests\Moduler\Ajax\AndelAjaxTest" classname="Tips.Tests.Moduler.Ajax.AndelAjaxTest" assertions="2" time="0.005834"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\Ajax\AutospikAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AutospikAjaxTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.010423">
-        <testcase name="testAutospikAjax" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AutospikAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\AutospikAjaxTest" classname="Tips.Tests.Moduler.Ajax.AutospikAjaxTest" assertions="3" time="0.010423"/>
+      <testsuite name="Tips\Tests\Moduler\Ajax\AutospikAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AutospikAjaxTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.010763">
+        <testcase name="testAutospikAjax" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/AutospikAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\AutospikAjaxTest" classname="Tips.Tests.Moduler.Ajax.AutospikAjaxTest" assertions="3" time="0.010763"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\Ajax\DistributionAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/DistributionAjaxTest.php" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="1.920152">
-        <testcase name="testDistributionAjaxMinprocent" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/DistributionAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\DistributionAjaxTest" classname="Tips.Tests.Moduler.Ajax.DistributionAjaxTest" assertions="3" time="1.851768"/>
-        <testcase name="testDistributionAjaxGrund" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/DistributionAjaxTest.php" line="46" class="Tips\Tests\Moduler\Ajax\DistributionAjaxTest" classname="Tips.Tests.Moduler.Ajax.DistributionAjaxTest" assertions="2" time="0.068384"/>
+      <testsuite name="Tips\Tests\Moduler\Ajax\DistributionAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/DistributionAjaxTest.php" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="1.844034">
+        <testcase name="testDistributionAjaxMinprocent" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/DistributionAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\DistributionAjaxTest" classname="Tips.Tests.Moduler.Ajax.DistributionAjaxTest" assertions="3" time="1.775381"/>
+        <testcase name="testDistributionAjaxGrund" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/DistributionAjaxTest.php" line="46" class="Tips\Tests\Moduler\Ajax\DistributionAjaxTest" classname="Tips.Tests.Moduler.Ajax.DistributionAjaxTest" assertions="2" time="0.068654"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\Ajax\FANNAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/FANNAjaxTest.php" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="0.016743">
-        <testcase name="testFannAjaxMin" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/FANNAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\FANNAjaxTest" classname="Tips.Tests.Moduler.Ajax.FANNAjaxTest" assertions="3" time="0.011625"/>
-        <testcase name="testFannAjaxTolerans" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/FANNAjaxTest.php" line="56" class="Tips\Tests\Moduler\Ajax\FANNAjaxTest" classname="Tips.Tests.Moduler.Ajax.FANNAjaxTest" assertions="2" time="0.005118"/>
+      <testsuite name="Tips\Tests\Moduler\Ajax\FANNAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/FANNAjaxTest.php" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="0.018834">
+        <testcase name="testFannAjaxMin" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/FANNAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\FANNAjaxTest" classname="Tips.Tests.Moduler.Ajax.FANNAjaxTest" assertions="3" time="0.012848"/>
+        <testcase name="testFannAjaxTolerans" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/FANNAjaxTest.php" line="56" class="Tips\Tests\Moduler\Ajax\FANNAjaxTest" classname="Tips.Tests.Moduler.Ajax.FANNAjaxTest" assertions="2" time="0.005987"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\Ajax\HGAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/HGAjaxTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.011567">
-        <testcase name="testHGAjaxMin" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/HGAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\HGAjaxTest" classname="Tips.Tests.Moduler.Ajax.HGAjaxTest" assertions="3" time="0.011567"/>
+      <testsuite name="Tips\Tests\Moduler\Ajax\HGAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/HGAjaxTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.010774">
+        <testcase name="testHGAjaxMin" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/HGAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\HGAjaxTest" classname="Tips.Tests.Moduler.Ajax.HGAjaxTest" assertions="3" time="0.010774"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\Ajax\KlusterAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/KlusterAjaxTest.php" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="0.766469">
-        <testcase name="testKlusterAjaxAntal" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/KlusterAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\KlusterAjaxTest" classname="Tips.Tests.Moduler.Ajax.KlusterAjaxTest" assertions="3" time="0.445941"/>
-        <testcase name="testKlusterAjaxRadie" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/KlusterAjaxTest.php" line="52" class="Tips\Tests\Moduler\Ajax\KlusterAjaxTest" classname="Tips.Tests.Moduler.Ajax.KlusterAjaxTest" assertions="2" time="0.320528"/>
+      <testsuite name="Tips\Tests\Moduler\Ajax\KlusterAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/KlusterAjaxTest.php" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="0.764838">
+        <testcase name="testKlusterAjaxAntal" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/KlusterAjaxTest.php" line="26" class="Tips\Tests\Moduler\Ajax\KlusterAjaxTest" classname="Tips.Tests.Moduler.Ajax.KlusterAjaxTest" assertions="3" time="0.452685"/>
+        <testcase name="testKlusterAjaxRadie" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/KlusterAjaxTest.php" line="52" class="Tips\Tests\Moduler\Ajax\KlusterAjaxTest" classname="Tips.Tests.Moduler.Ajax.KlusterAjaxTest" assertions="2" time="0.312153"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\Ajax\SystemAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/SystemAjaxTest.php" tests="1" assertions="6" errors="0" failures="0" skipped="0" time="0.050473">
-        <testcase name="testSystemAjax" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/SystemAjaxTest.php" line="28" class="Tips\Tests\Moduler\Ajax\SystemAjaxTest" classname="Tips.Tests.Moduler.Ajax.SystemAjaxTest" assertions="6" time="0.050473"/>
+      <testsuite name="Tips\Tests\Moduler\Ajax\SystemAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/SystemAjaxTest.php" tests="1" assertions="6" errors="0" failures="0" skipped="0" time="0.050338">
+        <testcase name="testSystemAjax" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/SystemAjaxTest.php" line="28" class="Tips\Tests\Moduler\Ajax\SystemAjaxTest" classname="Tips.Tests.Moduler.Ajax.SystemAjaxTest" assertions="6" time="0.050338"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\Ajax\TTAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/TTAjaxTest.php" tests="3" assertions="11" errors="0" failures="0" skipped="0" time="0.149915">
-        <testcase name="testTTAjax" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/TTAjaxTest.php" line="28" class="Tips\Tests\Moduler\Ajax\TTAjaxTest" classname="Tips.Tests.Moduler.Ajax.TTAjaxTest" assertions="6" time="0.082628"/>
-        <testcase name="testTTAjax2" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/TTAjaxTest.php" line="101" class="Tips\Tests\Moduler\Ajax\TTAjaxTest" classname="Tips.Tests.Moduler.Ajax.TTAjaxTest" assertions="1" time="0.032304"/>
-        <testcase name="testTTAjax3" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/TTAjaxTest.php" line="162" class="Tips\Tests\Moduler\Ajax\TTAjaxTest" classname="Tips.Tests.Moduler.Ajax.TTAjaxTest" assertions="4" time="0.034983"/>
+      <testsuite name="Tips\Tests\Moduler\Ajax\TTAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/TTAjaxTest.php" tests="3" assertions="11" errors="0" failures="0" skipped="0" time="0.155110">
+        <testcase name="testTTAjax" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/TTAjaxTest.php" line="28" class="Tips\Tests\Moduler\Ajax\TTAjaxTest" classname="Tips.Tests.Moduler.Ajax.TTAjaxTest" assertions="6" time="0.079744"/>
+        <testcase name="testTTAjax2" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/TTAjaxTest.php" line="101" class="Tips\Tests\Moduler\Ajax\TTAjaxTest" classname="Tips.Tests.Moduler.Ajax.TTAjaxTest" assertions="1" time="0.034712"/>
+        <testcase name="testTTAjax3" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/TTAjaxTest.php" line="162" class="Tips\Tests\Moduler\Ajax\TTAjaxTest" classname="Tips.Tests.Moduler.Ajax.TTAjaxTest" assertions="4" time="0.040654"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\Ajax\VinstgrafAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/VinstgrafAjaxTest.php" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="0.066984">
-        <testcase name="testVinstgrafAjax" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/VinstgrafAjaxTest.php" line="27" class="Tips\Tests\Moduler\Ajax\VinstgrafAjaxTest" classname="Tips.Tests.Moduler.Ajax.VinstgrafAjaxTest" assertions="4" time="0.066984"/>
+      <testsuite name="Tips\Tests\Moduler\Ajax\VinstgrafAjaxTest" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/VinstgrafAjaxTest.php" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="0.086621">
+        <testcase name="testVinstgrafAjax" file="/Users/nik/Sites/tips/tests/Moduler/Ajax/VinstgrafAjaxTest.php" line="27" class="Tips\Tests\Moduler\Ajax\VinstgrafAjaxTest" classname="Tips.Tests.Moduler.Ajax.VinstgrafAjaxTest" assertions="4" time="0.086621"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\AndelTest" file="/Users/nik/Sites/tips/tests/Moduler/AndelTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.027694">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/AndelTest.php" line="26" class="Tips\Tests\Moduler\AndelTest" classname="Tips.Tests.Moduler.AndelTest" assertions="2" time="0.027694"/>
+      <testsuite name="Tips\Tests\Moduler\AndelTest" file="/Users/nik/Sites/tips/tests/Moduler/AndelTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.030626">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/AndelTest.php" line="26" class="Tips\Tests\Moduler\AndelTest" classname="Tips.Tests.Moduler.AndelTest" assertions="2" time="0.030626"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\AutospikTest" file="/Users/nik/Sites/tips/tests/Moduler/AutospikTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.026498">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/AutospikTest.php" line="26" class="Tips\Tests\Moduler\AutospikTest" classname="Tips.Tests.Moduler.AutospikTest" assertions="2" time="0.026498"/>
+      <testsuite name="Tips\Tests\Moduler\AutospikTest" file="/Users/nik/Sites/tips/tests/Moduler/AutospikTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.030965">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/AutospikTest.php" line="26" class="Tips\Tests\Moduler\AutospikTest" classname="Tips.Tests.Moduler.AutospikTest" assertions="2" time="0.030965"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\DistributionTest" file="/Users/nik/Sites/tips/tests/Moduler/DistributionTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.033826">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/DistributionTest.php" line="26" class="Tips\Tests\Moduler\DistributionTest" classname="Tips.Tests.Moduler.DistributionTest" assertions="2" time="0.033826"/>
+      <testsuite name="Tips\Tests\Moduler\DistributionTest" file="/Users/nik/Sites/tips/tests/Moduler/DistributionTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.030107">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/DistributionTest.php" line="26" class="Tips\Tests\Moduler\DistributionTest" classname="Tips.Tests.Moduler.DistributionTest" assertions="2" time="0.030107"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\HGTest" file="/Users/nik/Sites/tips/tests/Moduler/HGTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.028066">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/HGTest.php" line="26" class="Tips\Tests\Moduler\HGTest" classname="Tips.Tests.Moduler.HGTest" assertions="2" time="0.028066"/>
+      <testsuite name="Tips\Tests\Moduler\HGTest" file="/Users/nik/Sites/tips/tests/Moduler/HGTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.026842">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/HGTest.php" line="26" class="Tips\Tests\Moduler\HGTest" classname="Tips.Tests.Moduler.HGTest" assertions="2" time="0.026842"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\System\RKodTest" file="/Users/nik/Sites/tips/tests/Moduler/System/RKodTest.php" tests="1" assertions="615" errors="0" failures="0" skipped="0" time="0.068909">
-        <testcase name="testRKod" file="/Users/nik/Sites/tips/tests/Moduler/System/RKodTest.php" line="24" class="Tips\Tests\Moduler\System\RKodTest" classname="Tips.Tests.Moduler.System.RKodTest" assertions="615" time="0.068909"/>
+      <testsuite name="Tips\Tests\Moduler\System\RKodTest" file="/Users/nik/Sites/tips/tests/Moduler/System/RKodTest.php" tests="1" assertions="615" errors="0" failures="0" skipped="0" time="0.068447">
+        <testcase name="testRKod" file="/Users/nik/Sites/tips/tests/Moduler/System/RKodTest.php" line="24" class="Tips\Tests\Moduler\System\RKodTest" classname="Tips.Tests.Moduler.System.RKodTest" assertions="615" time="0.068447"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\System\SystemTest" file="/Users/nik/Sites/tips/tests/Moduler/System/SystemTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.029075">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/System/SystemTest.php" line="27" class="Tips\Tests\Moduler\System\SystemTest" classname="Tips.Tests.Moduler.System.SystemTest" assertions="2" time="0.029075"/>
+      <testsuite name="Tips\Tests\Moduler\System\SystemTest" file="/Users/nik/Sites/tips/tests/Moduler/System/SystemTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.029231">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/System/SystemTest.php" line="27" class="Tips\Tests\Moduler\System\SystemTest" classname="Tips.Tests.Moduler.System.SystemTest" assertions="2" time="0.029231"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\TT\TTRKodTest" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTRKodTest.php" tests="1" assertions="258" errors="0" failures="0" skipped="0" time="0.004919">
-        <testcase name="testRKod" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTRKodTest.php" line="24" class="Tips\Tests\Moduler\TT\TTRKodTest" classname="Tips.Tests.Moduler.TT.TTRKodTest" assertions="258" time="0.004919"/>
+      <testsuite name="Tips\Tests\Moduler\TT\TTRKodTest" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTRKodTest.php" tests="1" assertions="258" errors="0" failures="0" skipped="0" time="0.004962">
+        <testcase name="testRKod" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTRKodTest.php" line="24" class="Tips\Tests\Moduler\TT\TTRKodTest" classname="Tips.Tests.Moduler.TT.TTRKodTest" assertions="258" time="0.004962"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\TT\TTTest" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.048752">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTTest.php" line="31" class="Tips\Tests\Moduler\TT\TTTest" classname="Tips.Tests.Moduler.TT.TTTest" assertions="3" time="0.048752"/>
+      <testsuite name="Tips\Tests\Moduler\TT\TTTest" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.050005">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/TT/TTTest.php" line="31" class="Tips\Tests\Moduler\TT\TTTest" classname="Tips.Tests.Moduler.TT.TTTest" assertions="3" time="0.050005"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Moduler\VinstgrafTest" file="/Users/nik/Sites/tips/tests/Moduler/VinstgrafTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.089533">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/VinstgrafTest.php" line="26" class="Tips\Tests\Moduler\VinstgrafTest" classname="Tips.Tests.Moduler.VinstgrafTest" assertions="2" time="0.089533"/>
+      <testsuite name="Tips\Tests\Moduler\VinstgrafTest" file="/Users/nik/Sites/tips/tests/Moduler/VinstgrafTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.086494">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/Moduler/VinstgrafTest.php" line="26" class="Tips\Tests\Moduler\VinstgrafTest" classname="Tips.Tests.Moduler.VinstgrafTest" assertions="2" time="0.086494"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Parallellisering\PGenereraTest" file="/Users/nik/Sites/tips/tests/Parallellisering/PGenereraTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="2.002682">
-        <testcase name="testPGenerera" file="/Users/nik/Sites/tips/tests/Parallellisering/PGenereraTest.php" line="22" class="Tips\Tests\Parallellisering\PGenereraTest" classname="Tips.Tests.Parallellisering.PGenereraTest" assertions="2" time="2.002682"/>
+      <testsuite name="Tips\Tests\Parallellisering\PGenereraTest" file="/Users/nik/Sites/tips/tests/Parallellisering/PGenereraTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="1.988109">
+        <testcase name="testPGenerera" file="/Users/nik/Sites/tips/tests/Parallellisering/PGenereraTest.php" line="22" class="Tips\Tests\Parallellisering\PGenereraTest" classname="Tips.Tests.Parallellisering.PGenereraTest" assertions="2" time="1.988109"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Funktioner\assistenterTest" file="/Users/nik/Sites/tips/tests/funktioner/assistenterTest.php" tests="1" assertions="21" errors="0" failures="0" skipped="0" time="0.001114">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/assistenterTest.php" line="23" class="Tips\Tests\Funktioner\assistenterTest" classname="Tips.Tests.Funktioner.assistenterTest" assertions="21" time="0.001114"/>
+      <testsuite name="Tips\Tests\Funktioner\assistenterTest" file="/Users/nik/Sites/tips/tests/funktioner/assistenterTest.php" tests="1" assertions="21" errors="0" failures="0" skipped="0" time="0.001121">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/assistenterTest.php" line="23" class="Tips\Tests\Funktioner\assistenterTest" classname="Tips.Tests.Funktioner.assistenterTest" assertions="21" time="0.001121"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Funktioner\generatorTest" file="/Users/nik/Sites/tips/tests/funktioner/generatorTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.000467">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/generatorTest.php" line="23" class="Tips\Tests\Funktioner\generatorTest" classname="Tips.Tests.Funktioner.generatorTest" assertions="1" time="0.000467"/>
+      <testsuite name="Tips\Tests\Funktioner\generatorTest" file="/Users/nik/Sites/tips/tests/funktioner/generatorTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.000471">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/generatorTest.php" line="23" class="Tips\Tests\Funktioner\generatorTest" classname="Tips.Tests.Funktioner.generatorTest" assertions="1" time="0.000471"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Funktioner\matriserTest" file="/Users/nik/Sites/tips/tests/funktioner/matriserTest.php" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="0.000626">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/matriserTest.php" line="23" class="Tips\Tests\Funktioner\matriserTest" classname="Tips.Tests.Funktioner.matriserTest" assertions="4" time="0.000626"/>
+      <testsuite name="Tips\Tests\Funktioner\matriserTest" file="/Users/nik/Sites/tips/tests/funktioner/matriserTest.php" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="0.000585">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/matriserTest.php" line="23" class="Tips\Tests\Funktioner\matriserTest" classname="Tips.Tests.Funktioner.matriserTest" assertions="4" time="0.000585"/>
       </testsuite>
-      <testsuite name="Tips\Tests\Funktioner\tipsraderTest" file="/Users/nik/Sites/tips/tests/funktioner/tipsraderTest.php" tests="1" assertions="14" errors="0" failures="0" skipped="0" time="0.000546">
-        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/tipsraderTest.php" line="23" class="Tips\Tests\Funktioner\tipsraderTest" classname="Tips.Tests.Funktioner.tipsraderTest" assertions="14" time="0.000546"/>
+      <testsuite name="Tips\Tests\Funktioner\tipsraderTest" file="/Users/nik/Sites/tips/tests/funktioner/tipsraderTest.php" tests="1" assertions="14" errors="0" failures="0" skipped="0" time="0.000499">
+        <testcase name="testCreateObject" file="/Users/nik/Sites/tips/tests/funktioner/tipsraderTest.php" line="23" class="Tips\Tests\Funktioner\tipsraderTest" classname="Tips.Tests.Funktioner.tipsraderTest" assertions="14" time="0.000499"/>
       </testsuite>
     </testsuite>
   </testsuite>

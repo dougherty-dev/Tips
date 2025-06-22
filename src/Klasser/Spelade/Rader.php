@@ -35,7 +35,7 @@ class Rader extends Kombinationsgraf {
 			 * Dela rader efter tre matcher, men behåll sista.
 			 */
 			$radbrytning = match (true) {
-				$index % 3 == 0 && $index < 12 && $index > 0 => '<br>',
+				$matchnr % 3 == 0 && $matchnr < 12 => '<br>',
 				default => ''
 			};
 

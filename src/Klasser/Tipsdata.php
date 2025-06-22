@@ -47,9 +47,10 @@ final class Tipsdata extends Tipsresultat {
 		$spel->omgång = $draws->drawNumber;
 		$spel->hämta_sekvenser();
 		$spel->spara_spel();
+
 		$tips = new Tips($spel);
 
-		$this->bearbeta_tipsdata($tips, $draws->events, [$draws->closeTime, $draws->drawComment, $draws->closeTime]);
+		$this->bearbeta_tipsdata($tips, $draws->events, $draws->closeTime, $draws->drawComment);
 
 		/**
 		 * Logga och återvänd.
@@ -69,15 +70,14 @@ final class Tipsdata extends Tipsresultat {
 	/**
 	 * Plocka ut data från JSON-objekt.
 	 * @param object[] $events
-	 * @param string[] $tider
 	 */
-	private function bearbeta_tipsdata(Tips &$tips, array $events, array $tider): void {
+	private function bearbeta_tipsdata(Tips &$tips, array $events, string $close_time, string $comment): void {
 		/**
 		 * Extrahera JSON-data för omgång.
 		 */
-		$tips->utdelning->år = intval(substr($tider[0], 0, 4));
-		$tips->utdelning->vecka = intval(explode("-", $tider[1])[1]);
-		$tips->matcher->spelstopp = strval($tider[2]);
+		$tips->utdelning->år = intval(substr($close_time, 0, 4));
+		$tips->utdelning->vecka = intval(explode("-", $comment)[1]);
+		$tips->matcher->spelstopp = strval($close_time);
 
 		/**
 		 * Plocka ut matcher, odds och streck.

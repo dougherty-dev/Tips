@@ -40,20 +40,18 @@ final class Matcher {
 	}
 
 	/**
-	 * Hämta enskild match från databas.
+	 * Hämta matcher från enskild omgång.
 	 */
 	public function hämta_matcher(): void {
 		/**
 		 * Initiera tomma fält.
 		 */
-		[$this->match, $this->resultat] = [TOMRAD, TOMRAD];
-		$this->matchstatus = NOLLRAD;
+		[$this->match, $this->resultat, $this->matchstatus] = [TOMRAD, TOMRAD, NOLLRAD];
 
 		/**
 		 * Hämta matcher från aktuell omgång.
 		 */
-		$sats = $this->spel->db->instans->prepare('SELECT *
-			FROM `matcher` WHERE `omgång`=:omgang AND `speltyp`=:speltyp LIMIT 1');
+		$sats = $this->spel->db->instans->prepare('SELECT * FROM `matcher` WHERE `omgång`=:omgang AND `speltyp`=:speltyp LIMIT 1');
 		$sats->bindValue(':omgang', $this->spel->omgång, PDO::PARAM_INT);
 		$sats->bindValue(':speltyp', $this->spel->speltyp->value, PDO::PARAM_INT);
 		$sats->execute();
@@ -70,18 +68,18 @@ final class Matcher {
 		 * Hämta rader.
 		 * Iterera över matchkolumner.
 		 */
-		$rad = $sats->fetchAll(PDO::FETCH_ASSOC)[0];
-		$this->spelstopp = $rad["spelstopp"];
-		$this->komplett = (bool) $rad["komplett"];
-
-		/**
-		 * Populera fält för matcher, resultat och matchstatus.
-		 */
-		foreach (MATCHKOLUMNER as $match) {
-			$nyckel = $match - 1;
-			$this->match[$nyckel] = $rad["match$match"];
-			$this->resultat[$nyckel] = $rad["resultat$match"];
-			$this->matchstatus[$nyckel] = $rad["status$match"];
+		foreach ($sats->fetchAll(PDO::FETCH_ASSOC) as $rad) {
+			$this->spelstopp = $rad["spelstopp"];
+			$this->komplett = (bool) $rad["komplett"];
+			/**
+			 * Populera fält för matcher, resultat och matchstatus.
+			 */
+			foreach (MATCHKOLUMNER as $match) {
+				$nyckel = $match - 1;
+				$this->match[$nyckel] = $rad["match$match"];
+				$this->resultat[$nyckel] = $rad["resultat$match"];
+				$this->matchstatus[$nyckel] = $rad["status$match"];
+			}
 		}
 	}
 

@@ -5,11 +5,12 @@ filter:
     excluded_paths: [vendor/*, tools/*, backup/*, tests/*, src/_data/skarp/*]
 
 build:
+    image: default-bionic
     nodes:
         my-tests:
             environment:
                 php:
-                    version: 8.4.8
+                    version: 8.3.22
         analysis:
             tests:
                 override:

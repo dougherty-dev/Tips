@@ -29,10 +29,10 @@ final class JusteradePrediktioner extends JusteradeSannolikheter {
 	 * Hämta historik.
 	 */
 	public function hämta_historik(): void {
-		$orediktioner = $this->db_preferenser->hämta_preferens("prediktioner.historik");
-		$historik = array_chunk(array_map('floatval', explode(',', $orediktioner)), 300);
+		$prediktioner = $this->db_preferenser->hämta_preferens("prediktioner.historik");
+		$historik = array_chunk(array_map('floatval', explode(',', $prediktioner)), 300);
 
-		match ($orediktioner) {
+		match ($prediktioner) {
 			'' => $this->spara_historik(),
 			default => [$this->odds_j, $this->streck_j] = [array_chunk($historik[0], 100), array_chunk($historik[1], 100)]
 		};

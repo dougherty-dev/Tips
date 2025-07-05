@@ -61,16 +61,21 @@ class Hamta extends Preferenser {
 	 */
 	private function extrahera_halvgarderingar(): void {
 		foreach ($this->garderingar as $index => $gardering) {
-			foreach ($gardering as $tecken) {
+			foreach ($gardering as $match) {
 				/**
 				 * Halvgardering = en ruta tom.
 				 */
-				if (!in_array('', $tecken, true)) {
-					$this->antal_garderingar[(int) $tecken]++;
+				if (count(array_unique($match)) > 1) {
+					$this->antal_garderingar[$index]++;
 				}
 			}
 
-			$this->antal_garderingar[$index] = min($this->andel_garderingar[$index], $this->antal_garderingar[$index]);
+			/**
+			 * Villor för garderingar.
+			 */
+			if ($this->andel_garderingar[$index] > $this->antal_garderingar[$index]) {
+				$this->antal_garderingar[$index] = $this->andel_garderingar[$index];
+			}
 		}
 	}
 

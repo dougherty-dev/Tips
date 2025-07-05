@@ -76,9 +76,7 @@ class HamtaSpikar extends HamtaData {
 				}
 			}
 
-			if ($this->andel_spikar[$index] > $this->antal_spikar[$index]) {
-				$this->antal_spikar[$index] = $this->andel_spikar[$index];
-			}
+			$this->antal_spikar[$index] = max($this->antal_spikar[$index], $this->andel_spikar[$index]);
 		}
 
 		$this->reduktion = array_fill(0, self::TT_MATCHANTAL, TOM_STRÄNGVEKTOR);

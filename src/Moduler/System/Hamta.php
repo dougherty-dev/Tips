@@ -73,9 +73,7 @@ class Hamta extends Preferenser {
 			/**
 			 * Villor för garderingar.
 			 */
-			if ($this->andel_garderingar[$index] > $this->antal_garderingar[$index]) {
-				$this->antal_garderingar[$index] = $this->andel_garderingar[$index];
-			}
+			$this->antal_garderingar[$index] = max($this->antal_garderingar[$index], $this->andel_garderingar[$index]);
 		}
 	}
 

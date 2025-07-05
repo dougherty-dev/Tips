@@ -38,9 +38,6 @@ class HamtaSpikar extends HamtaData {
 	 * Hämta spikar.
 	 */
 	protected function hämta_spikar(): void {
-		/**
-		 * Definiera en tom struktur. Hämta preferens.
-		 */
 		$this->spikar = array_fill(
 			0,
 			self::TT_MAX_SPIKFÄLT,
@@ -73,17 +70,12 @@ class HamtaSpikar extends HamtaData {
 
 		foreach ($this->spikar as $index => $gardering) {
 			foreach ($gardering as $match) {
-				/**
-				 * Halvgardering = en ruta tom.
-				 */
+				// Halvgardering = en ruta tom.
 				if (count(array_unique($match)) > 1) {
 					$this->antal_spikar[$index]++;
 				}
 			}
 
-			/**
-			 * Villor för garderingar.
-			 */
 			if ($this->andel_spikar[$index] > $this->antal_spikar[$index]) {
 				$this->antal_spikar[$index] = $this->andel_spikar[$index];
 			}
@@ -94,7 +86,6 @@ class HamtaSpikar extends HamtaData {
 
 		/**
 		 * Finns reduktion i preferenser är allt väl.
-		 * Annars sparas en tom datastruktur.
 		 */
 		match ($reduktion !== '') {
 			true => $this->reduktion = array_chunk(explode(',', $reduktion), 3),

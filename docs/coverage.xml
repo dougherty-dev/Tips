@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1750698901">
-  <project timestamp="1750698901" name="Clover Coverage">
+<coverage generated="1752881384">
+  <project timestamp="1752881384" name="Clover Coverage">
     <package name="Tips\Ajax">
       <file name="/Users/nik/Sites/tips/src/Ajax/InvesteraAjax.php">
         <class name="Tips\Ajax\InvesteraAjax" namespace="Tips\Ajax">
@@ -29,33 +29,33 @@
         </class>
         <line num="22" type="stmt" count="1"/>
         <line num="23" type="stmt" count="1"/>
-        <line num="38" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="39" type="stmt" count="1"/>
+        <line num="39" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
         <line num="40" type="stmt" count="1"/>
         <line num="41" type="stmt" count="1"/>
-        <line num="48" type="method" name="spara_matchdata" visibility="private" complexity="2" crap="2" count="1"/>
-        <line num="49" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="49" type="method" name="spara_matchdata" visibility="private" complexity="2" crap="2" count="1"/>
         <line num="50" type="stmt" count="1"/>
-        <line num="55" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
         <line num="56" type="stmt" count="1"/>
         <line num="57" type="stmt" count="1"/>
-        <line num="59" type="stmt" count="1"/>
+        <line num="58" type="stmt" count="1"/>
         <line num="60" type="stmt" count="1"/>
-        <line num="65" type="stmt" count="1"/>
+        <line num="61" type="stmt" count="1"/>
         <line num="66" type="stmt" count="1"/>
         <line num="67" type="stmt" count="1"/>
-        <line num="73" type="stmt" count="1"/>
+        <line num="68" type="stmt" count="1"/>
         <line num="74" type="stmt" count="1"/>
-        <line num="79" type="stmt" count="1"/>
+        <line num="75" type="stmt" count="1"/>
         <line num="80" type="stmt" count="1"/>
-        <line num="82" type="stmt" count="1"/>
-        <line num="87" type="stmt" count="1"/>
+        <line num="81" type="stmt" count="1"/>
+        <line num="83" type="stmt" count="1"/>
         <line num="88" type="stmt" count="1"/>
-        <line num="90" type="stmt" count="1"/>
+        <line num="89" type="stmt" count="1"/>
         <line num="91" type="stmt" count="1"/>
-        <line num="93" type="stmt" count="1"/>
-        <line num="97" type="stmt" count="1"/>
-        <metrics loc="98" ncloc="65" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="28" coveredelements="28"/>
+        <line num="92" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="98" type="stmt" count="1"/>
+        <metrics loc="99" ncloc="65" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="28" coveredelements="28"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Ajax/ModulerAjax.php">
         <class name="Tips\Ajax\ModulerAjax" namespace="Tips\Ajax">
@@ -3696,18 +3696,13 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Koder/R1/R_4_5_238_1.php">
         <class name="Tips\Koder\R1\R_4_5_238_1" namespace="Tips\Koder\R1">
-          <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+          <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
         </class>
         <line num="26" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="8"/>
         <line num="27" type="stmt" count="8"/>
         <line num="28" type="stmt" count="8"/>
         <line num="29" type="stmt" count="8"/>
-        <line num="31" type="stmt" count="8"/>
-        <line num="34" type="method" name="garanti" visibility="public" complexity="1" crap="1" count="8"/>
-        <line num="35" type="stmt" count="8"/>
-        <line num="36" type="stmt" count="8"/>
-        <line num="37" type="stmt" count="8"/>
-        <metrics loc="40" ncloc="27" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+        <metrics loc="33" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Koder/R1/R_4_6_432_1.php">
         <class name="Tips\Koder\R1\R_4_6_432_1" namespace="Tips\Koder\R1">
@@ -7214,7 +7209,7 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/System/Hamta.php">
         <class name="Tips\Moduler\System\Hamta" namespace="Tips\Moduler\System">
-          <metrics complexity="11" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="25" elements="33" coveredelements="26"/>
+          <metrics complexity="11" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="26" elements="33" coveredelements="28"/>
         </class>
         <line num="27" type="method" name="hämta_system" visibility="protected" complexity="4" crap="4" count="20"/>
         <line num="28" type="stmt" count="20"/>
@@ -7234,22 +7229,22 @@
         <line num="48" type="stmt" count="16"/>
         <line num="55" type="stmt" count="20"/>
         <line num="56" type="stmt" count="20"/>
-        <line num="62" type="method" name="extrahera_halvgarderingar" visibility="private" complexity="4" crap="4.13" count="20"/>
+        <line num="62" type="method" name="extrahera_halvgarderingar" visibility="private" complexity="4" crap="4" count="20"/>
         <line num="63" type="stmt" count="20"/>
         <line num="64" type="stmt" count="20"/>
         <line num="68" type="stmt" count="20"/>
-        <line num="69" type="stmt" count="0"/>
-        <line num="73" type="stmt" count="20"/>
-        <line num="80" type="method" name="spara_reduktion" visibility="private" complexity="3" crap="4.12" count="20"/>
-        <line num="81" type="stmt" count="20"/>
-        <line num="87" type="stmt" count="20"/>
-        <line num="88" type="stmt" count="20"/>
-        <line num="89" type="stmt" count="0"/>
-        <line num="90" type="stmt" count="0"/>
-        <line num="91" type="stmt" count="0"/>
+        <line num="69" type="stmt" count="16"/>
+        <line num="76" type="stmt" count="20"/>
+        <line num="83" type="method" name="spara_reduktion" visibility="private" complexity="3" crap="4.12" count="20"/>
+        <line num="84" type="stmt" count="20"/>
+        <line num="90" type="stmt" count="20"/>
+        <line num="91" type="stmt" count="20"/>
         <line num="92" type="stmt" count="0"/>
-        <line num="93" type="stmt" count="20"/>
-        <metrics loc="96" ncloc="63" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="25" elements="33" coveredelements="26"/>
+        <line num="93" type="stmt" count="0"/>
+        <line num="94" type="stmt" count="0"/>
+        <line num="95" type="stmt" count="0"/>
+        <line num="96" type="stmt" count="20"/>
+        <metrics loc="99" ncloc="63" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="26" elements="33" coveredelements="28"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/System/Kombo.php">
         <class name="Tips\Moduler\System\Kombo" namespace="Tips\Moduler\System">
@@ -7665,43 +7660,43 @@
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/TT/HamtaSpikar.php">
         <class name="Tips\Moduler\TT\HamtaSpikar" namespace="Tips\Moduler\TT">
-          <metrics complexity="9" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="28" elements="34" coveredelements="28"/>
+          <metrics complexity="9" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="29" elements="34" coveredelements="29"/>
         </class>
-        <line num="40" type="method" name="hämta_spikar" visibility="protected" complexity="9" crap="9.28" count="20"/>
+        <line num="40" type="method" name="hämta_spikar" visibility="protected" complexity="9" crap="9.14" count="20"/>
+        <line num="41" type="stmt" count="20"/>
+        <line num="42" type="stmt" count="20"/>
+        <line num="43" type="stmt" count="20"/>
         <line num="44" type="stmt" count="20"/>
         <line num="45" type="stmt" count="20"/>
         <line num="46" type="stmt" count="20"/>
-        <line num="47" type="stmt" count="20"/>
-        <line num="48" type="stmt" count="20"/>
-        <line num="49" type="stmt" count="20"/>
+        <line num="53" type="stmt" count="20"/>
+        <line num="54" type="stmt" count="20"/>
+        <line num="55" type="stmt" count="20"/>
         <line num="56" type="stmt" count="20"/>
         <line num="57" type="stmt" count="20"/>
         <line num="58" type="stmt" count="20"/>
         <line num="59" type="stmt" count="20"/>
         <line num="60" type="stmt" count="20"/>
-        <line num="61" type="stmt" count="20"/>
-        <line num="62" type="stmt" count="20"/>
         <line num="63" type="stmt" count="20"/>
-        <line num="66" type="stmt" count="20"/>
+        <line num="64" type="stmt" count="20"/>
+        <line num="65" type="stmt" count="20"/>
         <line num="67" type="stmt" count="20"/>
         <line num="68" type="stmt" count="20"/>
-        <line num="70" type="stmt" count="20"/>
         <line num="71" type="stmt" count="20"/>
+        <line num="72" type="stmt" count="20"/>
         <line num="74" type="stmt" count="20"/>
         <line num="75" type="stmt" count="20"/>
         <line num="79" type="stmt" count="20"/>
-        <line num="80" type="stmt" count="0"/>
-        <line num="84" type="stmt" count="20"/>
-        <line num="87" type="stmt" count="20"/>
+        <line num="82" type="stmt" count="20"/>
+        <line num="83" type="stmt" count="20"/>
         <line num="88" type="stmt" count="20"/>
+        <line num="89" type="stmt" count="20"/>
+        <line num="90" type="stmt" count="0"/>
+        <line num="91" type="stmt" count="0"/>
+        <line num="92" type="stmt" count="0"/>
+        <line num="93" type="stmt" count="0"/>
         <line num="94" type="stmt" count="20"/>
-        <line num="95" type="stmt" count="20"/>
-        <line num="96" type="stmt" count="0"/>
-        <line num="97" type="stmt" count="0"/>
-        <line num="98" type="stmt" count="0"/>
-        <line num="99" type="stmt" count="0"/>
-        <line num="100" type="stmt" count="20"/>
-        <metrics loc="103" ncloc="67" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="28" elements="34" coveredelements="28"/>
+        <metrics loc="97" ncloc="67" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="29" elements="34" coveredelements="29"/>
       </file>
       <file name="/Users/nik/Sites/tips/src/Moduler/TT/HistorisktUtfall.php">
         <class name="Tips\Moduler\TT\HistorisktUtfall" namespace="Tips\Moduler\TT">
@@ -8983,6 +8978,6 @@
       <line num="19" type="stmt" count="0"/>
       <metrics loc="20" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="4" coveredelements="0"/>
     </file>
-    <metrics files="470" loc="25529" ncloc="17047" classes="446" methods="752" coveredmethods="593" conditionals="0" coveredconditionals="0" statements="5365" coveredstatements="4289" elements="6117" coveredelements="4882"/>
+    <metrics files="470" loc="25520" ncloc="17040" classes="446" methods="751" coveredmethods="593" conditionals="0" coveredconditionals="0" statements="5361" coveredstatements="4287" elements="6112" coveredelements="4880"/>
   </project>
 </coverage>

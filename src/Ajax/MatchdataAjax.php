@@ -24,7 +24,8 @@ new Preludium();
 
 /**
  * Klass MatchdataAjax.
- * @SuppressWarnings("PHPMD.UnusedPrivateMethod", "PHPMD.UnusedPrivateField")
+ * @SuppressWarnings("PHPMD.UnusedPrivateMethod")
+ * @SuppressWarnings("PHPMD.UnusedPrivateField")
  */
 final class MatchdataAjax extends Nedbrytning {
 	use Ajax;
